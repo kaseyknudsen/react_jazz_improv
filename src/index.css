@@ -3,12 +3,16 @@
 
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Quattrocento', serif; */
+
+.navClass {
+  color: rgb(38, 25, 17);
+  border: 2px solid rgb(38, 25, 17);
+}
 .header {
     height: 200px;   
     position: relative;
     background-color: rgb(191, 175, 160);
     color: rgb(38,25,17);
-    border-bottom: 2px solid rgb(38, 25, 17);
 }
 .header-content {
   text-align: center;
