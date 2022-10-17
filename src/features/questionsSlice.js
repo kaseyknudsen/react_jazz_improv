@@ -1,7 +1,7 @@
-import { ModeQuestions } from "../QUESTIONS.js/TheoryQuestions";
-import { KeySignatureQuestions } from "../QUESTIONS.js/TheoryQuestions";
-import { ChordQuestions } from "../QUESTIONS.js/TheoryQuestions";
-import { IntervalQuestions } from "../QUESTIONS.js/TheoryQuestions";
+import { ModeQuestions } from "../QUESTIONS/TheoryQuestions";
+import { KeySignatureQuestions } from "../QUESTIONS/TheoryQuestions";
+import { ChordQuestions } from "../QUESTIONS/TheoryQuestions";
+import { IntervalQuestions } from "../QUESTIONS/TheoryQuestions";
 
 export const modeSlice = () => {
     const randomModeQuestion = ModeQuestions[Math.floor(Math.random() * ModeQuestions.length)];

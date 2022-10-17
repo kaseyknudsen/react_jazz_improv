@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import { DisplayModeQuestion } from './features/DisplayTheoryQuestions';
 import HomePage from './pages/HomePage';
 import { Routes, Route } from 'react-router-dom';
