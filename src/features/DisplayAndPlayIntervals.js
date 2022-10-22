@@ -19,17 +19,31 @@ const DisplayAndPlayIntervals = () => {
       <h5 className="text-center mb-5">Try to Repeat Back What You Hear!</h5>
       <Row>
         {noteCounts.map((noteCount) => {
-          return (
-            <Col
-              sm="7"
-              md="6"
-              lg="3"
-              className="mt-3 mx-auto"
-              onClick={() => playSequenceOnClick(noteCount)}
-            >
-              <IntervalCard name={`Play ${noteCount} Notes`} />
-            </Col>
-          );
+          if (noteCount > 1) {
+            return (
+              <Col
+                sm="7"
+                md="6"
+                lg="3"
+                className="mt-3 mx-auto"
+                onClick={() => playSequenceOnClick(noteCount)}
+              >
+                <IntervalCard name={`Play ${noteCount} Notes`} />
+              </Col>
+            );
+          } else {
+            return (
+              <Col
+                sm="7"
+                md="6"
+                lg="3"
+                className="mt-3 mx-auto"
+                onClick={() => playSequenceOnClick(noteCount)}
+              >
+                <IntervalCard name={`Play ${noteCount} Note`} />
+              </Col>
+            );
+          }
         })}
       </Row>
     </>
