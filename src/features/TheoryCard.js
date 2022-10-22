@@ -1,15 +1,17 @@
-import { Card, CardBody, CardTitle, CardText, CardImg  } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, CardImg } from "reactstrap";
 
-const TheoryCard = ({title, question, image} ) => {
-    return (
-        <Card>
-            {/* <CardImg>{image}</CardImg> */}
-            <CardBody>
-                <CardTitle>{title}</CardTitle>
-                <CardText>{question}</CardText>
-            </CardBody>
-        </Card>
-    )
-}
+const TheoryCard = ({ title, question, image }) => {
+  return (
+    <>
+      <Card className="card card-grow">
+        <CardImg src={image} alt={title} />
+        <CardBody className="card-body text-center">
+          <CardTitle>{title}</CardTitle>
+          <p className="card-text">{question}</p>
+        </CardBody>
+      </Card>
+    </>
+  );
+};
 
 export default TheoryCard;

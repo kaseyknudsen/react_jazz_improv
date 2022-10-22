@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento:wght@400;700&display=swap");
 
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Quattrocento', serif; */
@@ -10,24 +9,26 @@ font-family: 'Quattrocento', serif; */
 }
 
 .row-style {
-    padding: 50px;
-    border-bottom: 2px solid rgb(102,74,50)
+  padding: 50px;
+  border-bottom: 2px solid rgb(102, 74, 50);
 }
 
-h1, h2 {
-    font-family: 'Quattrocento', serif;
-    font-size: 50px;
-    color: rgb(102,74,50);
-    transition: 2s all ease;
+h1,
+h2 {
+  font-family: "Quattrocento", serif;
+  font-size: 50px;
+  color: rgb(102, 74, 50);
+  transition: 2s all ease;
 }
 
 h1:hover {
   filter: drop-shadow(5px 7px 4px rgb(38, 25, 17));
 }
 
-p {
-  font-family: 'Oswald', sans-serif;
-  color: rgb(69, 44, 29) ;
+p,
+.label {
+  font-family: "Oswald", sans-serif;
+  color: rgb(69, 44, 29);
 }
 
 .kaseyImage1 {
@@ -35,26 +36,19 @@ p {
 }
 
 h4 {
-  font-family: 'Quattrocento', serif;
-  color: rgb(102,74,50);
+  font-family: "Quattrocento", serif;
+  color: rgb(102, 74, 50);
 }
 
 h5 {
-  font-family: 'Quattrocento', serif;
+  font-family: "Quattrocento", serif;
   transition: 1s all ease-in;
   font-size: 25px;
-  color: rgb(102,74,50);
+  color: rgb(102, 74, 50);
 }
 
 h5:hover {
   filter: drop-shadow(5px 7px 4px rgb(38, 25, 17));
-}
-
-.theoryQuestionPrompt {
-  border: 2px solid rgb(38, 25, 17);
-  padding: 50px;
-  text-align: center;
-  filter: drop-shadow(1px 1px 4px rgb(38, 25, 17));
 }
 
 .card {
@@ -70,14 +64,17 @@ h5:hover {
 }
 
 #siteFooter {
-  background-image: linear-gradient(to bottom, rgb(191,175,160), rgb(186, 152, 124));
-  font-family: 'Quattrocento', serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(191, 175, 160),
+    rgb(186, 152, 124)
+  );
+  font-family: "Quattrocento", serif;
 }
 
 li {
-  color: rgb(102,74,50);
+  color: rgb(102, 74, 50);
   text-decoration: none;
-  
 }
 a {
   color: inherit;
@@ -88,10 +85,10 @@ a {
   font-weight: bolder;
 } */
 i {
-  color: rgb(102,74,50);
+  color: rgb(102, 74, 50);
 }
 #navLink {
-  color: rgb(102,74,50);
+  color: rgb(102, 74, 50);
   text-decoration: none;
 }
 #navLink:hover {
@@ -100,4 +97,35 @@ i {
 
 .footer-titles {
   text-decoration: underline;
+}
+
+.theory-topics {
+  border: 2px solid rgb(69, 44, 29);
+  padding: 50px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: rgb(69, 44, 29);
+  transition: 1s all ease-in;
+  filter: drop-shadow(3px 3px 4px #8e8c8c);
+}
+
+.theory-topics:hover {
+  padding: 55px;
+}
+
+.individual-theory-question {
+  border: 2px solid rgb(69, 44, 29);
+  padding: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: rgb(69, 44, 29);
+  transition: 1s all ease-in;
+  filter: drop-shadow(3px 3px 4px #8e8c8c);
+}
+
+#button {
+  background-color: rgb(202, 166, 138);
+  
 }

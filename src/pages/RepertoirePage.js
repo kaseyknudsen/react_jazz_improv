@@ -1,9 +1,13 @@
-import Header from "../components/Header";
+import SubHeader from "../components/Subheader";
+import DisplayRepertoire from "../features/DisplayRepertoire";
 
 const RepertoirePage = () => {
-    return (
-        <Header />
-    )
+  return (
+    <>
+      <SubHeader current="Repertoire Page" />
+      <DisplayRepertoire />
+    </>
+  );
 };
 
 export default RepertoirePage;

@@ -1,9 +1,13 @@
-import Header from "../components/Header";
+import SubHeader from "../components/Subheader";
+import DisplayPracticeRoutines from "../features/DisplayPracticeRoutines";
 
 const PracticeRoutinesPage = () => {
-    return (
-        <Header />
-    )
+  return (
+    <div>
+      <SubHeader current="Practice Routines" />
+      <DisplayPracticeRoutines />
+    </div>
+  );
 };
 
 export default PracticeRoutinesPage;

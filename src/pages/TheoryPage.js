@@ -1,22 +1,13 @@
-import { DisplayModeQuestion } from "../features/DisplayTheoryQuestions";
-import { DisplayIntervalQuestion } from "../features/DisplayTheoryQuestions";
-import { DisplayKeySignatureQuestion } from "../features/DisplayTheoryQuestions";
-import { DisplayChordQuestion } from "../features/DisplayTheoryQuestions";
-import { Col, Row } from "reactstrap";
-import Header from "../components/Header";
+import TheoryOptionsPage from "./TheoryOptionsPage";
+import SubHeader from "../components/Subheader";
 
 const TheoryPage = () => {
-    return (
-        <div>
-            <Header />
-            <DisplayModeQuestion />
-            <DisplayIntervalQuestion />
-            <DisplayKeySignatureQuestion />
-            <DisplayChordQuestion />
-        </div>
-    
-    );
+  return (
+    <div>
+      <SubHeader current="Theory Page" />
+      <TheoryOptionsPage />
+    </div>
+  );
 };
 
 export default TheoryPage;
-

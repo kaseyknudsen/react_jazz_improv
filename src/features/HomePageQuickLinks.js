@@ -1,6 +1,6 @@
 import { quickLinks } from "../QUESTIONS/quickLinks";
 import QuickLinkCard from "./QuickLinkCard";
-import { Row, Col, Card, CardBody, CardHeader } from "reactstrap";
+import { Row, Col, } from "reactstrap";
 
 const HomePageQuickLinks = () => {
   return (
@@ -10,11 +10,11 @@ const HomePageQuickLinks = () => {
           <h1>Quick Links</h1>
         </Col>
       </Row>
-      <Row className="mt-4">
+      <Row className="mt-3 mx-auto">
         {quickLinks.map((quickLink, index) => {
           return (
-            <Col xs="3" id={quickLinks.id}>
-              <QuickLinkCard text={quickLink.text} />
+            <Col sm='6' lg='3' key={quickLinks.id}>
+              <QuickLinkCard text={quickLink.text} image={quickLink.image} />
             </Col>
           );
         })}

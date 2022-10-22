@@ -1,0 +1,51 @@
+export const repertoireData = [
+  {
+    title: "10 Tunes To Start With",
+    text: [
+      "There Will Never Be Another You",
+      "There is No Greater Love ",
+      "Stella By Starlight",
+      "All Things You Are",
+      "Blue Bossa",
+      "Watermelon Man",
+      "Cantaloupe Island",
+      "Take The A Train",
+      "I Mean You",
+      "Scrapple From The Apple",
+    ],
+  },
+  {
+    title: "100 Tunes To Learn",
+    text: "Coming Soon...",
+  },
+  {
+    title: "10 Blues Heads To Learn",
+    text: [
+      "Sonnymoon For 2",
+      "Bloomdido",
+      "Tenor Madness",
+      "Barbados",
+      "Au Privave",
+      "Blues By 5",
+      "Blues For Alice",
+      "Things Ain't What They Used To Be",
+      "Cool Blues",
+      "Billie's Bounce",
+    ],
+  },
+  {
+    title: "10 Modal Tunes To Learn",
+    text: [
+      "So What",
+      "Impressions",
+      "Milestones (new)",
+      "My Favorite Things",
+      "Maiden Voyage",
+      "Footprints",
+      "Little Sunflower",
+      "Black Narcissus",
+      "Freedom Jazz Dance",
+      "Take Five",
+    ],
+  },
+];
