@@ -11,6 +11,7 @@ const PracticeDetailCard = (chosenRoutine) => {
         <CardText>
           <h5>{text}</h5>
         </CardText>
+        {/* button feature I need to add. It will link to another card with a detailed practice routine */}
         <Button className="btn" id="button"><h5>Click Here For A Detailed Plan</h5></Button>
       </CardBody>
     </Card>
