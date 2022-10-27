@@ -3,7 +3,7 @@ export const repertoireData = [
     title: "10 Tunes To Start With",
     text: [
       "There Will Never Be Another You",
-      "There is No Greater Love ",
+      "There is No Greater Love",
       "Stella By Starlight",
       "All Things You Are",
       "Blue Bossa",

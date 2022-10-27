@@ -1,6 +1,7 @@
 import { Row, Col } from "reactstrap";
 import TheoryOptionsCard from "../features/TheoryOptionsCard.js";
 import TheoryCard from "../features/TheoryCard.js";
+import { AnswerCard, ReadyForTheAnswer } from "../features/AnswerCard.js";
 import RandomQuestionSlice from "../features/RandomQuestionSlice.js";
 import { useState } from "react";
 import {
@@ -12,6 +13,7 @@ import {
 
 const TheoryOptionsPage = () => {
   const [question, setQuestion] = useState("");
+
   const topicToTopicArrayMap = {
     Intervals: IntervalQuestions,
     "Key Signatures": KeySignatureQuestions,
@@ -27,8 +29,9 @@ const TheoryOptionsPage = () => {
     <>
       <h1 className="text-center">Theory Questions</h1>
       <Row className="mt-5">
-        <Col xs='3' className="mx-auto">
+        <Col xs="3" className="mx-auto">
           <TheoryCard question={question.question} image={question.image} />
+          {console.log(question)}
         </Col>
       </Row>
       <Row className="mt-5">

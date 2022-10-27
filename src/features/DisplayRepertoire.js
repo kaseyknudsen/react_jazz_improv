@@ -11,14 +11,15 @@ const DisplayRepertoire = () => {
 
   return (
     <>
-      <h1 className="text-center">Repertoire</h1>
+      <h1 className="text-center mb-4">Repertoire</h1>
       <Row>
-        <Col sm="6" className="mx-auto mb-4">
+        <Col sm="4" className="mx-auto mb-4">
           <TuneListCard title={tuneList.title} text={tuneList.text} />
         </Col>
       </Row>
       <Row>
         {repertoireData.map((repertoireList, index) => {
+          console.log(repertoireList)
           return (
             <Col
               sm="7"
