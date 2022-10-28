@@ -100,6 +100,68 @@ import Descending_Maj_7th_F_to_Fsharp from "../app/images/High-Res-Interval-Pics
 import Descending_Maj_7th_G_to_Ab from "../app/images/High-Res-Interval-Pics/Descending-Major-Intervals/Descending-Maj-7ths/GtoAbDesc.png";
 import Descending_Maj_7th_High_E_to_F from "../app/images/High-Res-Interval-Pics/Descending-Major-Intervals/Descending-Maj-7ths/HighEtoFDesc.png";
 
+//ascending chromatic intervals
+//minor 2nds
+import Ascending_Chromatic_Min_2nd_High_Asharp_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-2nds/HighAsharpToB.png";
+import Ascending_Chromatic_Min_2nd_High_D_to_Eb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-2nds/HighDtoEb.png";
+import Ascending_Chromatic_Min_2nd_Low_C_to_Csharp from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-2nds/LowCtoCsharp.png";
+import Ascending_Chromatic_Min_2nd_Low_F_to_Fsharp from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-2nds/LowFtoFsharp.png";
+
+//minor 3rds
+import Ascending_Chromatic_Min_3rd_C_sharp_to_E from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-3rds/CsharpToE.png";
+import Ascending_Chromatic_Min_3rd_High_F_to_Ab from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-3rds/HighFtoAb.png";
+import Ascending_Chromatic_Min_3rd_Low_B_to_D from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-3rds/LowBtoD.png";
+import Ascending_Chromatic_Min_3rd_Low_Eb_to_Gb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-min-3rds/LowEbToGb.png";
+
+//augmented 4ths
+import Ascending_Chromatic_Aug_4th_Bb_to_E from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-aug-4ths/BbtoE.png";
+import Ascending_Chromatic_Aug_4th_B_to_F from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-aug-4ths/BtoF.png";
+import Ascending_Chromatic_Aug_4th_E_to_Bb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-aug-4ths/EtoBb.png";
+import Ascending_Chromatic_Aug_4th_F_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-aug-4ths/FtoB.png";
+
+//minor 6ths
+import Ascending_Chromatic_Min_6th_A_to_F from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/AtoF.png"
+import Ascending_Chromatic_Min_6th_Csharp_to_A from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/CsharpToA.png"
+import Ascending_Chromatic_Min_6th_Low_Bb_to_Gb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowBbToGb.png"
+import Ascending_Chromatic_Min_6th_Low_E_to_C from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowEtoC.png"
+
+//minor 7ths
+import Ascending_Chromatic_Min_7th_E_to_D from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/EtoD.png"
+import Ascending_Chromatic_Min_7th_F_to_Eb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/FtoEb.png"
+import Ascending_Chromatic_Min_7th_Low_Bb_to_Ab from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowBbToAb.png"
+import Ascending_Chromatic_Min_7th_Low_Csharp_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowCsharpToB.png"
+
+//descending chromatic intervals
+//min 2nds
+import Descending_Chromatic_Min_2nd_A_sharp_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-2nds/AsharpToAdesc.png";
+import Descending_Chromatic_Min_2nd_E_to_Eb from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-2nds/EtoEbDesc.png";
+import Descending_Chromatic_Min_2nd_F_to_E from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-2nds/FtoEdesc.png";
+import Descending_Chromatic_Min_2nd_High_Fsharp_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-2nds/HighFsharpToFdesc.png";
+
+//min 3rds
+import Descending_Chromatic_Min_3rd_Ab_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/AflatToFdesc.png";
+import Descending_Chromatic_Min_3rd_C_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/CtoAdesc.png";
+import Descending_Chromatic_Min_3rd_Bb_to_G from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/HighBbToGdesc.png";
+import Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/HighCsharpToAsharpDesc.png";
+
+//dim 4ths
+import Descending_Chromatic_Dim_4th_B_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/BtoFdesc.png"
+import Descending_Chromatic_Dim_4th_D_to_Ab from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/DtoAbDesc.png";
+import Descending_Chromatic_Dim_4th_Eb_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/EbToAdesc.png";
+import Descending_Chromatic_Dim_4th_G_to_C_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/GtoCsharpDesc.png";
+
+//min 6ths
+import Descending_Chromatic_Min_6th_A_to_Csharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-6ths/AtoLowCsharpDesc.png";
+import Descending_Chromatic_Min_6th_G_to_B from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-6ths/GtoLowBdesc.png";
+import Descending_Chromatic_Min_6th_High_A_to_C_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-6ths/HighAtoCsharpDesc.png";
+import Descending_Chromatic_Min_6th_D_to_Fsharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-6ths/HighDtoFsharpDesc.png";
+
+//min 7ths
+import Descending_Chromatic_Min_7th_B_to_Csharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-7ths/BtoLowCsharpDesc.png";
+import Descending_Chromatic_Min_7th_C_to_D from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-7ths/CtoLowDdesc.png";
+import Descending_Chromatic_Min_7th_Ab_to_Bb from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-7ths/HighAbtoBbDesc.png";
+import Descending_Chromatic_Min_7th_F_to_G from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-7ths/HighFtoGdesc.png";
+
 //modes
 import ionian from "../app/images/mode_pics/ionian.png";
 import dorian from "../app/images/mode_pics/dorian.png";
@@ -421,12 +483,27 @@ const Major6th = "Major 6th";
 const Major7th = "Major 7th"
 
 //major descending titles
-const DescendingMajor2nd = "Descending Major 2nd";
-const DescendingMajor3rd = "Descending Major 3rd";
-const DescendingPerfect4th = "Descending Perfect 4th";
-const DescendingPerfect5th = "Descending Perfect 5th";
-const DescendingMajor6th = "Descending Major 6th";
-const DescendingMajor7th = "Descending Major 7th";
+const DescendingMajor2nd = "Major 2nd";
+const DescendingMajor3rd = "Major 3rd";
+const DescendingPerfect4th = "Perfect 4th";
+const DescendingPerfect5th = "Perfect 5th";
+const DescendingMajor6th = "Major 6th";
+const DescendingMajor7th = "Major 7th";
+
+//chromatic ascending titles
+const AscendingMinor2nd = "Minor 2nd";
+const AscendingMinor3rd = "Minor 3rd";
+const AscendingAugmented4th = "Augmented 4th (tri-tone)";
+const AscendingMinor6th = "Minor 6th";
+const AscendingMinor7th = "Minor 7th";
+
+//chromatic descending titles
+const DescendingMinor2nd = "Minor 2nd";
+const DescendingMinor3rd = "Minor 3rd";
+const DescendingDiminished4th = "Diminished 4th (tri-tone)";
+const DescendingMinor6th = "Minor 6th";
+const DescendingMinor7th = "Minor 7th";
+
 
 export const IntervalQuestions = [
   //major 2nds
@@ -822,6 +899,309 @@ export const IntervalQuestions = [
   image: Descending_Maj_7th_High_E_to_F,
   question: intervalQuestion,
   answer: DescendingMajor7th,
+},
+
+//ascending chromatic intervals
+
+//ascending minor 2nds
+{
+  id: 52,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_2nd_High_Asharp_to_B,
+  question: intervalQuestion,
+  answer: AscendingMinor2nd,
+},
+{
+  id: 53,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_2nd_High_D_to_Eb,
+  question: intervalQuestion,
+  answer: AscendingMinor2nd,
+},
+{
+  id: 54,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_2nd_Low_C_to_Csharp,
+  question: intervalQuestion,
+  answer: AscendingMinor2nd,
+},
+{
+  id: 55,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_2nd_Low_F_to_Fsharp,
+  question: intervalQuestion,
+  answer: AscendingMinor2nd,
+},
+
+//ascending minor 3rds
+{
+  id: 56,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_3rd_C_sharp_to_E,
+  question: intervalQuestion,
+  answer: AscendingMinor3rd,
+},
+{
+  id: 56,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_3rd_High_F_to_Ab,
+  question: intervalQuestion,
+  answer: AscendingMinor3rd,
+},
+{
+  id: 56,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_3rd_Low_B_to_D,
+  question: intervalQuestion,
+  answer: AscendingMinor3rd,
+},
+{
+  id: 56,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_3rd_Low_Eb_to_Gb,
+  question: intervalQuestion,
+  answer: AscendingMinor3rd,
+},
+
+//ascending augmented 4ths
+{
+  id: 57,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Aug_4th_B_to_F,
+  question: intervalQuestion,
+  answer: AscendingAugmented4th,
+},
+{
+  id: 58,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Aug_4th_E_to_Bb,
+  question: intervalQuestion,
+  answer: AscendingAugmented4th,
+},
+{
+  id: 59,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Aug_4th_F_to_B,
+  question: intervalQuestion,
+  answer: AscendingAugmented4th,
+},
+{
+  id: 60,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Aug_4th_Bb_to_E,
+  question: intervalQuestion,
+  answer: AscendingAugmented4th,
+},
+
+//ascending minor 6ths
+{
+  id: 61,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_6th_A_to_F,
+  question: intervalQuestion,
+  answer: AscendingMinor6th,
+},
+{
+  id: 62,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_6th_Csharp_to_A,
+  question: intervalQuestion,
+  answer: AscendingMinor6th,
+},
+{
+  id: 63,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_6th_Low_Bb_to_Gb,
+  question: intervalQuestion,
+  answer: AscendingMinor6th,
+},
+{
+  id: 64,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_6th_Low_E_to_C,
+  question: intervalQuestion,
+  answer: AscendingMinor6th,
+},
+
+//ascending minor 7ths
+{
+  id: 65,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_7th_E_to_D,
+  question: intervalQuestion,
+  answer: AscendingMinor7th,
+},
+{
+  id: 66,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_7th_F_to_Eb,
+  question: intervalQuestion,
+  answer: AscendingMinor7th,
+},
+{
+  id: 67,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_7th_Low_Bb_to_Ab,
+  question: intervalQuestion,
+  answer: AscendingMinor7th,
+},
+{
+  id: 68,
+  title: intervalTopic,
+  image: Ascending_Chromatic_Min_7th_Low_Csharp_to_B,
+  question: intervalQuestion,
+  answer: AscendingMinor7th,
+},
+
+//descending chromatic intervals
+//min 2nds
+{
+  id: 69,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_2nd_A_sharp_to_A,
+  question: intervalQuestion,
+  answer: DescendingMinor2nd,
+},
+{
+  id: 70,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_2nd_F_to_E,
+  question: intervalQuestion,
+  answer: DescendingMinor2nd,
+},
+{
+  id: 71,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_2nd_High_Fsharp_to_F,
+  question: intervalQuestion,
+  answer: DescendingMinor2nd,
+},
+{
+  id: 72,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_2nd_E_to_Eb,
+  question: intervalQuestion,
+  answer: DescendingMinor2nd,
+},
+
+//min 3rds
+{
+  id: 73,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_3rd_Ab_to_F,
+  question: intervalQuestion,
+  answer: DescendingMinor3rd,
+},
+{
+  id: 74,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_3rd_Bb_to_G,
+  question: intervalQuestion,
+  answer: DescendingMinor3rd,
+},
+{
+  id: 75,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_3rd_C_to_A,
+  question: intervalQuestion,
+  answer: DescendingMinor3rd,
+},
+{
+  id: 76,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp,
+  question: intervalQuestion,
+  answer: DescendingMinor3rd,
+},
+
+//dim 4th
+{
+  id: 77,
+  title: intervalTopic,
+  image: Descending_Chromatic_Dim_4th_B_to_F,
+  question: intervalQuestion,
+  answer: DescendingDiminished4th,
+},
+{
+  id: 78,
+  title: intervalTopic,
+  image: Descending_Chromatic_Dim_4th_D_to_Ab,
+  question: intervalQuestion,
+  answer: DescendingDiminished4th,
+},
+{
+  id: 79,
+  title: intervalTopic,
+  image: Descending_Chromatic_Dim_4th_Eb_to_A,
+  question: intervalQuestion,
+  answer: DescendingDiminished4th,
+},
+{
+  id: 80,
+  title: intervalTopic,
+  image: Descending_Chromatic_Dim_4th_G_to_C_sharp,
+  question: intervalQuestion,
+  answer: DescendingDiminished4th,
+},
+
+//minor 6ths
+{
+  id: 81,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_6th_A_to_Csharp,
+  question: intervalQuestion,
+  answer: DescendingMinor6th,
+},
+{
+  id: 82,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_6th_D_to_Fsharp,
+  question: intervalQuestion,
+  answer: DescendingMinor6th,
+},
+{
+  id: 83,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_6th_G_to_B,
+  question: intervalQuestion,
+  answer: DescendingMinor6th,
+},
+{
+  id: 84,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_6th_High_A_to_C_sharp,
+  question: intervalQuestion,
+  answer: DescendingMinor6th,
+},
+
+//minor 7ths
+{
+  id: 85,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_7th_Ab_to_Bb,
+  question: intervalQuestion,
+  answer: DescendingMinor7th,
+},
+{
+  id: 86,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_7th_B_to_Csharp,
+  question: intervalQuestion,
+  answer: DescendingMinor7th,
+},
+{
+  id: 87,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_7th_C_to_D,
+  question: intervalQuestion,
+  answer: DescendingMinor7th,
+},
+{
+  id: 88,
+  title: intervalTopic,
+  image: Descending_Chromatic_Min_7th_F_to_G,
+  question: intervalQuestion,
+  answer: DescendingMinor7th,
 },
   
 ];

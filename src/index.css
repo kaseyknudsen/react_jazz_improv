@@ -5,7 +5,7 @@ font-family: 'Quattrocento', serif; */
 
 .custom-nav-bar {
   background-color: rgb(191, 175, 160);
-  min-height: 12rem;
+  min-height: 10rem;
 }
 
 .row-style {
@@ -129,4 +129,8 @@ i {
   background-color: rgb(202, 166, 138);
   
 }
+
+/* .answerCard {
+  margin-left: 50%;
+} */
 
