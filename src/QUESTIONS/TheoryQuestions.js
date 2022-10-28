@@ -163,64 +163,311 @@ import Descending_Chromatic_Min_7th_Ab_to_Bb from "../app/images/High-Res-Interv
 import Descending_Chromatic_Min_7th_F_to_G from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-7ths/HighFtoGdesc.png";
 
 //modes
-import ionian from "../app/images/mode_pics/ionian.png";
-import dorian from "../app/images/mode_pics/dorian.png";
-import phrygian from "../app/images/mode_pics/phrygian.png";
-import lydian from "../app/images/mode_pics/lydian.png";
-import mixolydian from "../app/images/mode_pics/mixolydian.png";
-import aeolian from "../app/images/mode_pics/aeolian.png";
-import locrian from "../app/images/mode_pics/locrian.png";
+//ionian
+import Ionian_Mode_Ab from "../app/images/High-res-major-scale-modes/ionian/Ab.png";
+import Ionian_Mode_Csharp from "../app/images/High-res-major-scale-modes/ionian/Csharp.png";
+import Ionian_Mode_Db from "../app/images/High-res-major-scale-modes/ionian/Db.png";
+import Ionian_Mode_E from "../app/images/High-res-major-scale-modes/ionian/E.png";
+
+//dorian
+import Dorian_Mode_B from "../app/images/High-res-major-scale-modes/dorian/B.png";
+import Dorian_Mode_D from "../app/images/High-res-major-scale-modes/dorian/D.png";
+import Dorian_Mode_Eb from "../app/images/High-res-major-scale-modes/dorian/Eb.png";
+import Dorian_Mode_F from "../app/images/High-res-major-scale-modes/dorian/F.png";
+
+//phrygian
+import Phrygian_Mode_Asharp from "../app/images/High-res-major-scale-modes/phrygian/Asharp.png";
+import Phrygian_Mode_C from "../app/images/High-res-major-scale-modes/phrygian/C.png";
+import Phrygian_Mode_E from "../app/images/High-res-major-scale-modes/phrygian/E.png";
+import Phrygian_Mode_Fsharp from "../app/images/High-res-major-scale-modes/phrygian/Fsharp.png";
+
+//lydian
+import Lydian_Mode_B from "../app/images/High-res-major-scale-modes/lydian/B.png";
+import Lydian_Mode_Eb from "../app/images/High-res-major-scale-modes/lydian/Eb.png";
+import Lydian_Mode_F from "../app/images/High-res-major-scale-modes/lydian/F.png";
+import Lydian_Mode_Bb from "../app/images/High-res-major-scale-modes/lydian/Bb.png";
+
+//mixolydian
+import Mixo_Mode_Bb from "../app/images/High-res-major-scale-modes/mixolydian/Bb.png";
+import Mixo_Mode_E from "../app/images/High-res-major-scale-modes/mixolydian/E.png";
+import Mixo_Mode_Fsharp from "../app/images/High-res-major-scale-modes/mixolydian/Fsharp.png";
+import Mixo_Mode_C from "../app/images/High-res-major-scale-modes/mixolydian/C.png";
+
+//aeolian
+import Aeolian_Mode_B from "../app/images/High-res-major-scale-modes/aeolian/B.png";
+import Aeolian_Mode_C from "../app/images/High-res-major-scale-modes/aeolian/C.png";
+import Aeolian_Mode_D from "../app/images/High-res-major-scale-modes/aeolian/D.png";
+import Aeolian_Mode_Gsharp from "../app/images/High-res-major-scale-modes/aeolian/Gsharp.png";
+
+//locrian
+import Locrian_Mode_Asharp from "../app/images/High-res-major-scale-modes/locrian/Asharp.png";
+import Locrian_Mode_Bsharp from "../app/images/High-res-major-scale-modes/locrian/Bsharp.png";
+import Locrian_Mode_D from "../app/images/High-res-major-scale-modes/locrian/D.png";
+import Locrian_Mode_Fsharp from "../app/images/High-res-major-scale-modes/locrian/Fsharp.png";
+
+
+
+//modes
+const modeQuestion = "What mode of the major scale is this?";
+const Ionian = "Ionian"
+const Dorian = "Dorian";
+const Phrygian = "Phrygian";
+const Lydian = "Lydian";
+const Mixolydian = "Mixolydian";
+const Aeolian = "Aeolian";
+const Locrian = "Locrian";
+
+const ModesOfTheMajorScale = "Modes of the Major Scale"
 
 export const ModeQuestions = [
+  //no images
   {
     id: 0,
-    image: dorian,
-    title: "Modes",
+    title: ModesOfTheMajorScale,
     question: "What is the 2nd mode of the major scale?",
-    answer: "Dorian",
+    answer: Dorian,
   },
   {
     id: 1,
-    image: lydian,
-    title: "Modes",
-    question: "What is the 4th mode of the major scale?",
-    answer: "Lydian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 3rd mode of the major scale?",
+    answer: Phrygian,
   },
   {
     id: 2,
-    image: aeolian,
-    title: "Modes",
-    question: "What is the 6th mode of the major scale?",
-    answer: "Aeolian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 4th mode of the major scale?",
+    answer: Lydian,
   },
   {
     id: 3,
-    image: phrygian,
-    title: "Modes",
-    question: "What is the 3rd mode of the major scale?",
-    answer: "Phrygian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 5th mode of the major scale?",
+    answer: Mixolydian,
   },
   {
     id: 4,
-    image: mixolydian,
-    title: "Modes",
-    question: "What is the 5th mode of the major scale?",
-    answer: "Mixolydian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 6th mode of the major scale?",
+    answer: Aeolian,
   },
   {
     id: 5,
-    image: ionian,
-    title: "Modes",
-    question: "What is the 1st mode of the major scale?",
-    answer: "Ionian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 7th mode of the major scale?",
+    answer: Locrian,
   },
   {
     id: 6,
-    image: locrian,
-    title: "Modes",
-    question: "What is the 7th mode of the major scale?",
-    answer: "Locrian",
+    title: ModesOfTheMajorScale,
+    question: "What is the 1st mode of the major scale?",
+    answer: Ionian,
   },
+  //mode questions with images
+  //ionian
+  {
+    id: 7,
+    title: ModesOfTheMajorScale,
+    image: Ionian_Mode_Ab,
+    question: modeQuestion,
+    answer: Ionian,
+  },
+  {
+    id: 8,
+    title: ModesOfTheMajorScale,
+    image: Ionian_Mode_Csharp,
+    question: modeQuestion,
+    answer: Ionian,
+  },
+  {
+    id: 9,
+    title: ModesOfTheMajorScale,
+    image: Ionian_Mode_Db,
+    question: modeQuestion,
+    answer: Ionian,
+  },
+  {
+    id: 10,
+    title: ModesOfTheMajorScale,
+    image: Ionian_Mode_E,
+    question: modeQuestion,
+    answer: Ionian,
+  },
+  //dorian
+  {
+    id: 11,
+    title: ModesOfTheMajorScale,
+    image: Dorian_Mode_B,
+    question: modeQuestion,
+    answer: Dorian,
+  },
+  {
+    id: 12,
+    title: ModesOfTheMajorScale,
+    image: Dorian_Mode_D,
+    question: modeQuestion,
+    answer: Dorian,
+  },
+  {
+    id: 13,
+    title: ModesOfTheMajorScale,
+    image: Dorian_Mode_Eb,
+    question: modeQuestion,
+    answer: Dorian,
+  },
+  {
+    id: 14,
+    title: ModesOfTheMajorScale,
+    image: Dorian_Mode_F,
+    question: modeQuestion,
+    answer: Dorian,
+  },
+ //phrygian
+ {
+  id: 15,
+  title: ModesOfTheMajorScale,
+  image: Phrygian_Mode_Asharp,
+  question: modeQuestion,
+  answer: Phrygian,
+}, 
+{
+  id: 16,
+  title: ModesOfTheMajorScale,
+  image: Phrygian_Mode_C,
+  question: modeQuestion,
+  answer: Phrygian,
+}, 
+{
+  id: 17,
+  title: ModesOfTheMajorScale,
+  image: Phrygian_Mode_E,
+  question: modeQuestion,
+  answer: Phrygian,
+}, 
+{
+  id: 18,
+  title: ModesOfTheMajorScale,
+  image: Phrygian_Mode_Fsharp,
+  question: modeQuestion,
+  answer: Phrygian,
+},
+//lydian
+{
+  id: 19,
+  title: ModesOfTheMajorScale,
+  image: Lydian_Mode_B,
+  question: modeQuestion,
+  answer: Lydian,
+},
+{
+  id: 20,
+  title: ModesOfTheMajorScale,
+  image: Lydian_Mode_Bb,
+  question: modeQuestion,
+  answer: Lydian,
+},  
+{
+  id: 21,
+  title: ModesOfTheMajorScale,
+  image: Lydian_Mode_Eb,
+  question: modeQuestion,
+  answer: Lydian,
+},  
+{
+  id: 22,
+  title: ModesOfTheMajorScale,
+  image: Lydian_Mode_F,
+  question: modeQuestion,
+  answer: Lydian,
+},
+//mixo
+{
+  id: 23,
+  title: ModesOfTheMajorScale,
+  image: Mixo_Mode_Bb,
+  question: modeQuestion,
+  answer: Mixolydian,
+},
+{
+  id: 24,
+  title: ModesOfTheMajorScale,
+  image: Mixo_Mode_C,
+  question: modeQuestion,
+  answer: Mixolydian,
+},     
+{
+  id: 25,
+  title: ModesOfTheMajorScale,
+  image: Mixo_Mode_E,
+  question: modeQuestion,
+  answer: Mixolydian,
+},     
+{
+  id: 26,
+  title: ModesOfTheMajorScale,
+  image: Mixo_Mode_Fsharp,
+  question: modeQuestion,
+  answer: Mixolydian,
+},
+//aeolian
+{
+  id: 27,
+  title: ModesOfTheMajorScale,
+  image: Aeolian_Mode_B,
+  question: modeQuestion,
+  answer: Aeolian,
+},
+{
+  id: 28,
+  title: ModesOfTheMajorScale,
+  image: Aeolian_Mode_C,
+  question: modeQuestion,
+  answer: Aeolian,
+},  
+{
+  id: 29,
+  title: ModesOfTheMajorScale,
+  image: Aeolian_Mode_D,
+  question: modeQuestion,
+  answer: Aeolian,
+},  
+{
+  id: 30,
+  title: ModesOfTheMajorScale,
+  image: Aeolian_Mode_Gsharp,
+  question: modeQuestion,
+  answer: Aeolian,
+},
+//locrian
+{
+  id: 30,
+  title: ModesOfTheMajorScale,
+  image: Locrian_Mode_Asharp,
+  question: modeQuestion,
+  answer: Locrian,
+},
+{
+  id: 31,
+  title: ModesOfTheMajorScale,
+  image: Locrian_Mode_Bsharp,
+  question: modeQuestion,
+  answer: Locrian,
+},   
+{
+  id: 32,
+  title: ModesOfTheMajorScale,
+  image: Locrian_Mode_D,
+  question: modeQuestion,
+  answer: Locrian,
+},   
+{
+  id: 33,
+  title: ModesOfTheMajorScale,
+  image: Locrian_Mode_Fsharp,
+  question: modeQuestion,
+  answer: Locrian,
+},                 
+ 
 ];
 
 const majorKeySig = "What is this major key signature?"

@@ -21,7 +21,7 @@ const TheoryOptionsPage = () => {
   const topicToTopicArrayMap = {
     Intervals: IntervalQuestions,
     "Key Signatures": KeySignatureQuestions,
-    Modes: ModeQuestions,
+    "Modes of the Major Scale": ModeQuestions,
     Chords: ChordQuestions,
   };
   //display the topic names inside the cards
