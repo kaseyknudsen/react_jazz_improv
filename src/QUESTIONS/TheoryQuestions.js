@@ -15,11 +15,7 @@ import Fsharp_maj_key_sig from "../app/images/Key-Signatures-Hig-Res-Images/Fsha
 import G_maj_key_sig from "../app/images/Key-Signatures-Hig-Res-Images/G-maj-key-sig.png";
 import Gb_maj_key_sig from "../app/images/Key-Signatures-Hig-Res-Images/Gb-maj-key-sig.png";
 
-//chords
-import c7Dominant from "../app/images/chords/c7Dominant.png";
-import B7Dominant from "../app/images/chords/B7Chord.png";
-import ebMajChord from "../app/images/chords/EbMajChord.png";
-import Dminor7 from "../app/images/chords/DminChord.png";
+
 
 //Ascending major intervals
 //maj 2nds
@@ -120,16 +116,16 @@ import Ascending_Chromatic_Aug_4th_E_to_Bb from "../app/images/High-Res-Interval
 import Ascending_Chromatic_Aug_4th_F_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-aug-4ths/FtoB.png";
 
 //minor 6ths
-import Ascending_Chromatic_Min_6th_A_to_F from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/AtoF.png"
-import Ascending_Chromatic_Min_6th_Csharp_to_A from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/CsharpToA.png"
-import Ascending_Chromatic_Min_6th_Low_Bb_to_Gb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowBbToGb.png"
-import Ascending_Chromatic_Min_6th_Low_E_to_C from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowEtoC.png"
+import Ascending_Chromatic_Min_6th_A_to_F from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/AtoF.png";
+import Ascending_Chromatic_Min_6th_Csharp_to_A from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/CsharpToA.png";
+import Ascending_Chromatic_Min_6th_Low_Bb_to_Gb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowBbToGb.png";
+import Ascending_Chromatic_Min_6th_Low_E_to_C from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-minor-6ths/LowEtoC.png";
 
 //minor 7ths
-import Ascending_Chromatic_Min_7th_E_to_D from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/EtoD.png"
-import Ascending_Chromatic_Min_7th_F_to_Eb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/FtoEb.png"
-import Ascending_Chromatic_Min_7th_Low_Bb_to_Ab from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowBbToAb.png"
-import Ascending_Chromatic_Min_7th_Low_Csharp_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowCsharpToB.png"
+import Ascending_Chromatic_Min_7th_E_to_D from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/EtoD.png";
+import Ascending_Chromatic_Min_7th_F_to_Eb from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/FtoEb.png";
+import Ascending_Chromatic_Min_7th_Low_Bb_to_Ab from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowBbToAb.png";
+import Ascending_Chromatic_Min_7th_Low_Csharp_to_B from "../app/images/High-Res-Interval-Pics/Ascending-Chromatic-Intervals/Ascending-Min-7ths/LowCsharpToB.png";
 
 //descending chromatic intervals
 //min 2nds
@@ -145,7 +141,7 @@ import Descending_Chromatic_Min_3rd_Bb_to_G from "../app/images/High-Res-Interva
 import Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/HighCsharpToAsharpDesc.png";
 
 //dim 4ths
-import Descending_Chromatic_Dim_4th_B_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/BtoFdesc.png"
+import Descending_Chromatic_Dim_4th_B_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/BtoFdesc.png";
 import Descending_Chromatic_Dim_4th_D_to_Ab from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/DtoAbDesc.png";
 import Descending_Chromatic_Dim_4th_Eb_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/EbToAdesc.png";
 import Descending_Chromatic_Dim_4th_G_to_C_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/GtoCsharpDesc.png";
@@ -205,11 +201,58 @@ import Locrian_Mode_Bsharp from "../app/images/High-res-major-scale-modes/locria
 import Locrian_Mode_D from "../app/images/High-res-major-scale-modes/locrian/D.png";
 import Locrian_Mode_Fsharp from "../app/images/High-res-major-scale-modes/locrian/Fsharp.png";
 
+//chords
+//major
+import Maj7_Chord_A from "../app/images/high-res-chord-pics/Maj7/A.png";
+import Maj7_Chord_Csharp from "../app/images/high-res-chord-pics/Maj7/Csharp.png";
+import Maj7_Chord_D from "../app/images/high-res-chord-pics/Maj7/D.png";
+import Maj7_Chord_F from "../app/images/high-res-chord-pics/Maj7/F.png";
 
+//dominant
+import Dom7_Chord_Ab from "../app/images/high-res-chord-pics/Dom7/Ab.png";
+import Dom7_Chord_B from "../app/images/high-res-chord-pics/Dom7/B.png";
+import Dom7_Chord_D from "../app/images/high-res-chord-pics/Dom7/D.png";
+import Dom7_Chord_F from "../app/images/high-res-chord-pics/Dom7/F.png";
+
+//minor
+import Min7_Chord_Ab from "../app/images/high-res-chord-pics/Min7/Ab.png";
+import Min7_Chord_B from "../app/images/high-res-chord-pics/Min7/B.png";
+import Min7_Chord_Eb from "../app/images/high-res-chord-pics/Min7/Eb.png";
+import Min7_Chord_G from "../app/images/high-res-chord-pics/Min7/G.png";
+
+//half-dim
+import Half_Dim7_Chord_B from "../app/images/high-res-chord-pics/half-dim7/B.png";
+import Half_Dim7_Chord_D from "../app/images/high-res-chord-pics/half-dim7/D.png";
+import Half_Dim7_Chord_E from "../app/images/high-res-chord-pics/half-dim7/E.png";
+import Half_Dim7_Chord_Eb from "../app/images/high-res-chord-pics/half-dim7/Eb.png";
+
+//fully dim
+import Dim7_Chord_B from "../app/images/high-res-chord-pics/diminished7/B.png";
+import Dim7_Chord_Csharp from "../app/images/high-res-chord-pics/diminished7/Csharp.png";
+import Dim7_Chord_E from "../app/images/high-res-chord-pics/diminished7/E.png";
+import Dim7_Chord_G from "../app/images/high-res-chord-pics/diminished7/G.png";
+
+//maj7#5
+import Maj_7_sharp_5_Bb from "../app/images/high-res-chord-pics/maj7sharp5/Bb.png";
+import Maj_7_sharp_5_C from "../app/images/high-res-chord-pics/maj7sharp5/C.png";
+import Maj_7_sharp_5_Eb from "../app/images/high-res-chord-pics/maj7sharp5/Eb.png";
+import Maj_7_sharp_5_G from "../app/images/high-res-chord-pics/maj7sharp5/G.png";
+
+//dom7#5
+import Dom_7_sharp_5_C from "../app/images/high-res-chord-pics/dom7sharp5/C.png";
+import Dom_7_sharp_5_E from "../app/images/high-res-chord-pics/dom7sharp5/E.png";
+import Dom_7_sharp_5_F from "../app/images/high-res-chord-pics/dom7sharp5/F.png";
+import Dom_7_sharp_5_G from "../app/images/high-res-chord-pics/dom7sharp5/G.png";
+
+//dom7sus4
+import Dom_7_sus_4_B from "../app/images/high-res-chord-pics/dom7sus4/B.png";
+import Dom_7_sus_4_Bb from "../app/images/high-res-chord-pics/dom7sus4/Bb.png";
+import Dom_7_sus_4_D from "../app/images/high-res-chord-pics/dom7sus4/D.png";
+import Dom_7_sus_4_Eb from "../app/images/high-res-chord-pics/dom7sus4/Eb.png";
 
 //modes
 const modeQuestion = "What mode of the major scale is this?";
-const Ionian = "Ionian"
+const Ionian = "Ionian";
 const Dorian = "Dorian";
 const Phrygian = "Phrygian";
 const Lydian = "Lydian";
@@ -217,7 +260,7 @@ const Mixolydian = "Mixolydian";
 const Aeolian = "Aeolian";
 const Locrian = "Locrian";
 
-const ModesOfTheMajorScale = "Modes of the Major Scale"
+const ModesOfTheMajorScale = "Modes of the Major Scale";
 
 export const ModeQuestions = [
   //no images
@@ -322,157 +365,156 @@ export const ModeQuestions = [
     question: modeQuestion,
     answer: Dorian,
   },
- //phrygian
- {
-  id: 15,
-  title: ModesOfTheMajorScale,
-  image: Phrygian_Mode_Asharp,
-  question: modeQuestion,
-  answer: Phrygian,
-}, 
-{
-  id: 16,
-  title: ModesOfTheMajorScale,
-  image: Phrygian_Mode_C,
-  question: modeQuestion,
-  answer: Phrygian,
-}, 
-{
-  id: 17,
-  title: ModesOfTheMajorScale,
-  image: Phrygian_Mode_E,
-  question: modeQuestion,
-  answer: Phrygian,
-}, 
-{
-  id: 18,
-  title: ModesOfTheMajorScale,
-  image: Phrygian_Mode_Fsharp,
-  question: modeQuestion,
-  answer: Phrygian,
-},
-//lydian
-{
-  id: 19,
-  title: ModesOfTheMajorScale,
-  image: Lydian_Mode_B,
-  question: modeQuestion,
-  answer: Lydian,
-},
-{
-  id: 20,
-  title: ModesOfTheMajorScale,
-  image: Lydian_Mode_Bb,
-  question: modeQuestion,
-  answer: Lydian,
-},  
-{
-  id: 21,
-  title: ModesOfTheMajorScale,
-  image: Lydian_Mode_Eb,
-  question: modeQuestion,
-  answer: Lydian,
-},  
-{
-  id: 22,
-  title: ModesOfTheMajorScale,
-  image: Lydian_Mode_F,
-  question: modeQuestion,
-  answer: Lydian,
-},
-//mixo
-{
-  id: 23,
-  title: ModesOfTheMajorScale,
-  image: Mixo_Mode_Bb,
-  question: modeQuestion,
-  answer: Mixolydian,
-},
-{
-  id: 24,
-  title: ModesOfTheMajorScale,
-  image: Mixo_Mode_C,
-  question: modeQuestion,
-  answer: Mixolydian,
-},     
-{
-  id: 25,
-  title: ModesOfTheMajorScale,
-  image: Mixo_Mode_E,
-  question: modeQuestion,
-  answer: Mixolydian,
-},     
-{
-  id: 26,
-  title: ModesOfTheMajorScale,
-  image: Mixo_Mode_Fsharp,
-  question: modeQuestion,
-  answer: Mixolydian,
-},
-//aeolian
-{
-  id: 27,
-  title: ModesOfTheMajorScale,
-  image: Aeolian_Mode_B,
-  question: modeQuestion,
-  answer: Aeolian,
-},
-{
-  id: 28,
-  title: ModesOfTheMajorScale,
-  image: Aeolian_Mode_C,
-  question: modeQuestion,
-  answer: Aeolian,
-},  
-{
-  id: 29,
-  title: ModesOfTheMajorScale,
-  image: Aeolian_Mode_D,
-  question: modeQuestion,
-  answer: Aeolian,
-},  
-{
-  id: 30,
-  title: ModesOfTheMajorScale,
-  image: Aeolian_Mode_Gsharp,
-  question: modeQuestion,
-  answer: Aeolian,
-},
-//locrian
-{
-  id: 30,
-  title: ModesOfTheMajorScale,
-  image: Locrian_Mode_Asharp,
-  question: modeQuestion,
-  answer: Locrian,
-},
-{
-  id: 31,
-  title: ModesOfTheMajorScale,
-  image: Locrian_Mode_Bsharp,
-  question: modeQuestion,
-  answer: Locrian,
-},   
-{
-  id: 32,
-  title: ModesOfTheMajorScale,
-  image: Locrian_Mode_D,
-  question: modeQuestion,
-  answer: Locrian,
-},   
-{
-  id: 33,
-  title: ModesOfTheMajorScale,
-  image: Locrian_Mode_Fsharp,
-  question: modeQuestion,
-  answer: Locrian,
-},                 
- 
+  //phrygian
+  {
+    id: 15,
+    title: ModesOfTheMajorScale,
+    image: Phrygian_Mode_Asharp,
+    question: modeQuestion,
+    answer: Phrygian,
+  },
+  {
+    id: 16,
+    title: ModesOfTheMajorScale,
+    image: Phrygian_Mode_C,
+    question: modeQuestion,
+    answer: Phrygian,
+  },
+  {
+    id: 17,
+    title: ModesOfTheMajorScale,
+    image: Phrygian_Mode_E,
+    question: modeQuestion,
+    answer: Phrygian,
+  },
+  {
+    id: 18,
+    title: ModesOfTheMajorScale,
+    image: Phrygian_Mode_Fsharp,
+    question: modeQuestion,
+    answer: Phrygian,
+  },
+  //lydian
+  {
+    id: 19,
+    title: ModesOfTheMajorScale,
+    image: Lydian_Mode_B,
+    question: modeQuestion,
+    answer: Lydian,
+  },
+  {
+    id: 20,
+    title: ModesOfTheMajorScale,
+    image: Lydian_Mode_Bb,
+    question: modeQuestion,
+    answer: Lydian,
+  },
+  {
+    id: 21,
+    title: ModesOfTheMajorScale,
+    image: Lydian_Mode_Eb,
+    question: modeQuestion,
+    answer: Lydian,
+  },
+  {
+    id: 22,
+    title: ModesOfTheMajorScale,
+    image: Lydian_Mode_F,
+    question: modeQuestion,
+    answer: Lydian,
+  },
+  //mixo
+  {
+    id: 23,
+    title: ModesOfTheMajorScale,
+    image: Mixo_Mode_Bb,
+    question: modeQuestion,
+    answer: Mixolydian,
+  },
+  {
+    id: 24,
+    title: ModesOfTheMajorScale,
+    image: Mixo_Mode_C,
+    question: modeQuestion,
+    answer: Mixolydian,
+  },
+  {
+    id: 25,
+    title: ModesOfTheMajorScale,
+    image: Mixo_Mode_E,
+    question: modeQuestion,
+    answer: Mixolydian,
+  },
+  {
+    id: 26,
+    title: ModesOfTheMajorScale,
+    image: Mixo_Mode_Fsharp,
+    question: modeQuestion,
+    answer: Mixolydian,
+  },
+  //aeolian
+  {
+    id: 27,
+    title: ModesOfTheMajorScale,
+    image: Aeolian_Mode_B,
+    question: modeQuestion,
+    answer: Aeolian,
+  },
+  {
+    id: 28,
+    title: ModesOfTheMajorScale,
+    image: Aeolian_Mode_C,
+    question: modeQuestion,
+    answer: Aeolian,
+  },
+  {
+    id: 29,
+    title: ModesOfTheMajorScale,
+    image: Aeolian_Mode_D,
+    question: modeQuestion,
+    answer: Aeolian,
+  },
+  {
+    id: 30,
+    title: ModesOfTheMajorScale,
+    image: Aeolian_Mode_Gsharp,
+    question: modeQuestion,
+    answer: Aeolian,
+  },
+  //locrian
+  {
+    id: 30,
+    title: ModesOfTheMajorScale,
+    image: Locrian_Mode_Asharp,
+    question: modeQuestion,
+    answer: Locrian,
+  },
+  {
+    id: 31,
+    title: ModesOfTheMajorScale,
+    image: Locrian_Mode_Bsharp,
+    question: modeQuestion,
+    answer: Locrian,
+  },
+  {
+    id: 32,
+    title: ModesOfTheMajorScale,
+    image: Locrian_Mode_D,
+    question: modeQuestion,
+    answer: Locrian,
+  },
+  {
+    id: 33,
+    title: ModesOfTheMajorScale,
+    image: Locrian_Mode_Fsharp,
+    question: modeQuestion,
+    answer: Locrian,
+  },
 ];
 
-const majorKeySig = "What is this major key signature?"
-const minorKeySig = "What is this relative minor key signature?"
-const topicKeySignatures = "Key Signatures"
+const majorKeySig = "What is this major key signature?";
+const minorKeySig = "What is this relative minor key signature?";
+const topicKeySignatures = "Key Signatures";
 
 export const KeySignatureQuestions = [
   {
@@ -687,34 +729,249 @@ export const KeySignatureQuestions = [
   },
 ];
 
+const ChordQualityQuestion = "What type of chord is this?";
+const ChordTopic = "Chords";
+const major7th = "Major 7th";
+const dominant7 = "Dominant 7th";
+const minor7 = "Minor 7th";
+const half_diminished7 = "Half-Diminished 7th (Minor 7b5)";
+const diminished7 = "Diminished 7th";
+const major7sharp5 = "Major 7#5";
+const dom7sharp5 = "Dominant 7#5";
+const dom7sus4 = "Dominant 7sus4";
+
 export const ChordQuestions = [
+  //major
   {
     id: 0,
-    title: "Chords",
-    image: c7Dominant,
-    question: "What chord is this?",
-    answer: "C7 Dominant",
+    title: ChordTopic,
+    image: Maj7_Chord_A,
+    question: ChordQualityQuestion,
+    answer: major7th,
   },
   {
     id: 1,
-    title: "Chords",
-    image: ebMajChord,
-    question: "What chord is this?",
-    answer: "Eb Major 7",
+    title: ChordTopic,
+    image: Maj7_Chord_Csharp,
+    question: ChordQualityQuestion,
+    answer: major7th,
   },
   {
     id: 2,
-    title: "Chords",
-    image: B7Dominant,
-    question: "What chord is this?",
-    answer: "B7 Dominant",
+    title: ChordTopic,
+    image: Maj7_Chord_D,
+    question: ChordQualityQuestion,
+    answer: major7th,
   },
   {
     id: 3,
-    title: "Chords",
-    image: Dminor7,
-    question: "What chord is this?",
-    answer: "D minor 7",
+    title: ChordTopic,
+    image: Maj7_Chord_F,
+    question: ChordQualityQuestion,
+    answer: major7th,
+  },
+  //dominant
+  {
+    id: 4,
+    title: ChordTopic,
+    image: Dom7_Chord_Ab,
+    question: ChordQualityQuestion,
+    answer: dominant7,
+  },
+  {
+    id: 5,
+    title: ChordTopic,
+    image: Dom7_Chord_B,
+    question: ChordQualityQuestion,
+    answer: dominant7,
+  },
+  {
+    id: 6,
+    title: ChordTopic,
+    image: Dom7_Chord_D,
+    question: ChordQualityQuestion,
+    answer: dominant7,
+  },
+  {
+    id: 7,
+    title: ChordTopic,
+    image: Dom7_Chord_F,
+    question: ChordQualityQuestion,
+    answer: dominant7,
+  },
+  //minor
+  {
+    id: 8,
+    title: ChordTopic,
+    image: Min7_Chord_Ab,
+    question: ChordQualityQuestion,
+    answer: minor7,
+  },
+  {
+    id: 9,
+    title: ChordTopic,
+    image: Min7_Chord_B,
+    question: ChordQualityQuestion,
+    answer: minor7,
+  },
+  {
+    id: 10,
+    title: ChordTopic,
+    image: Min7_Chord_Eb,
+    question: ChordQualityQuestion,
+    answer: minor7,
+  },
+  {
+    id: 11,
+    title: ChordTopic,
+    image: Min7_Chord_G,
+    question: ChordQualityQuestion,
+    answer: minor7,
+  },
+  //half-dim
+  {
+    id: 12,
+    title: ChordTopic,
+    image: Half_Dim7_Chord_B,
+    question: ChordQualityQuestion,
+    answer: half_diminished7,
+  },
+  {
+    id: 13,
+    title: ChordTopic,
+    image: Half_Dim7_Chord_D,
+    question: ChordQualityQuestion,
+    answer: half_diminished7,
+  },
+  {
+    id: 14,
+    title: ChordTopic,
+    image: Half_Dim7_Chord_E,
+    question: ChordQualityQuestion,
+    answer: half_diminished7,
+  },
+  {
+    id: 15,
+    title: ChordTopic,
+    image: Half_Dim7_Chord_Eb,
+    question: ChordQualityQuestion,
+    answer: half_diminished7,
+  },
+  //fully-dim
+  {
+    id: 16,
+    title: ChordTopic,
+    image: Dim7_Chord_B,
+    question: ChordQualityQuestion,
+    answer: diminished7,
+  },
+  {
+    id: 17,
+    title: ChordTopic,
+    image: Dim7_Chord_Csharp,
+    question: ChordQualityQuestion,
+    answer: diminished7,
+  },
+  {
+    id: 18,
+    title: ChordTopic,
+    image: Dim7_Chord_E,
+    question: ChordQualityQuestion,
+    answer: diminished7,
+  },
+  {
+    id: 19,
+    title: ChordTopic,
+    image: Dim7_Chord_G,
+    question: ChordQualityQuestion,
+    answer: diminished7,
+  },
+  //maj7#5
+  {
+    id: 20,
+    title: ChordTopic,
+    image: Maj_7_sharp_5_Bb,
+    question: ChordQualityQuestion,
+    answer: major7sharp5,
+  },
+  {
+    id: 21,
+    title: ChordTopic,
+    image: Maj_7_sharp_5_C,
+    question: ChordQualityQuestion,
+    answer: major7sharp5,
+  },
+  {
+    id: 22,
+    title: ChordTopic,
+    image: Maj_7_sharp_5_Eb,
+    question: ChordQualityQuestion,
+    answer: major7sharp5,
+  },
+  {
+    id: 23,
+    title: ChordTopic,
+    image: Maj_7_sharp_5_G,
+    question: ChordQualityQuestion,
+    answer: major7sharp5,
+  },
+  //dom7#5
+  {
+    id: 24,
+    title: ChordTopic,
+    image: Dom_7_sharp_5_C,
+    question: ChordQualityQuestion,
+    answer: dom7sharp5,
+  },
+  {
+    id: 25,
+    title: ChordTopic,
+    image: Dom_7_sharp_5_E,
+    question: ChordQualityQuestion,
+    answer: dom7sharp5,
+  },
+  {
+    id: 26,
+    title: ChordTopic,
+    image: Dom_7_sharp_5_F,
+    question: ChordQualityQuestion,
+    answer: dom7sharp5,
+  },
+  {
+    id: 27,
+    title: ChordTopic,
+    image: Dom_7_sharp_5_G,
+    question: ChordQualityQuestion,
+    answer: dom7sharp5,
+  },
+  //dom7sus4
+  {
+    id: 28,
+    title: ChordTopic,
+    image: Dom_7_sus_4_B,
+    question: ChordQualityQuestion,
+    answer: dom7sus4,
+  },
+  {
+    id: 29,
+    title: ChordTopic,
+    image: Dom_7_sus_4_Bb,
+    question: ChordQualityQuestion,
+    answer: dom7sus4,
+  },
+  {
+    id: 30,
+    title: ChordTopic,
+    image: Dom_7_sus_4_D,
+    question: ChordQualityQuestion,
+    answer: dom7sus4,
+  },
+  {
+    id: 31,
+    title: ChordTopic,
+    image: Dom_7_sus_4_Eb,
+    question: ChordQualityQuestion,
+    answer: dom7sus4,
   },
 ];
 
@@ -727,7 +984,7 @@ const Major3rd = "Major 3rd";
 const Perfect4th = "Perfect 4th";
 const Perfect5th = "Perfect 5th";
 const Major6th = "Major 6th";
-const Major7th = "Major 7th"
+const Major7th = "Major 7th";
 
 //major descending titles
 const DescendingMajor2nd = "Major 2nd";
@@ -750,7 +1007,6 @@ const DescendingMinor3rd = "Minor 3rd";
 const DescendingDiminished4th = "Diminished 4th (tri-tone)";
 const DescendingMinor6th = "Minor 6th";
 const DescendingMinor7th = "Minor 7th";
-
 
 export const IntervalQuestions = [
   //major 2nds
@@ -1087,368 +1343,367 @@ export const IntervalQuestions = [
     question: intervalQuestion,
     answer: DescendingPerfect5th,
   },
-  
-//descending major 6ths
-{
-  id: 44,
-  title: intervalTopic,
-  image: Descending_Maj_6th_Bb_to_Db,
-  question: intervalQuestion,
-  answer: DescendingMajor6th,
-},
-{
-  id: 45,
-  title: intervalTopic,
-  image: Descending_Maj_6th_G_to_Low_Bb,
-  question: intervalQuestion,
-  answer: DescendingMajor6th,
-},
-{
-  id: 46,
-  title: intervalTopic,
-  image: Descending_Maj_6th_High_D_to_F,
-  question: intervalQuestion,
-  answer: DescendingMajor6th,
-},
-{
-  id: 47,
-  title: intervalTopic,
-  image: Descending_Maj_6th_High_E_to_G,
-  question: intervalQuestion,
-  answer: DescendingMajor6th,
-},
 
-//descending major 7ths
-{
-  id: 48,
-  title: intervalTopic,
-  image: Descending_Maj_7th_Asharp_to_Low_B,
-  question: intervalQuestion,
-  answer: DescendingMajor7th,
-},
-{
-  id: 49,
-  title: intervalTopic,
-  image: Descending_Maj_7th_F_to_Fsharp,
-  question: intervalQuestion,
-  answer: DescendingMajor7th,
-},
-{
-  id: 50,
-  title: intervalTopic,
-  image: Descending_Maj_7th_G_to_Ab,
-  question: intervalQuestion,
-  answer: DescendingMajor7th,
-},
-{
-  id: 51,
-  title: intervalTopic,
-  image: Descending_Maj_7th_High_E_to_F,
-  question: intervalQuestion,
-  answer: DescendingMajor7th,
-},
+  //descending major 6ths
+  {
+    id: 44,
+    title: intervalTopic,
+    image: Descending_Maj_6th_Bb_to_Db,
+    question: intervalQuestion,
+    answer: DescendingMajor6th,
+  },
+  {
+    id: 45,
+    title: intervalTopic,
+    image: Descending_Maj_6th_G_to_Low_Bb,
+    question: intervalQuestion,
+    answer: DescendingMajor6th,
+  },
+  {
+    id: 46,
+    title: intervalTopic,
+    image: Descending_Maj_6th_High_D_to_F,
+    question: intervalQuestion,
+    answer: DescendingMajor6th,
+  },
+  {
+    id: 47,
+    title: intervalTopic,
+    image: Descending_Maj_6th_High_E_to_G,
+    question: intervalQuestion,
+    answer: DescendingMajor6th,
+  },
 
-//ascending chromatic intervals
+  //descending major 7ths
+  {
+    id: 48,
+    title: intervalTopic,
+    image: Descending_Maj_7th_Asharp_to_Low_B,
+    question: intervalQuestion,
+    answer: DescendingMajor7th,
+  },
+  {
+    id: 49,
+    title: intervalTopic,
+    image: Descending_Maj_7th_F_to_Fsharp,
+    question: intervalQuestion,
+    answer: DescendingMajor7th,
+  },
+  {
+    id: 50,
+    title: intervalTopic,
+    image: Descending_Maj_7th_G_to_Ab,
+    question: intervalQuestion,
+    answer: DescendingMajor7th,
+  },
+  {
+    id: 51,
+    title: intervalTopic,
+    image: Descending_Maj_7th_High_E_to_F,
+    question: intervalQuestion,
+    answer: DescendingMajor7th,
+  },
 
-//ascending minor 2nds
-{
-  id: 52,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_2nd_High_Asharp_to_B,
-  question: intervalQuestion,
-  answer: AscendingMinor2nd,
-},
-{
-  id: 53,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_2nd_High_D_to_Eb,
-  question: intervalQuestion,
-  answer: AscendingMinor2nd,
-},
-{
-  id: 54,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_2nd_Low_C_to_Csharp,
-  question: intervalQuestion,
-  answer: AscendingMinor2nd,
-},
-{
-  id: 55,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_2nd_Low_F_to_Fsharp,
-  question: intervalQuestion,
-  answer: AscendingMinor2nd,
-},
+  //ascending chromatic intervals
 
-//ascending minor 3rds
-{
-  id: 56,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_3rd_C_sharp_to_E,
-  question: intervalQuestion,
-  answer: AscendingMinor3rd,
-},
-{
-  id: 56,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_3rd_High_F_to_Ab,
-  question: intervalQuestion,
-  answer: AscendingMinor3rd,
-},
-{
-  id: 56,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_3rd_Low_B_to_D,
-  question: intervalQuestion,
-  answer: AscendingMinor3rd,
-},
-{
-  id: 56,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_3rd_Low_Eb_to_Gb,
-  question: intervalQuestion,
-  answer: AscendingMinor3rd,
-},
+  //ascending minor 2nds
+  {
+    id: 52,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_2nd_High_Asharp_to_B,
+    question: intervalQuestion,
+    answer: AscendingMinor2nd,
+  },
+  {
+    id: 53,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_2nd_High_D_to_Eb,
+    question: intervalQuestion,
+    answer: AscendingMinor2nd,
+  },
+  {
+    id: 54,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_2nd_Low_C_to_Csharp,
+    question: intervalQuestion,
+    answer: AscendingMinor2nd,
+  },
+  {
+    id: 55,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_2nd_Low_F_to_Fsharp,
+    question: intervalQuestion,
+    answer: AscendingMinor2nd,
+  },
 
-//ascending augmented 4ths
-{
-  id: 57,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Aug_4th_B_to_F,
-  question: intervalQuestion,
-  answer: AscendingAugmented4th,
-},
-{
-  id: 58,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Aug_4th_E_to_Bb,
-  question: intervalQuestion,
-  answer: AscendingAugmented4th,
-},
-{
-  id: 59,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Aug_4th_F_to_B,
-  question: intervalQuestion,
-  answer: AscendingAugmented4th,
-},
-{
-  id: 60,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Aug_4th_Bb_to_E,
-  question: intervalQuestion,
-  answer: AscendingAugmented4th,
-},
+  //ascending minor 3rds
+  {
+    id: 56,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_3rd_C_sharp_to_E,
+    question: intervalQuestion,
+    answer: AscendingMinor3rd,
+  },
+  {
+    id: 56,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_3rd_High_F_to_Ab,
+    question: intervalQuestion,
+    answer: AscendingMinor3rd,
+  },
+  {
+    id: 56,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_3rd_Low_B_to_D,
+    question: intervalQuestion,
+    answer: AscendingMinor3rd,
+  },
+  {
+    id: 56,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_3rd_Low_Eb_to_Gb,
+    question: intervalQuestion,
+    answer: AscendingMinor3rd,
+  },
 
-//ascending minor 6ths
-{
-  id: 61,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_6th_A_to_F,
-  question: intervalQuestion,
-  answer: AscendingMinor6th,
-},
-{
-  id: 62,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_6th_Csharp_to_A,
-  question: intervalQuestion,
-  answer: AscendingMinor6th,
-},
-{
-  id: 63,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_6th_Low_Bb_to_Gb,
-  question: intervalQuestion,
-  answer: AscendingMinor6th,
-},
-{
-  id: 64,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_6th_Low_E_to_C,
-  question: intervalQuestion,
-  answer: AscendingMinor6th,
-},
+  //ascending augmented 4ths
+  {
+    id: 57,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Aug_4th_B_to_F,
+    question: intervalQuestion,
+    answer: AscendingAugmented4th,
+  },
+  {
+    id: 58,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Aug_4th_E_to_Bb,
+    question: intervalQuestion,
+    answer: AscendingAugmented4th,
+  },
+  {
+    id: 59,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Aug_4th_F_to_B,
+    question: intervalQuestion,
+    answer: AscendingAugmented4th,
+  },
+  {
+    id: 60,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Aug_4th_Bb_to_E,
+    question: intervalQuestion,
+    answer: AscendingAugmented4th,
+  },
 
-//ascending minor 7ths
-{
-  id: 65,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_7th_E_to_D,
-  question: intervalQuestion,
-  answer: AscendingMinor7th,
-},
-{
-  id: 66,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_7th_F_to_Eb,
-  question: intervalQuestion,
-  answer: AscendingMinor7th,
-},
-{
-  id: 67,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_7th_Low_Bb_to_Ab,
-  question: intervalQuestion,
-  answer: AscendingMinor7th,
-},
-{
-  id: 68,
-  title: intervalTopic,
-  image: Ascending_Chromatic_Min_7th_Low_Csharp_to_B,
-  question: intervalQuestion,
-  answer: AscendingMinor7th,
-},
+  //ascending minor 6ths
+  {
+    id: 61,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_6th_A_to_F,
+    question: intervalQuestion,
+    answer: AscendingMinor6th,
+  },
+  {
+    id: 62,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_6th_Csharp_to_A,
+    question: intervalQuestion,
+    answer: AscendingMinor6th,
+  },
+  {
+    id: 63,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_6th_Low_Bb_to_Gb,
+    question: intervalQuestion,
+    answer: AscendingMinor6th,
+  },
+  {
+    id: 64,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_6th_Low_E_to_C,
+    question: intervalQuestion,
+    answer: AscendingMinor6th,
+  },
 
-//descending chromatic intervals
-//min 2nds
-{
-  id: 69,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_2nd_A_sharp_to_A,
-  question: intervalQuestion,
-  answer: DescendingMinor2nd,
-},
-{
-  id: 70,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_2nd_F_to_E,
-  question: intervalQuestion,
-  answer: DescendingMinor2nd,
-},
-{
-  id: 71,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_2nd_High_Fsharp_to_F,
-  question: intervalQuestion,
-  answer: DescendingMinor2nd,
-},
-{
-  id: 72,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_2nd_E_to_Eb,
-  question: intervalQuestion,
-  answer: DescendingMinor2nd,
-},
+  //ascending minor 7ths
+  {
+    id: 65,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_7th_E_to_D,
+    question: intervalQuestion,
+    answer: AscendingMinor7th,
+  },
+  {
+    id: 66,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_7th_F_to_Eb,
+    question: intervalQuestion,
+    answer: AscendingMinor7th,
+  },
+  {
+    id: 67,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_7th_Low_Bb_to_Ab,
+    question: intervalQuestion,
+    answer: AscendingMinor7th,
+  },
+  {
+    id: 68,
+    title: intervalTopic,
+    image: Ascending_Chromatic_Min_7th_Low_Csharp_to_B,
+    question: intervalQuestion,
+    answer: AscendingMinor7th,
+  },
 
-//min 3rds
-{
-  id: 73,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_3rd_Ab_to_F,
-  question: intervalQuestion,
-  answer: DescendingMinor3rd,
-},
-{
-  id: 74,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_3rd_Bb_to_G,
-  question: intervalQuestion,
-  answer: DescendingMinor3rd,
-},
-{
-  id: 75,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_3rd_C_to_A,
-  question: intervalQuestion,
-  answer: DescendingMinor3rd,
-},
-{
-  id: 76,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp,
-  question: intervalQuestion,
-  answer: DescendingMinor3rd,
-},
+  //descending chromatic intervals
+  //min 2nds
+  {
+    id: 69,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_2nd_A_sharp_to_A,
+    question: intervalQuestion,
+    answer: DescendingMinor2nd,
+  },
+  {
+    id: 70,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_2nd_F_to_E,
+    question: intervalQuestion,
+    answer: DescendingMinor2nd,
+  },
+  {
+    id: 71,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_2nd_High_Fsharp_to_F,
+    question: intervalQuestion,
+    answer: DescendingMinor2nd,
+  },
+  {
+    id: 72,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_2nd_E_to_Eb,
+    question: intervalQuestion,
+    answer: DescendingMinor2nd,
+  },
 
-//dim 4th
-{
-  id: 77,
-  title: intervalTopic,
-  image: Descending_Chromatic_Dim_4th_B_to_F,
-  question: intervalQuestion,
-  answer: DescendingDiminished4th,
-},
-{
-  id: 78,
-  title: intervalTopic,
-  image: Descending_Chromatic_Dim_4th_D_to_Ab,
-  question: intervalQuestion,
-  answer: DescendingDiminished4th,
-},
-{
-  id: 79,
-  title: intervalTopic,
-  image: Descending_Chromatic_Dim_4th_Eb_to_A,
-  question: intervalQuestion,
-  answer: DescendingDiminished4th,
-},
-{
-  id: 80,
-  title: intervalTopic,
-  image: Descending_Chromatic_Dim_4th_G_to_C_sharp,
-  question: intervalQuestion,
-  answer: DescendingDiminished4th,
-},
+  //min 3rds
+  {
+    id: 73,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_3rd_Ab_to_F,
+    question: intervalQuestion,
+    answer: DescendingMinor3rd,
+  },
+  {
+    id: 74,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_3rd_Bb_to_G,
+    question: intervalQuestion,
+    answer: DescendingMinor3rd,
+  },
+  {
+    id: 75,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_3rd_C_to_A,
+    question: intervalQuestion,
+    answer: DescendingMinor3rd,
+  },
+  {
+    id: 76,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp,
+    question: intervalQuestion,
+    answer: DescendingMinor3rd,
+  },
 
-//minor 6ths
-{
-  id: 81,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_6th_A_to_Csharp,
-  question: intervalQuestion,
-  answer: DescendingMinor6th,
-},
-{
-  id: 82,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_6th_D_to_Fsharp,
-  question: intervalQuestion,
-  answer: DescendingMinor6th,
-},
-{
-  id: 83,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_6th_G_to_B,
-  question: intervalQuestion,
-  answer: DescendingMinor6th,
-},
-{
-  id: 84,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_6th_High_A_to_C_sharp,
-  question: intervalQuestion,
-  answer: DescendingMinor6th,
-},
+  //dim 4th
+  {
+    id: 77,
+    title: intervalTopic,
+    image: Descending_Chromatic_Dim_4th_B_to_F,
+    question: intervalQuestion,
+    answer: DescendingDiminished4th,
+  },
+  {
+    id: 78,
+    title: intervalTopic,
+    image: Descending_Chromatic_Dim_4th_D_to_Ab,
+    question: intervalQuestion,
+    answer: DescendingDiminished4th,
+  },
+  {
+    id: 79,
+    title: intervalTopic,
+    image: Descending_Chromatic_Dim_4th_Eb_to_A,
+    question: intervalQuestion,
+    answer: DescendingDiminished4th,
+  },
+  {
+    id: 80,
+    title: intervalTopic,
+    image: Descending_Chromatic_Dim_4th_G_to_C_sharp,
+    question: intervalQuestion,
+    answer: DescendingDiminished4th,
+  },
 
-//minor 7ths
-{
-  id: 85,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_7th_Ab_to_Bb,
-  question: intervalQuestion,
-  answer: DescendingMinor7th,
-},
-{
-  id: 86,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_7th_B_to_Csharp,
-  question: intervalQuestion,
-  answer: DescendingMinor7th,
-},
-{
-  id: 87,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_7th_C_to_D,
-  question: intervalQuestion,
-  answer: DescendingMinor7th,
-},
-{
-  id: 88,
-  title: intervalTopic,
-  image: Descending_Chromatic_Min_7th_F_to_G,
-  question: intervalQuestion,
-  answer: DescendingMinor7th,
-},
-  
+  //minor 6ths
+  {
+    id: 81,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_6th_A_to_Csharp,
+    question: intervalQuestion,
+    answer: DescendingMinor6th,
+  },
+  {
+    id: 82,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_6th_D_to_Fsharp,
+    question: intervalQuestion,
+    answer: DescendingMinor6th,
+  },
+  {
+    id: 83,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_6th_G_to_B,
+    question: intervalQuestion,
+    answer: DescendingMinor6th,
+  },
+  {
+    id: 84,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_6th_High_A_to_C_sharp,
+    question: intervalQuestion,
+    answer: DescendingMinor6th,
+  },
+
+  //minor 7ths
+  {
+    id: 85,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_7th_Ab_to_Bb,
+    question: intervalQuestion,
+    answer: DescendingMinor7th,
+  },
+  {
+    id: 86,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_7th_B_to_Csharp,
+    question: intervalQuestion,
+    answer: DescendingMinor7th,
+  },
+  {
+    id: 87,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_7th_C_to_D,
+    question: intervalQuestion,
+    answer: DescendingMinor7th,
+  },
+  {
+    id: 88,
+    title: intervalTopic,
+    image: Descending_Chromatic_Min_7th_F_to_G,
+    question: intervalQuestion,
+    answer: DescendingMinor7th,
+  },
 ];
