@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, CardText, CardImg } from "reactstrap";
 const TheoryCard = ({ title, question, image }) => {
   return (
     <>
-      <Card className="card card-grow">
+      <Card className="card">
         <CardImg src={image} alt={title} />
         <CardBody className="card-body text-center">
           <CardTitle>{title}</CardTitle>

@@ -1,14 +1,16 @@
-import { Card, CardBody } from "reactstrap";
+import { Card, CardImg, CardText } from "reactstrap";
 
-const AnswerCard = ({ answer }) => {
-  return (
-    <>
-      <Card className="card card-grow">
-        <CardBody className="card-body text-center">
-          <p className="card-text">{answer}</p>
-        </CardBody>
-      </Card>
-    </>
-  );
+const AnswerCard = ({ image, answer }) => {
+  if (answer) {
+    return (
+      <>
+        <Card className="card">
+          <CardText className="card-body text-center">
+            <h3 className="card-text">{answer}</h3>
+          </CardText>
+        </Card>
+      </>
+    );
+  }
 };
- export default AnswerCard;
+export default AnswerCard;
