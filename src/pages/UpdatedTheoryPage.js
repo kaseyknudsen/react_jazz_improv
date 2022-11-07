@@ -2,7 +2,7 @@ import TheoryOptionsCard from "../features/TheoryOptionsCard.js";
 import TheoryCard from "../features/TheoryCard.js";
 import AnimatedAnswerCard from "../features/AnimatedAnswerCard.js";
 import AnswerCard from "../features/AnswerCard";
-
+import RandomQuestionSlice from "../features/RandomQuestionSlice";
 import { useState } from "react";
 import {
   ModeQuestions,
@@ -30,11 +30,13 @@ const UpdatedTheoryPage = () => {
   const currentQuestionContent = topicToTopicArrayMap[
     currentQuestion.topic
   ].find(({ id }) => currentQuestion.id === id);
-
+ 
   const topicsArray = Object.keys(topicToTopicArrayMap);
 
   const onClickNext = () => {
-    setCurrentQuestion({ ...currentQuestion, id: currentQuestion.id + 1 });
+    const randomNum = Math.floor(Math.random() * topicToTopicArrayMap[currentQuestion.topic].length)
+    // console.log(randomNum)
+    setCurrentQuestion({ ...currentQuestion, id: randomNum });
     setAnswer(null);
   };
 
