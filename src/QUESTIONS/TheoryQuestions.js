@@ -483,28 +483,28 @@ export const ModeQuestions = [
   },
   //locrian
   {
-    id: 30,
+    id: 31,
     title: ModesOfTheMajorScale,
     image: Locrian_Mode_Asharp,
     question: modeQuestion,
     answer: Locrian,
   },
   {
-    id: 31,
+    id: 32,
     title: ModesOfTheMajorScale,
     image: Locrian_Mode_Bsharp,
     question: modeQuestion,
     answer: Locrian,
   },
   {
-    id: 32,
+    id: 33,
     title: ModesOfTheMajorScale,
     image: Locrian_Mode_D,
     question: modeQuestion,
     answer: Locrian,
   },
   {
-    id: 33,
+    id: 34,
     title: ModesOfTheMajorScale,
     image: Locrian_Mode_Fsharp,
     question: modeQuestion,

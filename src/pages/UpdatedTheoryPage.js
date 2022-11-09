@@ -35,7 +35,7 @@ const UpdatedTheoryPage = () => {
 
   const onClickNext = () => {
     const randomNum = Math.floor(Math.random() * topicToTopicArrayMap[currentQuestion.topic].length)
-    // console.log(randomNum)
+    console.log(randomNum)
     setCurrentQuestion({ ...currentQuestion, id: randomNum });
     setAnswer(null);
   };

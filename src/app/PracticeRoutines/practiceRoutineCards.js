@@ -1,4 +1,4 @@
-export const practiceRoutineData = [
+export const practiceRoutineCards = [
   {
     title: "30 Minute Daily Practice Routine",
     text: "Quality over quantity! You can accomplish a lot in 30 minutes if you are organized and consistent.",

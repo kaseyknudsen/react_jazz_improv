@@ -125,19 +125,29 @@ i {
   display: grid;
   grid-column-gap: 1em;
   grid-template-columns: 1.5fr 2fr 2fr;
-
 }
 
 .grid > div {
   padding: 2em;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
 
+.practice_routine_header {
+  text-align: center;
+}
+
+.practice_routine_list {
+  margin-top: 1em;
+  justify-content: center;
+  font-family: "oswald", "sans-serif";
+  list-style-position: inside;
+  text-align: left;
+}
 /* .grid > div:nth-child(odd) {
   background-color: rgb(191, 175, 160);
 } */
