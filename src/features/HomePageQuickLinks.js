@@ -1,7 +1,6 @@
 import { quickLinks } from "../QUESTIONS/quickLinks";
 import QuickLinkCard from "./QuickLinkCard";
 import { Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
 
 const HomePageQuickLinks = () => {
   return (

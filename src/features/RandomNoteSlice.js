@@ -1,8 +1,7 @@
-import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 
-export const getRandomNote = () => {
+export const getRandomNote = (noteArray) => {
   const randomNote =
-    AltoSaxChromaticScaleArray[Math.floor(Math.random() * AltoSaxChromaticScaleArray.length)];
+    noteArray[Math.floor(Math.random() * noteArray.length)];
   return randomNote;
 };
 

@@ -3,7 +3,7 @@ import concert_Low_Gb from "./Henry_Chr_Scale/concert_low_F_sharp.mp3";
 import concert_Low_G from "./Henry_Chr_Scale/concert_low_G.mp3";
 import concert_Low_Ab from "./Henry_Chr_Scale/concert_low_Ab.mp3";
 import concert_Low_A from "./Henry_Chr_Scale/concert_low_A.mp3";
-import concert_Low_Bb from "./Henry_Chr_Scale/concert_low_Bb.mp3";
+import concert_Low_Bb from "./Henry_Chr_Scale/concert_Low_Bb.mp3";
 import concert_Low_B from "./Henry_Chr_Scale/concert_low_B.mp3";
 import concert_Low_C from "./Henry_Chr_Scale/concert_low_C.mp3";
 import concert_Low_Db from "./Henry_Chr_Scale/concert_low_Db.mp3";
