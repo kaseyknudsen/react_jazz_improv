@@ -1,33 +1,34 @@
-import { Col, Row, Button, Card } from "reactstrap";
+import { Col, Row, Button, Card, CardBody } from "reactstrap";
 import { useState } from "react";
-import PracticeRoutineCard from "./PracticeRoutineCard";
+import PracticeRoutineChoices from "./PracticeRoutineChoices";
 import { practiceRoutineCards } from "../app/PracticeRoutines/practiceRoutineCards";
-import PracticeRoutineDetails from "../app/PracticeRoutines/PracticeRoutineDetails";
-import ThirtyMinuteRoutine from "../app/PracticeRoutines/ThirtyMinuteRoutine";
-import OneHourRoutine from "../app/PracticeRoutines/OneHourRoutine";
-import TwoHourRoutine from "../app/PracticeRoutines/TwoHourRoutine";
-import ThreeHourRoutine from "../app/PracticeRoutines/Three_Hour_Routine";
 
 const DisplayPracticeRoutines = () => {
-  const [detailedPlan, setDetailedPlan] = useState("");
-
-  const setRoutine = () => {
-    setDetailedPlan("hello");
-  };
+  const [detailedPlan, setDetailedPlan] = useState(
+    "*** Click a link below to see a detailed practice routine ***"
+  );
 
   return (
     <>
       <h1 className="text-center mb-4">Practice Routines</h1>
       <Row>
-        <Col sm="4" className="mx-auto mb-5" onClick={() => setRoutine()}>
-          <ThirtyMinuteRoutine />
+        <Col sm="5" className="mx-auto mb-5">
+          <Card>
+            <CardBody style={{ textAlign: "center" }}>
+              <h5>{detailedPlan}</h5>
+            </CardBody>
+          </Card>
         </Col>
       </Row>
       <Row>
         {practiceRoutineCards.map((routine, index) => {
           return (
-            <Col sm="7" className="mx-auto mt-3 text-center">
-              <PracticeRoutineCard title={routine.title} key={index} />
+            <Col
+              sm="7"
+              className="mx-auto mt-3 text-center"
+              onClick={() => setDetailedPlan(routine.routineCard)}
+            >
+              <PracticeRoutineChoices title={routine.title} key={index} />
             </Col>
           );
         })}

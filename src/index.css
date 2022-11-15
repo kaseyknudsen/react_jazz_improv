@@ -139,14 +139,18 @@ i {
 
 .practice_routine_header {
   text-align: center;
+  font-weight: bolder;
 }
 
 .practice_routine_list {
   margin-top: 1em;
   justify-content: center;
-  font-family: "oswald", "sans-serif";
+  font-family: 'Quattrocento', serif;
+  font-size: smaller;
   list-style-position: inside;
   text-align: left;
+  line-height: 1.5em;
+
 }
 /* .grid > div:nth-child(odd) {
   background-color: rgb(191, 175, 160);

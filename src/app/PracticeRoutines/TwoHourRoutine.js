@@ -5,8 +5,11 @@ const TwoHourRoutine = () => {
     <Card>
       <CardBody>
         <CardHeader className="practice_routine_header">
-          Remember To Use A Timer and a Metronome!
+          <h4>2 Hour Daily Practice Routine</h4>
         </CardHeader>
+        <h5 className="mt-4" style={{ textAlign: "center" }}>
+          Remember To Use A Timer and a Metronome!
+        </h5>
         <div className="practice_routine_list">
           <ul>
             <li>10 minutes: Long Tones</li>

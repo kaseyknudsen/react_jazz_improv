@@ -1,9 +1,8 @@
-import { ChromaticScaleArray } from "../EARTRAINING/earTrainingData";
-import { useState, useEffect } from "react";
+import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 
 export const getRandomNote = () => {
   const randomNote =
-    ChromaticScaleArray[Math.floor(Math.random() * ChromaticScaleArray.length)];
+    AltoSaxChromaticScaleArray[Math.floor(Math.random() * AltoSaxChromaticScaleArray.length)];
   return randomNote;
 };
 

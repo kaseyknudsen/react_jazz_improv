@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const DisplayRepertoire = () => {
   const [tuneList, setTuneList] = useState({
-    text: "Your Tune List Will Appear Here!",
+    text: "Click a link below!",
   });
 
   return (
@@ -14,12 +14,15 @@ const DisplayRepertoire = () => {
       <h1 className="text-center mb-4">Repertoire</h1>
       <Row>
         <Col sm="4" className="mx-auto mb-4">
-          <TuneListCard title={tuneList.title} text={tuneList.text} />
+          <TuneListCard
+            title={tuneList.title}
+            text={tuneList.text}
+          />
         </Col>
       </Row>
       <Row>
         {repertoireData.map((repertoireList, index) => {
-          console.log(repertoireList)
+          console.log(repertoireList);
           return (
             <Col
               sm="7"

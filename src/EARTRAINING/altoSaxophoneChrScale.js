@@ -68,199 +68,198 @@ import High_E_Image from "../EARTRAINING/Interval_Images/High_E.png";
 import High_F_Image from "../EARTRAINING/Interval_Images/High_F.png";
 import High_Gb_Image from "../EARTRAINING/Interval_Images/High_Gb.png";
 
-
-export const ChromaticScaleArray = [
+export const AltoSaxChromaticScaleArray = [
   {
     image: Low_Bb_Image,
     index: 0,
     name: "Low Bb",
-    audio_file: new Audio(Low_Bb)
+    audio_file: new Audio(Low_Bb),
   },
   {
     image: Low_B_Image,
     index: 1,
     name: "Low B",
-    audio_file: new Audio(Low_B)
+    audio_file: new Audio(Low_B),
   },
   {
     image: Low_C_Image,
     index: 2,
     name: "Low C",
-    audio_file: new Audio(Low_C)
+    audio_file: new Audio(Low_C),
   },
   {
     image: Low_Db_Image,
     index: 3,
     name: "Low Db",
-    audio_file: new Audio(Low_Db)
+    audio_file: new Audio(Low_Db),
   },
   {
     image: Low_D_Image,
     index: 4,
     name: "Low D",
-    audio_file: new Audio(Low_D)  
+    audio_file: new Audio(Low_D),
   },
   {
     image: Low_Eb_Image,
     index: 5,
     name: "Low Eb",
-    audio_file: new Audio(Low_Eb)
+    audio_file: new Audio(Low_Eb),
   },
   {
     image: Low_E_Image,
     index: 6,
     name: "Low E",
-    audio_file: new Audio(Low_E) 
+    audio_file: new Audio(Low_E),
   },
   {
     image: Low_F_Image,
     index: 7,
     name: "Low F",
-    audio_file: new Audio(Low_F)  
+    audio_file: new Audio(Low_F),
   },
   {
     image: Low_Gb_Image,
     index: 8,
     name: "Low Gb",
-    audio_file: new Audio(Low_Gb)
+    audio_file: new Audio(Low_Gb),
   },
   {
     image: Middle_G_Image,
     index: 9,
     name: "Middle G",
-    audio_file: new Audio(Middle_G)
+    audio_file: new Audio(Middle_G),
   },
   {
     image: Middle_Ab_Image,
     index: 10,
     name: "Middle Ab",
-    audio_file: new Audio(Middle_Ab)
+    audio_file: new Audio(Middle_Ab),
   },
   {
     image: Middle_A_Image,
     index: 11,
     name: "Middle A",
-    audio_file: new Audio(Middle_A)
+    audio_file: new Audio(Middle_A),
   },
   {
     image: Middle_Bb_Image,
     index: 12,
     name: "Middle Bb",
-    audio_file: new Audio(Middle_Bb)
+    audio_file: new Audio(Middle_Bb),
   },
   {
     image: Middle_B_Image,
     index: 13,
     name: "Middle B",
-    audio_file: new Audio(Middle_B)
+    audio_file: new Audio(Middle_B),
   },
   {
     image: Middle_C_Image,
     index: 14,
     name: "Middle C",
-    audio_file: new Audio(Middle_C)
+    audio_file: new Audio(Middle_C),
   },
   {
     image: Middle_Db_Image,
     index: 15,
     name: "Middle Db",
-    audio_file: new Audio(Middle_Db)
+    audio_file: new Audio(Middle_Db),
   },
   {
     image: Middle_D_Image,
     index: 16,
     name: "Middle D",
-    audio_file: new Audio(Middle_D)
+    audio_file: new Audio(Middle_D),
   },
   {
     image: Middle_Eb_Image,
     index: 17,
     name: "Middle Eb",
-    audio_file: new Audio(Middle_Eb)
+    audio_file: new Audio(Middle_Eb),
   },
   {
     image: Middle_E_Image,
     index: 18,
     name: "Middle E",
-    audio_file: new Audio(Middle_E)
+    audio_file: new Audio(Middle_E),
   },
   {
     image: Middle_F_Image,
     index: 19,
     name: "Middle F",
-    audio_file: new Audio(Middle_F)
+    audio_file: new Audio(Middle_F),
   },
   {
     image: Middle_Gb_Image,
     index: 20,
     name: "Middle Gb",
-    audio_file: new Audio(Middle_Gb)
+    audio_file: new Audio(Middle_Gb),
   },
   {
     image: High_G_Image,
     index: 21,
     name: "High G",
-    audio_file: new Audio(High_G)
+    audio_file: new Audio(High_G),
   },
   {
     image: High_Ab_Image,
     index: 22,
     name: "High Ab",
-    audio_file: new Audio(High_A)
+    audio_file: new Audio(High_A),
   },
   {
     image: High_A_Image,
     index: 23,
     name: "High A",
-    audio_file: new Audio(High_A)
+    audio_file: new Audio(High_A),
   },
   {
     image: High_Bb_Image,
     index: 24,
     name: "High Bb",
-    audio_file: new Audio(High_B)
+    audio_file: new Audio(High_B),
   },
   {
     image: High_B_Image,
     index: 25,
     name: "High B",
-    audio_file: new Audio(High_B)
+    audio_file: new Audio(High_B),
   },
   {
     image: High_C_Image,
     index: 26,
     name: "High C",
-    audio_file: new Audio(High_C)
+    audio_file: new Audio(High_C),
   },
   {
     image: High_Db_Image,
     index: 27,
     name: "High Db",
-    audio_file: new Audio(High_D)
+    audio_file: new Audio(High_D),
   },
   {
     image: High_D_Image,
     index: 28,
     name: "High D",
-    audio_file: new Audio(High_D)
+    audio_file: new Audio(High_D),
   },
   {
     image: High_Eb_Image,
     index: 29,
     name: "High Eb",
-    audio_file: new Audio(High_E)
+    audio_file: new Audio(High_E),
   },
   {
     image: High_E_Image,
     index: 30,
     name: "High E",
-    audio_file: new Audio(High_E)
+    audio_file: new Audio(High_E),
   },
   {
     image: High_F_Image,
     index: 31,
     name: "High F",
-    audio_file: new Audio(High_F)
+    audio_file: new Audio(High_F),
   },
   {
     image: High_Gb_Image,
@@ -269,5 +268,3 @@ export const ChromaticScaleArray = [
     audio_file: new Audio(High_G),
   },
 ];
-
-

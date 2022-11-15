@@ -1,6 +1,6 @@
 import { Card, CardBody, CardText } from "reactstrap";
 
-const PracticeRoutineCard = (routine) => {
+const PracticeRoutineChoices = (routine) => {
   const { title, text } = routine;
   return (
     <Card>
@@ -10,4 +10,4 @@ const PracticeRoutineCard = (routine) => {
   );
 };
 
-export default PracticeRoutineCard;
+export default PracticeRoutineChoices;
