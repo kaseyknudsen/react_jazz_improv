@@ -4,9 +4,15 @@ import { Col, Row } from "reactstrap";
 import { repertoireData } from "../app/REPERTOIRE/repertoireData";
 import { useState } from "react";
 
+const sorted = (array) => {
+  const result = [...array];
+  result.sort();
+  return result;
+};
+
 const DisplayRepertoire = () => {
   const [tuneList, setTuneList] = useState({
-    text: "Click a link below!",
+    text: ["Click a link below!"],
   });
 
   return (
@@ -14,10 +20,7 @@ const DisplayRepertoire = () => {
       <h1 className="text-center mb-4">Repertoire</h1>
       <Row>
         <Col sm="4" className="mx-auto mb-4">
-          <TuneListCard
-            title={tuneList.title}
-            text={tuneList.text}
-          />
+          <TuneListCard title={tuneList.title} text={sorted(tuneList.text)} />
         </Col>
       </Row>
       <Row>

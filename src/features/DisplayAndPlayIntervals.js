@@ -5,15 +5,38 @@ import saxophone from "../EARTRAINING/instrument_images/saxophone.png";
 import trumpet from "../EARTRAINING/instrument_images/trumpet.png";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
+import { useState } from "react";
 
 const DisplayAndPlayIntervals = () => {
-  const playSequenceOnClick = (noteCount, noteArray) => {
+  const [currentSequence, setCurrentSequence] = useState([]);
+  const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
+    AltoSaxChromaticScaleArray
+  );
+
+  const randomSequence = (noteCount, noteArray) => {
+    const sequence = [];
     for (let i = 0; i < noteCount; i++) {
-      const audioFile = getRandomNote(noteArray).audio_file;
+      const note = Math.floor(Math.random() * noteArray.length);
+      sequence.push(note);
+    }
+    return sequence;
+  };
+
+  const playSequence = (notes, noteArray) => {
+    for (let i = 0; i < notes.length; i++) {
+      const note = notes[i];
+      const audioFile = noteArray[note].audio_file;
       console.log(audioFile);
       const delay = 1200 * i;
       setTimeout(() => audioFile.play(), delay);
     }
+  };
+
+  const onNewSequenceClick = (noteCount, instrumentArray) => {
+    const newSequence = randomSequence(noteCount, instrumentArray);
+    setCurrentSequence(newSequence);
+    setCurrentInstrumentArray(instrumentArray);
+    playSequence(newSequence, instrumentArray);
   };
 
   const noteCounts = [1, 2, 3, 4, 5];
@@ -60,36 +83,31 @@ const DisplayAndPlayIntervals = () => {
       </Row>
       <Row className="row-style">
         {noteCounts.map((noteCount) => {
-          if (noteCount > 1) {
-            return (
-              <Col
-                sm="7"
-                md="6"
-                lg="3"
-                className="mt-3 mx-auto"
-                onClick={() =>
-                  playSequenceOnClick(noteCount, AltoSaxChromaticScaleArray)
-                }
-              >
-                <IntervalCard name={`Play ${noteCount} Notes`} />
-              </Col>
-            );
-          } else {
-            return (
-              <Col
-                sm="7"
-                md="6"
-                lg="3"
-                className="mt-3 mx-auto"
-                onClick={() =>
-                  playSequenceOnClick(noteCount, AltoSaxChromaticScaleArray)
-                }
-              >
-                <IntervalCard name={`Play ${noteCount} Note`} />
-              </Col>
-            );
-          }
+          return (
+            <Col
+              sm="7"
+              md="6"
+              lg="3"
+              className="mt-3 mx-auto"
+              onClick={() =>
+                onNewSequenceClick(noteCount, AltoSaxChromaticScaleArray)
+              }
+            >
+              <IntervalCard name={`Play ${noteCount} Notes`} />
+            </Col>
+          );
         })}
+        <Row className="mt-3">
+          <Col
+            sm="5"
+            className="mx-auto"
+            onClick={() =>
+              playSequence(currentSequence, currentInstrumentArray)
+            }
+          >
+            <IntervalCard name="replay" />
+          </Col>
+        </Row>
       </Row>
       <Row id="trumpet">
         <Col sm="12">
@@ -106,31 +124,17 @@ const DisplayAndPlayIntervals = () => {
       </Row>
       <Row className="row-style">
         {noteCounts.map((noteCount) => {
-          if (noteCount > 1) {
-            return (
-              <Col
-                sm="7"
-                md="6"
-                lg="3"
-                className="mt-3 mx-auto"
-                onClick={() => playSequenceOnClick(noteCount, trumpetChrScale)}
-              >
-                <IntervalCard name={`Play ${noteCount} Notes`} />
-              </Col>
-            );
-          } else {
-            return (
-              <Col
-                sm="7"
-                md="6"
-                lg="3"
-                className="mt-3 mx-auto"
-                onClick={() => playSequenceOnClick(noteCount, trumpetChrScale)}
-              >
-                <IntervalCard name={`Play ${noteCount} Note`} />
-              </Col>
-            );
-          }
+          return (
+            <Col
+              sm="7"
+              md="6"
+              lg="3"
+              className="mt-3 mx-auto"
+              onClick={() => onNewSequenceClick(noteCount, trumpetChrScale)}
+            >
+              <IntervalCard name={`Play ${noteCount} Notes`} />
+            </Col>
+          );
         })}
       </Row>
     </>
