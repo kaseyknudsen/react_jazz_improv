@@ -5,7 +5,6 @@ import saxophone from "../EARTRAINING/instrument_images/saxophone.png";
 import trumpet from "../EARTRAINING/instrument_images/trumpet.png";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
-import { Link } from "react-router-dom";
 
 const DisplayAndPlayIntervals = () => {
   const playSequenceOnClick = (noteCount, noteArray) => {
@@ -53,7 +52,7 @@ const DisplayAndPlayIntervals = () => {
           </h1>
         </Col>
         <Col sm="12">
-          <h2 className="text-center mb-2">Choose A Note Length</h2>
+          <h2 className="text-center mb-2">Choose A Note Sequence Length</h2>
         </Col>
         <Col sm="12">
           <h5 className="text-center">Try to Repeat Back What You Hear!</h5>
@@ -82,7 +81,9 @@ const DisplayAndPlayIntervals = () => {
                 md="6"
                 lg="3"
                 className="mt-3 mx-auto"
-                onClick={() => playSequenceOnClick(noteCount)}
+                onClick={() =>
+                  playSequenceOnClick(noteCount, AltoSaxChromaticScaleArray)
+                }
               >
                 <IntervalCard name={`Play ${noteCount} Note`} />
               </Col>
@@ -97,7 +98,7 @@ const DisplayAndPlayIntervals = () => {
           </h1>
         </Col>
         <Col sm="12">
-          <h2 className="text-center mb-2">Choose A Note Length</h2>
+          <h2 className="text-center mb-2">Choose A Note Sequence Length</h2>
         </Col>
         <Col sm="12">
           <h5 className="text-center">Try to Repeat Back What You Hear!</h5>
@@ -124,7 +125,7 @@ const DisplayAndPlayIntervals = () => {
                 md="6"
                 lg="3"
                 className="mt-3 mx-auto"
-                onClick={() => playSequenceOnClick(noteCount)}
+                onClick={() => playSequenceOnClick(noteCount, trumpetChrScale)}
               >
                 <IntervalCard name={`Play ${noteCount} Note`} />
               </Col>
