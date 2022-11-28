@@ -1,25 +1,25 @@
-import emuPic from "../app/images/emu.jpg";
-import ostrichPic from "../app/images/ostrich.jpg";
-import huskyPic from "../app/images/husky.jpg";
-import vizslaPic from "../app/images/vizsla.jpg";
+
+import ear_training_image from "../app/images/quick-link-images/ear_training_image.png"
+import theory_image from "../app/images/quick-link-images/theory_image.png"
+import practice_time_image from "../app/images/quick-link-images/practice_time_image.png"
 
 export const quickLinks = [
   {
     id: 0,
-    image: ostrichPic,
+    image: ear_training_image,
     text: "I want to improve my ear, but I'm not sure where to start.",
     route: "/ear_training",
   },
   {
     id: 1,
-    image: emuPic,
-    text: "How can I get better at music theory?",
+    image: theory_image,
+    text: "How can I improve my knowledge of music theory?",
     route: "/theory_page",
   },
 
   {
     id: 2,
-    image: vizslaPic,
+    image: practice_time_image,
     text: "How do I organize my practice time?",
     route: "/practice_routines",
   },

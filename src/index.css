@@ -81,10 +81,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* a:hover {
-  color: rgb(102,74,50);
-  font-weight: bolder;
-} */
+
 i {
   color: rgb(102, 74, 50);
 }
@@ -129,7 +126,7 @@ i {
 }
 
 .grid > div {
-  padding: 2em;
+  padding: 1em;
 }
 
 @media (max-width: 500px) {
@@ -146,12 +143,51 @@ i {
 .practice_routine_list {
   margin-top: 1em;
   justify-content: center;
-  font-family: 'Quattrocento', serif;
+  font-family: "Quattrocento", serif;
   font-size: smaller;
   list-style-position: inside;
   text-align: left;
   line-height: 1.5em;
+}
 
+.repertoire-cards {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.big-grid {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.ear-training-grid {
+display: grid;
+grid-template-columns: 1fr;
+column-gap: 10px;
+row-gap: 10px;
+margin-bottom: 1em;
+}
+
+.sequence-grid {
+display: grid;
+grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+grid-template-rows: 2fr;
+column-gap: 10px;
+margin-left: 200px;
+row-gap: 40px;
+}
+
+
+
+@media (max-width: 500px) {
+  .big-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* .grid > div:nth-child(odd) {
   background-color: rgb(191, 175, 160);

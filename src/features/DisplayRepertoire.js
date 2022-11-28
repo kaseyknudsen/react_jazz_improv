@@ -19,7 +19,7 @@ const DisplayRepertoire = () => {
     <>
       <h1 className="text-center mb-4">Repertoire</h1>
       <Row>
-        <Col sm="4" className="mx-auto mb-4">
+        <Col xs="4" className="mx-auto mb-4">
           <TuneListCard title={tuneList.title} text={sorted(tuneList.text)} />
         </Col>
       </Row>
@@ -31,10 +31,15 @@ const DisplayRepertoire = () => {
               sm="7"
               md="6"
               lg="3"
-              className="mx-auto"
+              className="mx-auto repertoire-cards"
               onClick={() => setTuneList(repertoireList)}
             >
-              <ChooseRepertoireCard title={repertoireList.title} key={index} />
+              <div className="repertoire-cards">
+                <ChooseRepertoireCard
+                  title={repertoireList.title}
+                  key={index}
+                />
+              </div>
             </Col>
           );
         })}
