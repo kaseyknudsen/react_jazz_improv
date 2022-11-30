@@ -183,7 +183,6 @@ row-gap: 40px;
 }
 
 
-
 @media (max-width: 500px) {
   .big-grid {
     grid-template-columns: 1fr;

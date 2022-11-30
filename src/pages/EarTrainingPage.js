@@ -6,7 +6,7 @@ const EarTrainingPage = () => {
   return (
     <div>
       <SubHeader current="Ear Training" />
-      <DisplayAndPlayIntervals />
+      <DisplayAndPlayIntervalsRefactor />
     </div>
   );
 };
