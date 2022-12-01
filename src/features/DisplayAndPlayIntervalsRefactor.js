@@ -2,6 +2,7 @@ import IntervalCard from "./IntervalCard";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
 import { useState } from "react";
+import { Card, CardTitle } from "reactstrap";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -46,12 +47,18 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
       <div className="big-grid">
         <div className="ear-training-grid ">
-          <div className="grid-item"
-          onClick={() => setCurrentInstrumentArray(AltoSaxChromaticScaleArray)}>
+          <div
+            className="grid-item"
+            onClick={() =>
+              setCurrentInstrumentArray(AltoSaxChromaticScaleArray)
+            }
+          >
             <IntervalCard name="Alto Saxophone" />
           </div>
-          <div className="grid-item"
-          onClick={() => setCurrentInstrumentArray(trumpetChrScale)}>
+          <div
+            className="grid-item"
+            onClick={() => setCurrentInstrumentArray(trumpetChrScale)}
+          >
             <IntervalCard name="Trumpet" />
           </div>
           <div className="grid-item">
@@ -72,7 +79,10 @@ const DisplayAndPlayIntervalsRefactor = () => {
           {noteCounts.map((noteCount) => {
             return (
               <div
-                onClick={() => onNewSequenceClick(noteCount, currentInstrumentArray) }
+                className="sequence-grid-item"
+                onClick={() =>
+                  onNewSequenceClick(noteCount, currentInstrumentArray)
+                }
               >
                 {noteCount === 1 ? (
                   <IntervalCard name={`Play ${noteCount} Note`} />
@@ -83,11 +93,12 @@ const DisplayAndPlayIntervalsRefactor = () => {
             );
           })}
           <div
+            className="sequence-grid-item"
             onClick={() =>
               playSequence(currentSequence, currentInstrumentArray)
             }
           >
-            <IntervalCard name="replay" />
+            <IntervalCard name="Replay Sequence" />
           </div>
         </div>
       </div>
