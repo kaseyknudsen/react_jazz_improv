@@ -2,10 +2,12 @@ import IntervalCard from "./IntervalCard";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
 import { useState } from "react";
-import { Card, CardTitle } from "reactstrap";
+import SpeedCard from "../components/SpeedCard";
+import { Row, Col, Container } from "reactstrap";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
+  const [currentDelay, setDelay] = useState()
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
@@ -19,6 +21,9 @@ const DisplayAndPlayIntervalsRefactor = () => {
     }
     return sequence;
   };
+  const slow = 1800;
+  const medium = 1300;
+  const fast = 1000;
 
   //function that plays the set of random indices of the instrument array
   const playSequence = (notes, noteArray) => {
@@ -26,7 +31,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
       const note = notes[i];
       const audioFile = noteArray[note].audio_file;
       console.log(audioFile);
-      const delay = 1200 * i;
+      const delay = currentDelay * i;
       setTimeout(() => audioFile.play(), delay);
     }
   };
@@ -44,6 +49,20 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>
+      <Container>
+        <h2 style={{ textAlign: "center" }}>Choose Your Tempo</h2>
+        <Row className="mb-5">
+          <Col onClick={() => setDelay(slow)}>
+            <SpeedCard speed="Slow" />
+          </Col>
+          <Col onClick={() => setDelay(medium)}>
+            <SpeedCard speed="Medium" />
+          </Col>
+          <Col onClick={() => setDelay(fast)}>
+            <SpeedCard speed="Fast" />
+          </Col>
+        </Row>
+      </Container>
 
       <div className="big-grid">
         <div className="ear-training-grid ">

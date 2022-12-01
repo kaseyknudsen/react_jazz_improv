@@ -186,6 +186,7 @@ margin-left: 20%;
   margin-top: 15%;
 }
 
+
 @media (max-width: 500px) {
   .big-grid {
     grid-template-columns: 1fr;
