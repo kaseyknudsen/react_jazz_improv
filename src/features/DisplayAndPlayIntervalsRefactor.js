@@ -49,7 +49,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>
-      <Container>
+      <Container style={{maxWidth: 650}}>
         <h2 style={{ textAlign: "center" }}>Choose Your Tempo</h2>
         <Row className="mb-5">
           <Col onClick={() => setDelay(slow)}>
@@ -80,7 +80,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
           >
             <IntervalCard name="Trumpet" />
           </div>
-          <div className="grid-item">
+          {/* <div className="grid-item">
             <IntervalCard name="Bass" />
           </div>
           <div className="grid-item">
@@ -91,7 +91,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </div>
           <div className="grid-item">
             <IntervalCard name="Piano" />
-          </div>
+          </div> */}
         </div>
 
         <div className="sequence-grid">

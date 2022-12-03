@@ -177,7 +177,8 @@ margin-left: 20%;
 }
 .sequence-grid-item {
   width: 200px;
-  align-self: start;
+  /* align-self: start; */
+  margin-bottom: 10px;
 }
 
 .sequence-grid-item:nth-of-type(6) {
