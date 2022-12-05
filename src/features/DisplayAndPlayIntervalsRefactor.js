@@ -7,7 +7,7 @@ import { Row, Col, Container } from "reactstrap";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
-  const [currentDelay, setDelay] = useState()
+  const [currentDelay, setDelay] = useState(1300);
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
@@ -49,7 +49,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>
-      <Container style={{maxWidth: 650}}>
+
+      <Container style={{ maxWidth: 650 }}>
         <h2 style={{ textAlign: "center" }}>Choose Your Tempo</h2>
         <Row className="mb-5">
           <Col onClick={() => setDelay(slow)}>

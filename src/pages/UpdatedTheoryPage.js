@@ -51,8 +51,10 @@ const UpdatedTheoryPage = () => {
 
   return (
     <>
-      <h1 className="text-center mb-5">Theory Questions</h1>
-      <div className="theory-topics grid w3-container">
+    <div className="container">
+     <h1 className="text-center mb-5">Theory Questions</h1>
+      <div className="theory-topics text grid w3-container">
+      
         <div>
           <h2 className="mb-5">Choose A Topic</h2>
           {topicsArray.map((topic) => {
@@ -84,6 +86,7 @@ const UpdatedTheoryPage = () => {
             <AnimatedAnswerCard text={"Ready to see the answer? Click here."} />
           </div>
         </div>
+      </div>
       </div>
     </>
   );
