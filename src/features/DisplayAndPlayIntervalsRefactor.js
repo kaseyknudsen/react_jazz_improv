@@ -1,9 +1,11 @@
 import IntervalCard from "./IntervalCard";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
+import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../components/SpeedCard";
 import { Row, Col, Container } from "reactstrap";
+
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -83,14 +85,17 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </div>
           {/* <div className="grid-item">
             <IntervalCard name="Bass" />
-          </div>
-          <div className="grid-item">
+          </div> */}
+          <div
+            className="grid-item"
+            onClick={() => setCurrentInstrumentArray(tromboneChrScale)}
+          >
             <IntervalCard name="Trombone" />
           </div>
-          <div className="grid-item">
+          {/* <div className="grid-item">
             <IntervalCard name="Tenor Saxophone" />
-          </div>
-          <div className="grid-item">
+          </div> */}
+          {/* <div className="grid-item">
             <IntervalCard name="Piano" />
           </div> */}
         </div>
