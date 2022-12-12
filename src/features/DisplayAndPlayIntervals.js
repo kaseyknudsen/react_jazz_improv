@@ -1,18 +1,20 @@
-import IntervalCard from "./IntervalCard";
-import { Col, Row, Card, CardBody, CardImg } from "reactstrap";
-import { getRandomNote } from "./RandomNoteSlice";
-import saxophone from "../EARTRAINING/instrument_images/saxophone.png";
-import trumpet from "../EARTRAINING/instrument_images/trumpet.png";
+import IntervalCard from "./cards/IntervalCard";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
+import { TenorSaxChromaticScaleArray } from "../EARTRAINING/tenorSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
+import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
 import { useState } from "react";
+import SpeedCard from "../components/SpeedCard";
+import { Row, Col, Container } from "reactstrap";
 
-const DisplayAndPlayIntervals = () => {
+const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
+  const [currentDelay, setDelay] = useState(1300);
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
 
+  //function that generates random numbers that will correspond to the indices of the instrument array
   const randomSequence = (noteCount, noteArray) => {
     const sequence = [];
     for (let i = 0; i < noteCount; i++) {
@@ -21,21 +23,24 @@ const DisplayAndPlayIntervals = () => {
     }
     return sequence;
   };
+  const slow = 1800;
+  const medium = 1300;
+  const fast = 1000;
 
+  //function that plays the set of random indices of the instrument array
   const playSequence = (notes, noteArray) => {
     for (let i = 0; i < notes.length; i++) {
       const note = notes[i];
       const audioFile = noteArray[note].audio_file;
       console.log(audioFile);
-      const delay = 1200 * i;
+      const delay = currentDelay * i;
       setTimeout(() => audioFile.play(), delay);
     }
   };
 
-  const onNewSequenceClick = (noteCount, instrumentArray) => {
-    const newSequence = randomSequence(noteCount, instrumentArray);
+  const onNewSequenceClick = (notes, instrumentArray) => {
+    const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
-    setCurrentInstrumentArray(instrumentArray);
     playSequence(newSequence, instrumentArray);
   };
 
@@ -43,102 +48,93 @@ const DisplayAndPlayIntervals = () => {
 
   return (
     <>
-      <Row>
-        <h1 className="text-center mb-3" style={{ fontSize: "3em" }}>
-          Choose Your Instrument
-        </h1>
-      </Row>
-      <Row className="row-style">
-        <Col sm="4" lg="3" className="mx-auto mb-3">
-          <a href="#altoSax">
-            <Card>
-              <CardBody>
-                <CardImg src={saxophone} />
-              </CardBody>
-            </Card>
-          </a>
-        </Col>
-        <Col sm="4" lg="3" className="mx-auto">
-          <a href="#trumpet">
-            <Card>
-              <CardBody>
-                <CardImg src={trumpet} />
-              </CardBody>
-            </Card>
-          </a>
-        </Col>
-      </Row>
-      <Row id="altoSax">
-        <Col>
-          <h1 className="text-center mb-5" style={{ fontSize: "3em" }}>
-            Alto Saxophone
-          </h1>
-        </Col>
-        <Col sm="12">
-          <h2 className="text-center mb-2">Choose A Note Sequence Length</h2>
-        </Col>
-        <Col sm="12">
-          <h5 className="text-center">Try to Repeat Back What You Hear!</h5>
-        </Col>
-      </Row>
-      <Row className="row-style">
-        {noteCounts.map((noteCount) => {
-          return (
-            <Col
-              sm="7"
-              md="6"
-              lg="3"
-              className="mt-3 mx-auto"
-              onClick={() =>
-                onNewSequenceClick(noteCount, AltoSaxChromaticScaleArray)
-              }
-            >
-              <IntervalCard name={`Play ${noteCount} Notes`} />
-            </Col>
-          );
-        })}
-        <Row className="mt-3">
-          <Col
-            sm="5"
-            className="mx-auto"
+      <div>
+        <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
+      </div>
+
+      <Container style={{ maxWidth: 650 }}>
+        <h2 style={{ textAlign: "center" }}>Choose Your Tempo</h2>
+        <Row className="mb-5">
+          <Col onClick={() => setDelay(slow)}>
+            <SpeedCard speed="Slow" />
+          </Col>
+          <Col onClick={() => setDelay(medium)}>
+            <SpeedCard speed="Medium" />
+          </Col>
+          <Col onClick={() => setDelay(fast)}>
+            <SpeedCard speed="Fast" />
+          </Col>
+        </Row>
+      </Container>
+
+      <div className="big-grid">
+        <div className="ear-training-grid ">
+          <div
+            className="grid-item"
+            onClick={() =>
+              setCurrentInstrumentArray(AltoSaxChromaticScaleArray)
+            }
+          >
+            <IntervalCard name="Alto Saxophone" />
+          </div>
+          <div
+            className="grid-item"
+            onClick={() =>
+              setCurrentInstrumentArray(TenorSaxChromaticScaleArray)
+            }
+          >
+            <IntervalCard name="Tenor Saxophone" />
+          </div>
+          <div
+            className="grid-item"
+            onClick={() => setCurrentInstrumentArray(trumpetChrScale)}
+          >
+            <IntervalCard name="Trumpet" />
+          </div>
+          {/* <div className="grid-item">
+            <IntervalCard name="Bass" />
+          </div> */}
+          <div
+            className="grid-item"
+            onClick={() => setCurrentInstrumentArray(tromboneChrScale)}
+          >
+            <IntervalCard name="Trombone" />
+          </div>
+
+          {/* <div className="grid-item">
+            <IntervalCard name="Piano" />
+          </div> */}
+        </div>
+
+        <div className="sequence-grid">
+          {noteCounts.map((noteCount) => {
+            return (
+              <div
+                className="sequence-grid-item"
+                onClick={() =>
+                  onNewSequenceClick(noteCount, currentInstrumentArray)
+                }
+              >
+                {noteCount === 1 ? (
+                  <IntervalCard name={`Play ${noteCount} Note`} />
+                ) : (
+                  <IntervalCard name={`Play ${noteCount} Notes`} />
+                )}
+              </div>
+            );
+          })}
+          <div
+            className="sequence-grid-item"
             onClick={() =>
               playSequence(currentSequence, currentInstrumentArray)
             }
           >
-            <IntervalCard name="replay" />
-          </Col>
-        </Row>
-      </Row>
-      <Row id="trumpet">
-        <Col sm="12">
-          <h1 className="text-center mb-5" style={{ fontSize: "3em" }}>
-            Trumpet
-          </h1>
-        </Col>
-        <Col sm="12">
-          <h2 className="text-center mb-2">Choose A Note Sequence Length</h2>
-        </Col>
-        <Col sm="12">
-          <h5 className="text-center">Try to Repeat Back What You Hear!</h5>
-        </Col>
-      </Row>
-      <Row className="row-style">
-        {noteCounts.map((noteCount) => {
-          return (
-            <Col
-              sm="7"
-              md="6"
-              lg="3"
-              className="mt-3 mx-auto"
-              onClick={() => onNewSequenceClick(noteCount, trumpetChrScale)}
-            >
-              <IntervalCard name={`Play ${noteCount} Notes`} />
-            </Col>
-          );
-        })}
-      </Row>
+            <IntervalCard name="Replay Sequence" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
 
-export default DisplayAndPlayIntervals;
+export default DisplayAndPlayIntervalsRefactor;

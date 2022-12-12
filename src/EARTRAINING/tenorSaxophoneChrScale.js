@@ -1,37 +1,37 @@
 //audio files
-import Low_Bb from "../EARTRAINING/chr_scale/Low-Bb.mp3";
-import Low_B from "../EARTRAINING/chr_scale/Low-B.mp3";
-import Low_C from "../EARTRAINING/chr_scale/Low-C.mp3";
-import Low_Db from "../EARTRAINING/chr_scale/Low-Db.mp3";
-import Low_D from "../EARTRAINING/chr_scale/Low-D.mp3";
-import Low_Eb from "../EARTRAINING/chr_scale/Low-Eb.mp3";
-import Low_E from "../EARTRAINING/chr_scale/Low-E.mp3";
-import Low_F from "../EARTRAINING/chr_scale/Low-F.mp3";
-import Low_Gb from "../EARTRAINING/chr_scale/Low-Gb.mp3";
-import Middle_G from "../EARTRAINING/chr_scale/Middle-G.mp3";
-import Middle_Ab from "../EARTRAINING/chr_scale/Middle-Ab.mp3";
-import Middle_A from "../EARTRAINING/chr_scale/Middle-A.mp3";
-import Middle_Bb from "../EARTRAINING/chr_scale/Middle-Bb.mp3";
-import Middle_B from "../EARTRAINING/chr_scale/Middle-B.mp3";
-import Middle_C from "../EARTRAINING/chr_scale/Middle-C.mp3";
-import Middle_Db from "../EARTRAINING/chr_scale/Middle-Db.mp3";
-import Middle_D from "../EARTRAINING/chr_scale/Middle-D.mp3";
-import Middle_Eb from "../EARTRAINING/chr_scale/Middle-Eb.mp3";
-import Middle_E from "../EARTRAINING/chr_scale/Middle-E.mp3";
-import Middle_F from "../EARTRAINING/chr_scale/Middle-F.mp3";
-import Middle_Gb from "../EARTRAINING/chr_scale/Middle-Gb.mp3";
-import High_G from "../EARTRAINING/chr_scale/High-G.mp3";
-import High_Ab from "../EARTRAINING/chr_scale/High-Ab.mp3";
-import High_A from "../EARTRAINING/chr_scale/High-A.mp3";
-import High_Bb from "../EARTRAINING/chr_scale/High-Bb.mp3";
-import High_B from "../EARTRAINING/chr_scale/High-B.mp3";
-import High_C from "../EARTRAINING/chr_scale/High-C.mp3";
-import High_Db from "../EARTRAINING/chr_scale/High-Db.mp3";
-import High_D from "../EARTRAINING/chr_scale/High-D.mp3";
-import High_Eb from "../EARTRAINING/chr_scale/High-Eb.mp3";
-import High_E from "../EARTRAINING/chr_scale/High-E.mp3";
-import High_F from "../EARTRAINING/chr_scale/High-F.mp3";
-import High_Gb from "../EARTRAINING/chr_scale/High-Gb.mp3";
+import Low_Bb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowBb.mp3";
+import Low_B from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowB.mp3";
+import Low_C from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowC.mp3";
+import Low_Db from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowDb.mp3";
+import Low_D from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowD.mp3";
+import Low_Eb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowEb.mp3";
+import Low_E from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowE.mp3";
+import Low_F from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowF.mp3";
+import Low_Gb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowGb.mp3";
+import Low_G from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowG.mp3";
+import Low_Ab from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowAb.mp3";
+import Low_A from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_LowA.mp3";
+import Middle_Bb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleBb.mp3";
+import Middle_B from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleB.mp3";
+import Middle_C from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleC.mp3";
+import Middle_Db from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleDb.mp3";
+import Middle_D from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleD.mp3";
+import Middle_Eb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleEb.mp3";
+import Middle_E from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleE.mp3";
+import Middle_F from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_middleF.mp3";
+import High_Gb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_Gb.mp3";
+import High_G from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_G.mp3";
+import High_Ab from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_Ab.mp3";
+import High_A from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_A.mp3";
+import High_Bb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_Bb.mp3";
+import High_B from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_B.mp3";
+import High_C from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_C.mp3";
+import High_Db from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_Db.mp3";
+import High_D from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_D.mp3";
+import High_Eb from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_Eb.mp3";
+import High_E from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_E.mp3";
+import High_F from "../EARTRAINING/ten_chr_scale/tenor_chr_scale_high_F.mp3";
+
 
 //interval images
 import Low_Bb_Image from "../EARTRAINING/Interval_Images/Low_Bb.png";
@@ -66,9 +66,9 @@ import High_D_Image from "../EARTRAINING/Interval_Images/High_D.png";
 import High_Eb_Image from "../EARTRAINING/Interval_Images/High_Eb.png";
 import High_E_Image from "../EARTRAINING/Interval_Images/High_E.png";
 import High_F_Image from "../EARTRAINING/Interval_Images/High_F.png";
-import High_Gb_Image from "../EARTRAINING/Interval_Images/High_Gb.png";
 
-export const AltoSaxChromaticScaleArray = [
+
+export const TenorSaxChromaticScaleArray = [
   {
     image: Low_Bb_Image,
     index: 0,
@@ -127,19 +127,19 @@ export const AltoSaxChromaticScaleArray = [
     image: Middle_G_Image,
     index: 9,
     name: "Middle G",
-    audio_file: new Audio(Middle_G),
+    audio_file: new Audio(Low_G),
   },
   {
     image: Middle_Ab_Image,
     index: 10,
     name: "Middle Ab",
-    audio_file: new Audio(Middle_Ab),
+    audio_file: new Audio(Low_Ab),
   },
   {
     image: Middle_A_Image,
     index: 11,
     name: "Middle A",
-    audio_file: new Audio(Middle_A),
+    audio_file: new Audio(Low_A),
   },
   {
     image: Middle_Bb_Image,
@@ -192,8 +192,8 @@ export const AltoSaxChromaticScaleArray = [
   {
     image: Middle_Gb_Image,
     index: 20,
-    name: "Middle Gb",
-    audio_file: new Audio(Middle_Gb),
+    name: "High Gb",
+    audio_file: new Audio(High_Gb),
   },
   {
     image: High_G_Image,
@@ -260,11 +260,5 @@ export const AltoSaxChromaticScaleArray = [
     index: 31,
     name: "High F",
     audio_file: new Audio(High_F),
-  },
-  {
-    image: High_Gb_Image,
-    index: 32,
-    name: "High Gb",
-    audio_file: new Audio(High_Gb),
   },
 ];

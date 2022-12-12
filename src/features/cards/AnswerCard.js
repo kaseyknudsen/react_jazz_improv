@@ -1,4 +1,4 @@
-import { Card, CardImg, CardText } from "reactstrap";
+import { Card, CardText } from "reactstrap";
 
 const AnswerCard = ({ image, answer }) => {
   if (answer) {

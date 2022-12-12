@@ -1,5 +1,5 @@
 import { quickLinks } from "../QUESTIONS/quickLinks";
-import QuickLinkCard from "./QuickLinkCard";
+import QuickLinkCard from "./cards/QuickLinkCard";
 import { Row, Col } from "reactstrap";
 
 const HomePageQuickLinks = () => {

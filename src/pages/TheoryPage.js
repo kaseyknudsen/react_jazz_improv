@@ -1,13 +1,11 @@
-import TheoryOptionsPage from "./TheoryOptionsPage";
 import SubHeader from "../components/Subheader";
-import UpdatedTheoryPage from "./UpdatedTheoryPage";
+import TheoryOptions from "../features/TheoryOptions";
 
 const TheoryPage = () => {
   return (
     <div>
       <SubHeader current="Theory Page" />
-      {/* <TheoryOptionsPage /> */}
-      <UpdatedTheoryPage />
+      <TheoryOptions />
     </div>
   );
 };

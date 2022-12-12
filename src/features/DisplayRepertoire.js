@@ -1,5 +1,5 @@
-import ChooseRepertoireCard from "./ChooseRepertoireCard";
-import TuneListCard from "./TuneListCard";
+import ChooseRepertoireCard from "./cards/ChooseRepertoireCard";
+import TuneListCard from "./cards/TuneListCard";
 import { Col, Row } from "reactstrap";
 import { repertoireData } from "../app/REPERTOIRE/repertoireData";
 import { useState } from "react";
