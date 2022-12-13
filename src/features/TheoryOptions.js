@@ -42,7 +42,7 @@ const UpdatedTheoryPage = () => {
   };
 
   const setTopic = (topic) => {
-    setCurrentQuestion({ ...currentQuestion, topic });
+    setCurrentQuestion({ ...currentQuestion, topic, id: 0 });
     setAnswer(null);
   };
 

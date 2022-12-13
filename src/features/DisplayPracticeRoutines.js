@@ -1,6 +1,6 @@
 import { Col, Row, Card, CardBody } from "reactstrap";
 import { useState } from "react";
-import PracticeRoutineChoices from "./PracticeRoutineChoices";
+import PracticeRoutineChoices from "./cards/PracticeRoutineChoices";
 import { practiceRoutineCards } from "../app/PracticeRoutines/practiceRoutineCards";
 
 const DisplayPracticeRoutines = () => {

@@ -13,7 +13,7 @@ const HomePageQuickLinks = () => {
       <Row className="mt-3 mx-auto">
         {quickLinks.map((quickLink) => {
           return (
-            <Col sm="6" lg="3" className="mx-auto" key={quickLinks.id}>
+            <Col sm="6" lg="3" className="mx-auto mb-4" key={quickLinks.id}>
               <QuickLinkCard
                 text={quickLink.text}
                 image={quickLink.image}
