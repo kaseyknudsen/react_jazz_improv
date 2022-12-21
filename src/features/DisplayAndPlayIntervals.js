@@ -6,6 +6,12 @@ import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../components/SpeedCard";
 import { Row, Col, Container } from "reactstrap";
+import MajorScaleCard from "./cards/MajorScaleCard";
+import BbMajorIntervalCard from "./cards/BbMajorIntervalCard";
+import GuessIntervalCard from "./cards/GuessIntervalCard";
+import GuessIntervalAnswerCard from "./cards/GuessIntervalAnswerCard";
+import { altoSaxBbMajorScale } from "../EARTRAINING/MajorScaleIntervals";
+import Bb_Major_Scale from "../EARTRAINING/Bb_MajorScale/Bb_Major_Scale.png";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -13,6 +19,12 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
+  const [currentMajorInterval, setCurrentMajorInterval] = useState(
+    altoSaxBbMajorScale[0].audioFile1
+  );
+  const [currentRandomMajorInterval, setCurrentRandomMajorInterval] = useState(altoSaxBbMajorScale[0].audioFile1)
+
+  
 
   //function that generates random numbers that will correspond to the indices of the instrument array
   const randomSequence = (noteCount, noteArray) => {
@@ -46,6 +58,23 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
   const noteCounts = [1, 2, 3, 4, 5];
 
+  //function that plays an interval of the Bb major scale
+  const playMajorInterval = (interval) => {
+    const note1 = interval.audioFile1
+    const note2 = interval.audioFile2
+    const delay = 1300;
+    note1.play()
+    setTimeout(() => note2.play(), delay)
+  }
+
+  //function that plays a random sequence from the Bb major scale
+  const randomMajorSequence = () => {
+    const intervalIndex = Math.floor(Math.random() * altoSaxBbMajorScale.length)
+    const randomMajInterval = altoSaxBbMajorScale[intervalIndex]
+    playMajorInterval(randomMajInterval)
+  }
+
+
   return (
     <>
       <div>
@@ -67,7 +96,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
         </Row>
       </Container>
 
-      <div className="big-grid">
+      <div className="big-grid row-style">
         <div className="ear-training-grid ">
           <div
             className="grid-item"
@@ -133,6 +162,44 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </div>
         </div>
       </div>
+      <Container style={{ maxWidth: 750 }}>
+        <Row>
+        <h2 style={{ textAlign: "center" }}>Major Scale Interval Trainer</h2>
+        </Row>
+        <Row>
+        <h5 style={{ textAlign: "center" }}>(Transposed for Alto Saxophone)</h5>
+        </Row>
+        <Row className="mt-5">
+          <MajorScaleCard
+            majorScale={"Bb Major Scale"}
+            image={Bb_Major_Scale}
+          />
+        </Row>
+
+        <Row className="mt-5 mx-auto">
+          {altoSaxBbMajorScale.map((interval) => {
+            return (
+              <Col sm="4" md="3" className="mb-4" onClick={() => setCurrentMajorInterval(playMajorInterval(interval))}>
+                <BbMajorIntervalCard
+                  majorInterval={interval.title}
+                  image={interval.image}
+                />
+              </Col>
+            );
+          })}
+        </Row>
+        <Row className="mt-4">
+        <h2 style={{ textAlign: "center" }}>Now it's time to test your ear!</h2>
+        </Row>
+        <Row className="mt-3 mx-auto">
+          <Col sm="6" onClick={() => setCurrentRandomMajorInterval(randomMajorSequence())}>
+          <GuessIntervalCard />
+          </Col>
+          <Col sm="6">
+          <GuessIntervalAnswerCard />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

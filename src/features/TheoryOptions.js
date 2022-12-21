@@ -48,6 +48,7 @@ const UpdatedTheoryPage = () => {
 
   const showAnswer = () => {
     setAnswer(currentQuestionContent.answer);
+    console.log(currentQuestion.id);
   };
 
   return (
