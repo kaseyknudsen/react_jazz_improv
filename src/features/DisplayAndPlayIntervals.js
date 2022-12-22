@@ -1,4 +1,5 @@
 import IntervalCard from "./cards/IntervalCard";
+import InstrumentCard from "./cards/InstrumentCard";
 import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
 import { TenorSaxChromaticScaleArray } from "../EARTRAINING/tenorSaxophoneChrScale";
 import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
@@ -86,7 +87,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
               setCurrentInstrumentArray(AltoSaxChromaticScaleArray)
             }
           >
-            <IntervalCard name="Alto Saxophone" />
+            <InstrumentCard instrument={"Alto Saxophone"} />
           </Col>
           <Col
             xs="6"
@@ -96,7 +97,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
               setCurrentInstrumentArray(TenorSaxChromaticScaleArray)
             }
           >
-            <IntervalCard name="Tenor Saxophone" />
+            <InstrumentCard instrument={"Tenor Saxophone"} />
           </Col>
           <Col
             xs="6"
@@ -104,7 +105,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
             className="mb-3"
             onClick={() => setCurrentInstrumentArray(trumpetChrScale)}
           >
-            <IntervalCard name="Trumpet" />
+            <InstrumentCard instrument={"Trumpet"} />
           </Col>
 
           <Col
@@ -113,7 +114,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
             md="3"
             className="mb-3"
           >
-            <IntervalCard name="Trombone" />
+            <InstrumentCard instrument={"Trombone"} />
           </Col>
         </Row>
       </Container>

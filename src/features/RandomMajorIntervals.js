@@ -42,6 +42,7 @@ const RandomMajorIntervals = () => {
       <Row className="mt-3 mx-auto">
         <Col
           sm="6"
+          className="mb-3"
           onClick={() => setCurrentRandomInterval(randomMajorSequence())}
         >
           <GuessIntervalCard />
