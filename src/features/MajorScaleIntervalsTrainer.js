@@ -20,7 +20,7 @@ const MajorScaleIntervalTrainer = () => {
   };
 
   return (
-    <Container style={{ maxWidth: 850 }}>
+    <Container maxWidth='sm'>
       <Row>
         <h2 style={{ textAlign: "center" }}>Major Scale Interval Trainer</h2>
       </Row>
@@ -36,7 +36,10 @@ const MajorScaleIntervalTrainer = () => {
           return (
             <Col
               key={interval.id}
-              sm="4"
+              sm={{
+                offset: 1,
+                size: 6
+              }}
               md="3"
               className="mb-4"
               onClick={() =>

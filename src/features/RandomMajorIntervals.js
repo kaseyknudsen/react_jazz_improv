@@ -35,7 +35,7 @@ const RandomMajorIntervals = () => {
     setRandomIntervalAnswer(currentRandomInterval);
   };
   return (
-    <Container>
+    <Container style={{maxWidth: 500}}>
       <Row className="mt-4">
         <h2 style={{ textAlign: "center" }}>Now it's time to test your ear!</h2>
       </Row>
