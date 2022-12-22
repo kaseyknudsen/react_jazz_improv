@@ -61,7 +61,7 @@ h5:hover {
 }
 
 .card-grow:hover {
-  background-color:  rgb(191, 175, 160);
+  background-color: rgb(191, 175, 160);
 }
 
 .interval-cards {
@@ -69,7 +69,7 @@ h5:hover {
 }
 
 .interval-cards:hover {
-  background-color: #F9F5EC;
+  background-color: #f9f5ec;
 }
 
 #siteFooter {
@@ -127,20 +127,6 @@ i {
   background-color: rgb(202, 166, 138);
 }
 
-.grid {
-  display: grid;
-  /* max-width: 760px; */
-  /* justify-content: center; */
-  grid-column-gap: 1em;
-  grid-template-columns: 1.5fr 2fr 2fr;
-}
-
-@media (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .practice_routine_header {
   text-align: center;
   font-weight: bolder;
@@ -160,49 +146,3 @@ i {
   margin-right: 2em;
   margin-left: 2em;
 }
-
-.big-grid {
-  max-width: 90%;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  column-gap: 10px;
-  /* align-items: center; */
-  margin-left: 2em;
-}
-
-.ear-training-grid {
-display: grid;
-gap: 10px;
-margin-bottom: 1em;
-}
-
-.sequence-grid {
-display: grid;
-grid-template-columns: 2fr 2fr;
-margin-left: 20%;
-/* align-items: center; */
-/* justify content only takes effect without the grid-template-columns */
-/* justify-content: center; */
-
-}
-.sequence-grid-item {
-  width: 200px;
-  /* align-self: start; */
-  margin-bottom: 10px;
-}
-
-.sequence-grid-item:nth-of-type(6) {
-  grid-column-start: 1;
-  text-align: center;
-  margin-top: 15%;
-}
-
-
-@media (max-width: 500px) {
-  .big-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* .grid > div:nth-child(odd) {
-  background-color: rgb(191, 175, 160);
-} */
