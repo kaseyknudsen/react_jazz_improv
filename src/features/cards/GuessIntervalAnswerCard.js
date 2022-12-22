@@ -5,8 +5,9 @@ const GuessIntervalAnswerCard = ({ image, name }) => {
     <Card className="card card-grow">
       
         <CardBody>
-          <CardText className="text-center"><h5>Click Me to See the Answer!</h5></CardText>
+          <CardText className="text-center"><h5>{name}</h5></CardText>
         </CardBody>
+        <CardImg src={image} className="w-75 mx-auto mb-4"/>
     </Card>
   );
 };
