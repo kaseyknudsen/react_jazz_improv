@@ -5,8 +5,9 @@ import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
 import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../components/SpeedCard";
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col, Container, Card, CardBody } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
+import RandomMajorIntervals from "./RandomMajorIntervals";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -49,9 +50,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
   return (
     <>
-    <div className="row-style">
-    <MajorScaleIntervalTrainer />
-    </div>
+      <div className="row-style">
+        <MajorScaleIntervalTrainer />
+        <RandomMajorIntervals />
+      </div>
+
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>
@@ -71,50 +74,60 @@ const DisplayAndPlayIntervalsRefactor = () => {
         </Row>
       </Container>
 
-      <div className="big-grid row-style">
-        <div className="ear-training-grid ">
-          <div
-            className="grid-item"
+      <Container style={{ maxWidth: 700 }}>
+        <h2 style={{ textAlign: "center" }}>Choose Your Instrument</h2>
+
+        <Row className="mb-5">
+          <Col
+            xs="6"
+            md="3"
+            className="mb-3"
             onClick={() =>
               setCurrentInstrumentArray(AltoSaxChromaticScaleArray)
             }
           >
             <IntervalCard name="Alto Saxophone" />
-          </div>
-          <div
-            className="grid-item"
+          </Col>
+          <Col
+            xs="6"
+            md="3"
+            className="mb-3"
             onClick={() =>
               setCurrentInstrumentArray(TenorSaxChromaticScaleArray)
             }
           >
             <IntervalCard name="Tenor Saxophone" />
-          </div>
-          <div
-            className="grid-item"
+          </Col>
+          <Col
+            xs="6"
+            md="3"
+            className="mb-3"
             onClick={() => setCurrentInstrumentArray(trumpetChrScale)}
           >
             <IntervalCard name="Trumpet" />
-          </div>
-          {/* <div className="grid-item">
-            <IntervalCard name="Bass" />
-          </div> */}
-          <div
-            className="grid-item"
+          </Col>
+
+          <Col
             onClick={() => setCurrentInstrumentArray(tromboneChrScale)}
+            xs="6"
+            md="3"
+            className="mb-3"
           >
             <IntervalCard name="Trombone" />
-          </div>
-
-          {/* <div className="grid-item">
-            <IntervalCard name="Piano" />
-          </div> */}
-        </div>
-
-        <div className="sequence-grid">
+          </Col>
+        </Row>
+      </Container>
+      <Container style={{ maxWidth: 400, justifyContent: "center" }}>
+        <h2 style={{ textAlign: "center" }}>
+          Choose Your Note Sequence Length
+        </h2>
+        <Row style={{ alignItems: "center" }}>
           {noteCounts.map((noteCount) => {
             return (
-              <div
-                className="sequence-grid-item"
+              <Col
+                sm="6"
+               
+                className="mb-3"
                 onClick={() =>
                   onNewSequenceClick(noteCount, currentInstrumentArray)
                 }
@@ -124,20 +137,26 @@ const DisplayAndPlayIntervalsRefactor = () => {
                 ) : (
                   <IntervalCard name={`Play ${noteCount} Notes`} />
                 )}
-              </div>
+              </Col>
             );
           })}
-          <div
-            className="sequence-grid-item"
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col
             onClick={() =>
               playSequence(currentSequence, currentInstrumentArray)
             }
           >
-            <IntervalCard name="Replay Sequence" />
-          </div>
-        </div>
-      </div>
-      
+            <Card className="card card-grow w-50 mx-auto mt-3">
+              <CardBody className="text-center">
+                <h4>Replay Sequence</h4>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
