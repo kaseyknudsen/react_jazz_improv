@@ -7,7 +7,7 @@ const BbMajorIntervalCard = ({ majorInterval, image, name }) => {
         <h5>{majorInterval}</h5>
       </CardHeader>
       <CardBody>
-        <CardImg src={image} alt={name} style={{height:'100%'}} />
+        <CardImg src={image} alt={name} style={{height:'100%'}}  />
       </CardBody>
     </Card>
   );

@@ -20,7 +20,7 @@ const MajorScaleIntervalTrainer = () => {
   };
 
   return (
-    <Container maxWidth='sm'>
+    <Container fixed>
       <Row>
         <h2 style={{ textAlign: "center" }}>Major Scale Interval Trainer</h2>
       </Row>
@@ -28,16 +28,19 @@ const MajorScaleIntervalTrainer = () => {
         <h5 style={{ textAlign: "center" }}>(Transposed for Alto Saxophone)</h5>
       </Row>
       <Row className="mt-5" style={{ justifyContent: "center" }}>
-        <MajorScaleCard majorScale={"Bb Major Scale"} image={Bb_Major_Scale} />
+        {/* <MajorScaleCard majorScale={"Bb Major Scale"} image={Bb_Major_Scale} /> */}
+      </Row>
+      <Row>
+        <h5 style={{ textAlign: "center" }}>(Ascending Intervals of the Bb Major Scale)</h5>
       </Row>
 
-      <Row className="mt-5 mx-auto">
+      <Row className="mt-3 mx-auto justify-content-center">
         {altoSaxBbMajorScale.map((interval) => {
           return (
             <Col
               key={interval.id}
               sm={{
-                offset: 1,
+                //offset: 1,
                 size: 6
               }}
               md="3"

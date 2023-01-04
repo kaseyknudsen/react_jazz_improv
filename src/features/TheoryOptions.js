@@ -10,6 +10,7 @@ import {
   IntervalQuestions,
 } from "../QUESTIONS/THEORYQUESTIONS.js";
 import NextQuestionCard from "./cards/NextQuestionCard.js";
+import { Container, Row, Col } from "reactstrap";
 
 const UpdatedTheoryPage = () => {
   const [currentQuestion, setCurrentQuestion] = useState({
@@ -53,44 +54,50 @@ const UpdatedTheoryPage = () => {
 
   return (
     <>
-      <div className="container">
+      <Container style={{ maxWidth: 800}}>
         <h1 className="text-center mb-5">Theory Questions</h1>
-        <div className="theory-topics text grid w3-container">
-          <div>
-            <h2 className="mb-5">Choose A Topic</h2>
+        <div className="theory-topics">
+          <h2 className="mb-5">Choose A Topic</h2>
+          <Row>
             {topicsArray.map((topic) => {
               return (
-                <div className="mb-3" onClick={() => setTopic(topic)}>
+                <Col
+                  sm="12"
+                  md="6"
+                  lg="3"
+                  className="mb-3"
+                  onClick={() => setTopic(topic)}
+                >
                   <TheoryOptionsCard topic={topic} />
-                </div>
+                </Col>
               );
             })}
-          </div>
-          <div>
-            <div className="mb-3">
-              <h2 className="mb-5">Question</h2>
-              <TheoryCard
-                question={currentQuestionContent.question}
-                image={currentQuestionContent.image}
-              />
-            </div>
-            <div className="mb-3" onClick={() => onClickNext()}>
-              <NextQuestionCard />
-            </div>
-          </div>
-          <div>
-            <div className="mb-3">
-              <h2 className="mb-5">Answer</h2>
-              <AnswerCard answer={answer} />
-            </div>
-            <div onClick={() => showAnswer()}>
-              <AnimatedAnswerCard
-                text={"Ready to see the answer? Click here."}
-              />
-            </div>
+          </Row>
+        </div>
+        </Container>
+        <Container style={{ maxWidth: 800}}>
+        <div className="mt-5 mb-3 theory-topics">
+          <h2 className="mb-5">Question</h2>
+          <TheoryCard
+            question={currentQuestionContent.question}
+            image={currentQuestionContent.image}
+          />
+
+          <div className="mt-3 mb-3" onClick={() => onClickNext()}>
+            <NextQuestionCard />
           </div>
         </div>
-      </div>
+        </Container>
+        <Container style={{ maxWidth: 800}}>
+        <div className="mt-5 mb-3 theory-topics">
+          <h2 className="mb-3">Answer</h2>
+          <AnswerCard answer={answer} />
+        </div>
+        <div onClick={() => showAnswer()}>
+          <AnimatedAnswerCard text={"Ready to see the answer? Click here."} />
+        </div>
+        </Container>
+     
     </>
   );
 };

@@ -118,11 +118,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={{ maxWidth: 400, justifyContent: "center" }}>
+      <Container style={{ maxWidth: 400}}>
         <h2 style={{ textAlign: "center" }}>
           Choose Your Note Sequence Length
         </h2>
-        <Row style={{ alignItems: "center" }}>
+        <Row className="justify-content-center">
           {noteCounts.map((noteCount) => {
             return (
               <Col
@@ -150,7 +150,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
               playSequence(currentSequence, currentInstrumentArray)
             }
           >
-            <Card className="card card-grow w-50 mx-auto mt-3">
+            <Card className="card card-grow w-25 mx-auto mt-3">
               <CardBody className="text-center">
                 <h4>Replay Sequence</h4>
               </CardBody>
