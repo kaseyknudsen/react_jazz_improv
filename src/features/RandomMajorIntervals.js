@@ -11,7 +11,7 @@ const RandomMajorIntervals = () => {
   const [randomIntervalAnswer, setRandomIntervalAnswer] =
     useState(altoSaxBbMajorScale);
 
-    const [isAnswerShowing, setIsAnswerShowing] = useState(false)
+  const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
   //function that plays an interval of the Bb major scale
   const playMajorInterval = (interval) => {
@@ -46,18 +46,26 @@ const RandomMajorIntervals = () => {
           sm="6"
           className="mb-3"
           onClick={() => {
-            setIsAnswerShowing(false)
-            setCurrentRandomInterval(randomMajorSequence())}}
+            setIsAnswerShowing(false);
+            setCurrentRandomInterval(randomMajorSequence());
+          }}
         >
           <GuessIntervalCard />
         </Col>
 
-        <Col sm="6" onClick={() =>{
-          showAnswer()
-          setIsAnswerShowing(true)
-          }}>
+        <Col
+          sm="6"
+          onClick={() => {
+            showAnswer();
+            setIsAnswerShowing(true);
+          }}
+        >
           <GuessIntervalAnswerCard
-            name={isAnswerShowing ? randomIntervalAnswer.title : "Click to see answer"}
+            name={
+              isAnswerShowing
+                ? randomIntervalAnswer.title
+                : "Click to see answer"
+            }
             image={randomIntervalAnswer.image}
           />
         </Col>
