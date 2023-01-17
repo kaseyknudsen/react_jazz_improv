@@ -11,6 +11,8 @@ const RandomMajorIntervals = () => {
   const [randomIntervalAnswer, setRandomIntervalAnswer] =
     useState(altoSaxBbMajorScale);
 
+    const [isAnswerShowing, setIsAnswerShowing] = useState(false)
+
   //function that plays an interval of the Bb major scale
   const playMajorInterval = (interval) => {
     const note1 = interval.audioFile1;
@@ -35,7 +37,7 @@ const RandomMajorIntervals = () => {
     setRandomIntervalAnswer(currentRandomInterval);
   };
   return (
-    <Container style={{maxWidth: 500}}>
+    <Container style={{ maxWidth: 500 }}>
       <Row className="mt-4">
         <h2 style={{ textAlign: "center" }}>Now it's time to test your ear!</h2>
       </Row>
@@ -43,14 +45,19 @@ const RandomMajorIntervals = () => {
         <Col
           sm="6"
           className="mb-3"
-          onClick={() => setCurrentRandomInterval(randomMajorSequence())}
+          onClick={() => {
+            setIsAnswerShowing(false)
+            setCurrentRandomInterval(randomMajorSequence())}}
         >
           <GuessIntervalCard />
         </Col>
 
-        <Col sm="6" onClick={() => showAnswer()}>
+        <Col sm="6" onClick={() =>{
+          showAnswer()
+          setIsAnswerShowing(true)
+          }}>
           <GuessIntervalAnswerCard
-            name={randomIntervalAnswer.title}
+            name={isAnswerShowing ? randomIntervalAnswer.title : "Click to see answer"}
             image={randomIntervalAnswer.image}
           />
         </Col>
