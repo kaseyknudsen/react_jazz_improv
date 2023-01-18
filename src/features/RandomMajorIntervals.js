@@ -37,9 +37,9 @@ const RandomMajorIntervals = () => {
     setRandomIntervalAnswer(currentRandomInterval);
   };
   return (
-    <Container style={{ maxWidth: 500 }}>
+    <Container style={{ maxWidth: 600 }}>
       <Row className="mt-4">
-        <h2 style={{ textAlign: "center" }}>Now it's time to test your ear!</h2>
+        <h2 style={{ textAlign: "center" }} className="mt-5">Now it's time to test your ear!</h2>
       </Row>
       <Row className="mt-3 mx-auto">
         <Col

@@ -1,7 +1,6 @@
 import TheoryOptionsCard from "./cards/TheoryOptionsCard.js";
 import TheoryCard from "./cards/TheoryCard.js";
 import AnimatedAnswerCard from "./cards/AnimatedAnswerCard.js";
-import AnswerCard from "./cards/AnswerCard";
 import { useState } from "react";
 import {
   ModeQuestions,
@@ -18,6 +17,7 @@ const UpdatedTheoryPage = () => {
   });
 
   const [answer, setAnswer] = useState(null);
+  const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
   const topicToTopicArrayMap = {
     Intervals: IntervalQuestions,
@@ -44,52 +44,63 @@ const UpdatedTheoryPage = () => {
   const setTopic = (topic) => {
     setCurrentQuestion({ ...currentQuestion, topic, id: 0 });
     setAnswer(null);
+    setIsAnswerShowing(false)
   };
 
   const showAnswer = () => {
     setAnswer(currentQuestionContent.answer);
-    console.log(currentQuestion.id);
   };
 
   return (
     <>
-    <h1 className="text-center mb-4">Theory Questions</h1>
-      {/* main grid */}
+      <h1 className="text-center mb-4">Theory Questions</h1>
       <container className="theoryOptionsGrid">
-        {/* grid item 1 */}
         <div className="mb-5">
-          
           <h2 className="text-center">Choose A Topic</h2>
-          {/* items within grid item 1 */}
           {topicsArray.map((topic) => {
             return (
-              <div className="theoryOptionsItem" onClick={() => setTopic(topic)}>
+              <div
+                className="theoryOptionsItem"
+                onClick={() => setTopic(topic)}
+              >
                 <TheoryOptionsCard topic={topic} />
               </div>
             );
           })}
         </div>
-
-        {/* grid item 2 */}
         <div className="mb-5">
           <h2 className="text-center">Question</h2>
           <div className="mb-3">
-          <TheoryCard
-            question={currentQuestionContent.question}
-            image={currentQuestionContent.image}
-          />
+            <TheoryCard
+              question={currentQuestionContent.question}
+              image={currentQuestionContent.image}
+            />
           </div>
-          <div onClick={() => onClickNext()}>
+          <div
+            onClick={() => {
+              onClickNext();
+              setIsAnswerShowing(false);
+            }}
+          >
             <NextQuestionCard />
           </div>
         </div>
-        {/* grid item 3 */}
         <div className="theoryOptionsItem">
           <h2 className="text-center">Answer</h2>
-          <AnswerCard answer={answer} />
 
-          <div onClick={() => showAnswer()}>
-            <AnimatedAnswerCard text={"Ready to see the answer? Click here."} />
+          <div
+            onClick={() => {
+              showAnswer();
+              setIsAnswerShowing(true);
+            }}
+          >
+            <AnimatedAnswerCard
+              text={
+                isAnswerShowing
+                  ? answer
+                  : "Ready to see the answer? Click here."
+              }
+            />
           </div>
         </div>
       </container>

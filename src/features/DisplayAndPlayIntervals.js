@@ -53,6 +53,9 @@ const DisplayAndPlayIntervalsRefactor = () => {
     <>
       <div className="row-style">
         <MajorScaleIntervalTrainer />
+        {/* <div className="mt-5">
+        <DescendingMajorScaleIntervalTrainer />
+        </div> */}
         <RandomMajorIntervals />
       </div>
 
