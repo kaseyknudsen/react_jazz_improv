@@ -9,6 +9,8 @@ import SpeedCard from "../components/SpeedCard";
 import { Row, Col, Container, Card, CardBody } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "./RandomMajorIntervals";
+import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
+import RandomChromaticIntervals from "./RandomChromaticIntervals";
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -53,12 +55,13 @@ const DisplayAndPlayIntervalsRefactor = () => {
     <>
       <div className="row-style">
         <MajorScaleIntervalTrainer />
-        {/* <div className="mt-5">
-        <DescendingMajorScaleIntervalTrainer />
-        </div> */}
+    
         <RandomMajorIntervals />
       </div>
-
+        <div className="row-style">
+        <ChromaticIntervalTrainer />
+        <RandomChromaticIntervals />
+        </div>
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>

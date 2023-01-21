@@ -2,44 +2,45 @@ import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import GuessIntervalCard from "./cards/GuessIntervalCard";
 import GuessIntervalAnswerCard from "./cards/GuessIntervalAnswerCard";
-import { altoSaxBbMajorScale } from "../EARTRAINING/MajorScaleIntervals";
+import { chromaticIntervals } from "./ChromaticIntervals";
 
-const RandomMajorIntervals = () => {
+const RandomChromaticIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(
-    altoSaxBbMajorScale[0]
+    chromaticIntervals[0]
   );
   const [randomIntervalAnswer, setRandomIntervalAnswer] =
-    useState(altoSaxBbMajorScale);
+    useState(chromaticIntervals);
 
   const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
-  //function that plays an interval of the Bb major scale
-  const playMajorInterval = (interval) => {
+  //function that plays a random chromatic interval
+  const playChromaticInterval = (interval) => {
     const note1 = interval.audioFile1;
     const note2 = interval.audioFile2;
     note1.play();
     setTimeout(() => note2.play(), 1300);
   };
 
-  //function that plays a random sequence from the Bb major scale
-  const randomMajorSequence = () => {
-    const intervalIndex = Math.floor(
-      Math.random() * altoSaxBbMajorScale.length
-    );
-    const randomMajInterval = altoSaxBbMajorScale[intervalIndex];
-    playMajorInterval(randomMajInterval);
+  //function that finds the index and plays a random chromatic interval
+  const chromaticInterval = () => {
+    const intervalIndex = Math.floor(Math.random() * chromaticIntervals.length);
+    const randomInterval = chromaticIntervals[intervalIndex];
+    playChromaticInterval(randomInterval);
     setRandomIntervalAnswer("");
-    return randomMajInterval;
+    return randomInterval;
   };
 
-  //function to update the major interval answer card
+  //function to update the random chromatic interval card
   const showAnswer = () => {
     setRandomIntervalAnswer(currentRandomInterval);
   };
+
   return (
     <Container style={{ maxWidth: 600 }}>
       <Row className="mt-4">
-        <h2 style={{ textAlign: "center" }} className="mt-5">Test your ear!</h2>
+        <h2 style={{ textAlign: "center" }} className="mt-5">
+          Test your ear!
+        </h2>
       </Row>
       <Row className="mt-3 mx-auto">
         <Col
@@ -47,7 +48,7 @@ const RandomMajorIntervals = () => {
           className="mb-3"
           onClick={() => {
             setIsAnswerShowing(false);
-            setCurrentRandomInterval(randomMajorSequence());
+            setCurrentRandomInterval(chromaticInterval());
           }}
         >
           <GuessIntervalCard />
@@ -74,4 +75,4 @@ const RandomMajorIntervals = () => {
   );
 };
 
-export default RandomMajorIntervals;
+export default RandomChromaticIntervals;
