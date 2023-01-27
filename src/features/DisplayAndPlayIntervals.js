@@ -6,7 +6,7 @@ import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
 import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../components/SpeedCard";
-import { Row, Col, Container, Card, CardBody } from "reactstrap";
+import { Row, Col, Container, Card, CardBody, CardImg } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "./RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
@@ -18,6 +18,10 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
+  const [randomIntervalsAnswer, setRandomIntervalsAnswer] = useState(
+    currentInstrumentArray
+  );
+  const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
   //function that generates random numbers that will correspond to the indices of the instrument array
   const randomSequence = (noteCount, noteArray) => {
@@ -37,9 +41,9 @@ const DisplayAndPlayIntervalsRefactor = () => {
     for (let i = 0; i < notes.length; i++) {
       const note = notes[i];
       const audioFile = noteArray[note].audio_file;
-      console.log(audioFile);
       const delay = currentDelay * i;
       setTimeout(() => audioFile.play(), delay);
+      
     }
   };
 
@@ -47,7 +51,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
     const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
+    setIsAnswerShowing(false);
+    return newSequence
   };
+
+  
 
   const noteCounts = [1, 2, 3, 4, 5];
 
@@ -55,13 +63,13 @@ const DisplayAndPlayIntervalsRefactor = () => {
     <>
       <div className="row-style">
         <MajorScaleIntervalTrainer />
-    
+
         <RandomMajorIntervals />
       </div>
-        <div className="row-style">
+      <div className="row-style">
         <ChromaticIntervalTrainer />
         <RandomChromaticIntervals />
-        </div>
+      </div>
       <div>
         <h2 className="text-center mb-5">Random Note Sequence Ear Trainer</h2>
       </div>
@@ -124,7 +132,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={{ maxWidth: 400}}>
+      <Container style={{ maxWidth: 400 }}>
         <h2 style={{ textAlign: "center" }}>
           Choose Your Note Sequence Length
         </h2>
@@ -133,7 +141,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
             return (
               <Col
                 sm="6"
-               
                 className="mb-3"
                 onClick={() =>
                   onNewSequenceClick(noteCount, currentInstrumentArray)
@@ -152,9 +159,10 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <Container>
         <Row>
           <Col
-            onClick={() =>
-              playSequence(currentSequence, currentInstrumentArray)
-            }
+            onClick={() => {
+              playSequence(currentSequence, currentInstrumentArray);
+              
+            }}
           >
             <Card className="card card-grow w-25 mx-auto mt-3">
               <CardBody className="text-center">
@@ -163,6 +171,24 @@ const DisplayAndPlayIntervalsRefactor = () => {
             </Card>
           </Col>
         </Row>
+        {/* <Row>
+          <Col
+            className="mt-4"
+            onClick={() => {
+              setIsAnswerShowing(true);
+            }}
+          >
+            <Card className="card card-grow w-50 mx-auto mt-3">
+              <CardBody className="text-center">
+                {isAnswerShowing ? (
+                  <h4>show answer</h4>
+                ) : (
+                  <h4>Click Me To See the Answer</h4>
+                )}
+              </CardBody>
+            </Card>
+          </Col>
+        </Row> */}
       </Container>
     </>
   );
