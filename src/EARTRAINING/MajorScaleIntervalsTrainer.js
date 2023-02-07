@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
-import BbMajorIntervalCard from "./cards/BbMajorIntervalCard";
-import { altoSaxBbMajorScale } from "../EARTRAINING/MajorScaleIntervals";
+import BbMajorIntervalCard from "../features/cards/BbMajorIntervalCard";
+import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
 
 const MajorScaleIntervalTrainer = () => {
   const [currentInterval, setCurrentInterval] = useState(
@@ -25,7 +25,7 @@ const MajorScaleIntervalTrainer = () => {
         <h5 style={{ textAlign: "center" }}>(Transposed for Alto Saxophone)</h5>
       </Row>
 
-      <Row >
+      <Row>
         <h4 style={{ textAlign: "center" }} className="mt-4 mb-3">
           Intervals of the Bb Major Scale
         </h4>
@@ -37,7 +37,6 @@ const MajorScaleIntervalTrainer = () => {
             <Col
               key={interval.id}
               sm={{
-                //offset: 1,
                 size: 6,
               }}
               md="3"

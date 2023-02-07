@@ -1,14 +1,14 @@
-import IntervalCard from "./cards/IntervalCard";
-import InstrumentCard from "./cards/InstrumentCard";
-import { AltoSaxChromaticScaleArray } from "../EARTRAINING/altoSaxophoneChrScale";
-import { TenorSaxChromaticScaleArray } from "../EARTRAINING/tenorSaxophoneChrScale";
-import { trumpetChrScale } from "../EARTRAINING/trumpetChrScale";
-import { tromboneChrScale } from "../EARTRAINING/tromboneChrScale";
+import IntervalCard from "../features/cards/IntervalCard";
+import InstrumentCard from "../features/cards/InstrumentCard";
+import { AltoSaxChromaticScaleArray } from "./altoSaxophoneChrScale";
+import { TenorSaxChromaticScaleArray } from "./tenorSaxophoneChrScale";
+import { trumpetChrScale } from "./trumpetChrScale";
+import { tromboneChrScale } from "./tromboneChrScale";
 import { useState } from "react";
-import SpeedCard from "../components/SpeedCard";
-import { Row, Col, Container, Card, CardBody, CardImg } from "reactstrap";
+import SpeedCard from "../features/cards/SpeedCard";
+import { Row, Col, Container, Card, CardBody } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
-import RandomMajorIntervals from "./RandomMajorIntervals";
+import RandomMajorIntervals from "../features/RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
 import RandomChromaticIntervals from "./RandomChromaticIntervals";
 
@@ -18,9 +18,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
-  const [randomIntervalsAnswer, setRandomIntervalsAnswer] = useState(
-    currentInstrumentArray
-  );
+
   const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
   //function that generates random numbers that will correspond to the indices of the instrument array
@@ -43,7 +41,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
       const audioFile = noteArray[note].audio_file;
       const delay = currentDelay * i;
       setTimeout(() => audioFile.play(), delay);
-      
     }
   };
 
@@ -52,10 +49,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
     setIsAnswerShowing(false);
-    return newSequence
+    return newSequence;
   };
-
-  
 
   const noteCounts = [1, 2, 3, 4, 5];
 
@@ -161,7 +156,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
           <Col
             onClick={() => {
               playSequence(currentSequence, currentInstrumentArray);
-              
             }}
           >
             <Card className="card card-grow w-25 mx-auto mt-3">
@@ -171,24 +165,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
             </Card>
           </Col>
         </Row>
-        {/* <Row>
-          <Col
-            className="mt-4"
-            onClick={() => {
-              setIsAnswerShowing(true);
-            }}
-          >
-            <Card className="card card-grow w-50 mx-auto mt-3">
-              <CardBody className="text-center">
-                {isAnswerShowing ? (
-                  <h4>show answer</h4>
-                ) : (
-                  <h4>Click Me To See the Answer</h4>
-                )}
-              </CardBody>
-            </Card>
-          </Col>
-        </Row> */}
       </Container>
     </>
   );

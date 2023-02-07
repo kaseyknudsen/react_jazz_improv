@@ -1,5 +1,5 @@
 import SubHeader from "../components/Subheader";
-import DisplayAndPlayIntervals from "../features/DisplayAndPlayIntervals";
+import DisplayAndPlayIntervals from "../EARTRAINING/DisplayAndPlayIntervals"
 
 const EarTrainingPage = () => {
   return (

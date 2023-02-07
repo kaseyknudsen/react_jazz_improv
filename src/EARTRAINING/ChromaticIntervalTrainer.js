@@ -1,5 +1,5 @@
 import { chromaticIntervals } from "./ChromaticIntervals";
-import ChromaticIntervalCard from "./cards/ChromaticIntervalCard";
+import ChromaticIntervalCard from "../features/cards/ChromaticIntervalCard";
 import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 

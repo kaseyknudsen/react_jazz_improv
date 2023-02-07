@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
-import GuessIntervalCard from "./cards/GuessIntervalCard";
-import GuessIntervalAnswerCard from "./cards/GuessIntervalAnswerCard";
-import { chromaticIntervals } from "./ChromaticIntervals";
+import GuessIntervalCard from "../features/cards/GuessIntervalCard"
+import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
+import { chromaticIntervals } from "../EARTRAINING/ChromaticIntervals";
 
 const RandomChromaticIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(

@@ -1,11 +1,11 @@
-import Middle_Bb from "../EARTRAINING/chr_scale/Middle-Bb.mp3";
-import Middle_C from "../EARTRAINING/chr_scale/Middle-C.mp3";
-import Middle_D from "../EARTRAINING/chr_scale/Middle-D.mp3";
-import Middle_Eb from "../EARTRAINING/chr_scale/Middle-Eb.mp3";
-import Middle_F from "../EARTRAINING/chr_scale/Middle-F.mp3";
-import High_G from "../EARTRAINING/chr_scale/High-G.mp3";
-import High_A from "../EARTRAINING/chr_scale/High-A.mp3";
-import High_Bb from "../EARTRAINING/chr_scale/High-Bb.mp3";
+import Middle_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Bb.mp3";
+import Middle_C from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-C.mp3";
+import Middle_D from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-D.mp3";
+import Middle_Eb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Eb.mp3";
+import Middle_F from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-F.mp3";
+import High_G from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-G.mp3";
+import High_A from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-A.mp3";
+import High_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-Bb.mp3";
 
 import Bb_to_C from "../EARTRAINING/Bb_MajorScale/Bb_C.png";
 import Bb_to_D from "../EARTRAINING/Bb_MajorScale/Bb_D.png";
@@ -15,13 +15,13 @@ import Bb_to_G from "../EARTRAINING/Bb_MajorScale/Bb_G.png";
 import Bb_to_A from "../EARTRAINING/Bb_MajorScale/Bb_A.png";
 import Bb_to_Bb from "../EARTRAINING/Bb_MajorScale/Bb_Bb.png";
 
-import Low_Bb from "../EARTRAINING/chr_scale/Low-Bb.mp3";
-import Low_C from "../EARTRAINING/chr_scale/Low-C.mp3";
-import Low_D from "../EARTRAINING/chr_scale/Low-D.mp3";
-import Low_Eb from "../EARTRAINING/chr_scale/Low-Eb.mp3";
-import Low_F from "../EARTRAINING/chr_scale/Low-F.mp3";
-import Middle_G from "../EARTRAINING/chr_scale/Middle-G.mp3";
-import Middle_A from "../EARTRAINING/chr_scale/Middle-A.mp3";
+import Low_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Bb.mp3";
+import Low_C from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-C.mp3";
+import Low_D from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-D.mp3";
+import Low_Eb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Eb.mp3";
+import Low_F from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-F.mp3";
+import Middle_G from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-G.mp3";
+import Middle_A from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-A.mp3";
 
 import descending_Bb_to_A from "../EARTRAINING/descending_major_intervals/descending_min_2nd.png";
 import descending_Bb_to_G from "../EARTRAINING/descending_major_intervals/descending_min_3rd.png";
@@ -51,6 +51,7 @@ export const altoSaxBbMajorScale = [
     title: "Ascending Perfect 4th",
     audioFile1: new Audio(Middle_Bb),
     audioFile2: new Audio(Middle_Eb),
+    
     image: Bb_to_Eb,
   },
   {

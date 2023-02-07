@@ -1,4 +1,4 @@
-import { quickLinks } from "../QUESTIONS/quickLinks";
+import { quickLinks } from "./quickLinks"
 import QuickLinkCard from "./cards/QuickLinkCard";
 import { Row, Col } from "reactstrap";
 

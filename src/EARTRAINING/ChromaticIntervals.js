@@ -13,13 +13,13 @@ import desc_Bb_to_Db from "../EARTRAINING/descending_non_diatonic_intervals/desc
 import desc_Bb_to_B from "../EARTRAINING/descending_non_diatonic_intervals/descending_maj_7th.png";
 
 //audio files
-import Low_Bb from "../EARTRAINING/chr_scale/Low-Bb.mp3";
-import Low_B from "../EARTRAINING/chr_scale/Low-B.mp3";
-import Low_Db from "../EARTRAINING/chr_scale/Low-Db.mp3";
-import Low_E from "../EARTRAINING/chr_scale/Low-E.mp3";
-import Middle_Gb from "../EARTRAINING/chr_scale/Low-Gb.mp3";
-import Middle_Ab from "../EARTRAINING/chr_scale/Middle-Ab.mp3";
-import Middle_Bb from "../EARTRAINING/chr_scale/Middle-Bb.mp3";
+import Low_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Bb.mp3";
+import Low_B from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-B.mp3";
+import Low_Db from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Db.mp3";
+import Low_E from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-E.mp3";
+import Middle_Gb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Gb.mp3";
+import Middle_Ab from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Ab.mp3";
+import Middle_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Bb.mp3";
 
 export const chromaticIntervals = [
   {
