@@ -7,9 +7,9 @@ My goal for this project was to create a fun, interactive, easy to use tool for 
 ## Project Features
 
 This project contains the following sections:
-Ear Training
-Theory
-Repertoire
+Ear Training,
+Theory,
+Repertoire,
 Practice Routines
 
 ## Tech
