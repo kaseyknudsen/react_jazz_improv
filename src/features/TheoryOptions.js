@@ -7,7 +7,7 @@ import {
   KeySignatureQuestions,
   ChordQuestions,
   IntervalQuestions,
-} from "../QUESTIONS/theoryQuestions"
+} from "./theoryQuestions"
 import NextQuestionCard from "./cards/NextQuestionCard.js";
 
 const UpdatedTheoryPage = () => {
