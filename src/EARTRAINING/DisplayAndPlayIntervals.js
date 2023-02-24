@@ -6,11 +6,13 @@ import { trumpetChrScale } from "./trumpetChrScale";
 import { tromboneChrScale } from "./tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../features/cards/SpeedCard";
-import { Row, Col, Container, Card, CardBody } from "reactstrap";
+import { Row, Col, Container, Card, CardBody, CardImg } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "../features/RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
 import RandomChromaticIntervals from "./RandomChromaticIntervals";
+import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
+
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -18,10 +20,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
-
   const [isAnswerShowing, setIsAnswerShowing] = useState(false);
+  const [showCard, setShowCard] = useState(null)
 
   //function that generates random numbers that will correspond to the indices of the instrument array
+  //it will return somewhere between 1 & 5 random numbers, depending on the chosen note sequence
   const randomSequence = (noteCount, noteArray) => {
     const sequence = [];
     for (let i = 0; i < noteCount; i++) {
@@ -48,7 +51,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
     const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
-    setIsAnswerShowing(false);
+    setIsAnswerShowing(false); 
     return newSequence;
   };
 
@@ -137,9 +140,22 @@ const DisplayAndPlayIntervalsRefactor = () => {
               <Col
                 sm="6"
                 className="mb-3"
-                onClick={() =>
+                onClick={() => {
                   onNewSequenceClick(noteCount, currentInstrumentArray)
-                }
+                  console.log(noteCount, currentSequence)
+                  setShowCard(() => {
+                    return (
+                      <Card className="card card-grow">
+                        {/* where do I access the right index? Do i need
+                        to loop through it since it might be more that 1 image? */}
+                        <CardImg src={currentInstrumentArray[currentSequence[0] ?? 0].image}/>
+                        <CardBody className="card-body text-center">
+                          <p className="card-text">note name and image should go here</p>
+                        </CardBody>
+                      </Card>
+                    )
+                  })
+                }}
               >
                 {noteCount === 1 ? (
                   <IntervalCard name={`Play ${noteCount} Note`} />
@@ -150,6 +166,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
             );
           })}
         </Row>
+        <Row>{showCard}</Row>
       </Container>
       <Container>
         <Row>

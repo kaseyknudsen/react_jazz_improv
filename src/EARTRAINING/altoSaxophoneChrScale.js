@@ -34,39 +34,39 @@ import High_F from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale
 import High_Gb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-Gb.mp3";
 
 //interval images
-import Low_Bb_Image from "../EARTRAINING/Interval_Images/Low_Bb.png";
-import Low_B_Image from "../EARTRAINING/Interval_Images/Low_B.png";
-import Low_C_Image from "../EARTRAINING/Interval_Images/Low_C.png";
-import Low_Db_Image from "../EARTRAINING/Interval_Images/Low_Db.png";
-import Low_D_Image from "../EARTRAINING/Interval_Images/Low_D.png";
-import Low_Eb_Image from "../EARTRAINING/Interval_Images/Low_Eb.png";
-import Low_E_Image from "../EARTRAINING/Interval_Images/Low_E.png";
-import Low_F_Image from "../EARTRAINING/Interval_Images/Low_F.png";
-import Low_Gb_Image from "../EARTRAINING/Interval_Images/Low_Gb.png";
-import Middle_G_Image from "../EARTRAINING/Interval_Images/Middle_G.png";
-import Middle_Ab_Image from "../EARTRAINING/Interval_Images/Middle_Ab.png";
-import Middle_A_Image from "../EARTRAINING/Interval_Images/Middle_A.png";
-import Middle_Bb_Image from "../EARTRAINING/Interval_Images/Middle_Bb.png";
-import Middle_B_Image from "../EARTRAINING/Interval_Images/Middle_B.png";
-import Middle_C_Image from "../EARTRAINING/Interval_Images/Middle_C.png";
-import Middle_Db_Image from "../EARTRAINING/Interval_Images/Middle_Db.png";
-import Middle_D_Image from "../EARTRAINING/Interval_Images/Middle_D.png";
-import Middle_Eb_Image from "../EARTRAINING/Interval_Images/Middle_Eb.png";
-import Middle_E_Image from "../EARTRAINING/Interval_Images/Middle_E.png";
-import Middle_F_Image from "../EARTRAINING/Interval_Images/Middle_F.png";
-import Middle_Gb_Image from "../EARTRAINING/Interval_Images/Middle_Gb.png";
-import High_G_Image from "../EARTRAINING/Interval_Images/High_G.png";
-import High_Ab_Image from "../EARTRAINING/Interval_Images/High_Ab.png";
-import High_A_Image from "../EARTRAINING/Interval_Images/High_A.png";
-import High_Bb_Image from "../EARTRAINING/Interval_Images/High_Bb.png";
-import High_B_Image from "../EARTRAINING/Interval_Images/High_B.png";
-import High_C_Image from "../EARTRAINING/Interval_Images/High_C.png";
-import High_Db_Image from "../EARTRAINING/Interval_Images/High_Db.png";
-import High_D_Image from "../EARTRAINING/Interval_Images/High_D.png";
-import High_Eb_Image from "../EARTRAINING/Interval_Images/High_Eb.png";
-import High_E_Image from "../EARTRAINING/Interval_Images/High_E.png";
-import High_F_Image from "../EARTRAINING/Interval_Images/High_F.png";
-import High_Gb_Image from "../EARTRAINING/Interval_Images/High_Gb.png";
+import Low_Bb_Image from "../app/images/treble-clef-notes/Low-Bb.png"
+import Low_B_Image from "../app/images/treble-clef-notes/Low-B.png";
+import Low_C_Image from "../app/images/treble-clef-notes/Low-C.png";
+import Low_Db_Image from "../app/images/treble-clef-notes/Low-Csharp.png";
+import Low_D_Image from "../app/images/treble-clef-notes/Low-D.png";
+import Low_Eb_Image from "../app/images/treble-clef-notes/Low-Eb.png";
+import Low_E_Image from "../app/images/treble-clef-notes/Low-E.png";
+import Low_F_Image from "../app/images/treble-clef-notes/Low-F.png";
+import Low_Fsharp_Image from "../app/images/treble-clef-notes/Low-Fsharp.png";
+import Middle_G_Image from "../app/images/treble-clef-notes/Middle-G.png";
+import Middle_Ab_Image from "../app/images/treble-clef-notes/Middle-Ab.png";
+import Middle_A_Image from "../app/images/treble-clef-notes/Middle-A.png";
+import Middle_Bb_Image from "../app/images/treble-clef-notes/Middle-Bb.png";
+import Middle_B_Image from "../app/images/treble-clef-notes/Middle-B.png";
+import Middle_C_Image from "../app/images/treble-clef-notes/Middle-C.png";
+import Middle_Csharp_Image from "../app/images/treble-clef-notes/Middle-Csharp.png";
+import Middle_D_Image from "../app/images/treble-clef-notes/Middle-D.png";
+import Middle_Eb_Image from "../app/images/treble-clef-notes/Middle-Eb.png";
+import Middle_E_Image from "../app/images/treble-clef-notes/Middle-E.png";
+import Middle_F_Image from "../app/images/treble-clef-notes/Middle-F.png";
+import Middle_Fsharp_Image from "../app/images/treble-clef-notes/Middle-Fsharp.png";
+import High_G_Image from "../app/images/treble-clef-notes/High-G.png";
+import High_Ab_Image from "../app/images/treble-clef-notes/High-Ab.png";
+import High_A_Image from "../app/images/treble-clef-notes/High-A.png";
+import High_Bb_Image from "../app/images/treble-clef-notes/High-Bb.png";
+import High_B_Image from "../app/images/treble-clef-notes/High-B.png";
+import High_C_Image from "../app/images/treble-clef-notes/High-C.png";
+import High_Csharp_Image from "../app/images/treble-clef-notes/High-Csharp.png";
+import High_D_Image from "../app/images/treble-clef-notes/High-D.png";
+import High_Eb_Image from "../app/images/treble-clef-notes/High-Eb.png";
+import High_E_Image from "../app/images/treble-clef-notes/High-E.png";
+import High_F_Image from "../app/images/treble-clef-notes/High-F.png";
+import High_Fsharp_Image from "../app/images/treble-clef-notes/High-Fsharp.png";
 
 export const AltoSaxChromaticScaleArray = [
   {
@@ -118,9 +118,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(Low_F),
   },
   {
-    image: Low_Gb_Image,
+    image: Low_Fsharp_Image,
     index: 8,
-    name: "Low Gb",
+    name: "Low F#",
     audio_file: new Audio(Low_Gb),
   },
   {
@@ -160,9 +160,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(Middle_C),
   },
   {
-    image: Middle_Db_Image,
+    image: Middle_Csharp_Image,
     index: 15,
-    name: "Middle Db",
+    name: "Middle C#",
     audio_file: new Audio(Middle_Db),
   },
   {
@@ -190,9 +190,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(Middle_F),
   },
   {
-    image: Middle_Gb_Image,
+    image: Middle_Fsharp_Image,
     index: 20,
-    name: "Middle Gb",
+    name: "Middle F sharp",
     audio_file: new Audio(Middle_Gb),
   },
   {
@@ -232,9 +232,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(High_C),
   },
   {
-    image: High_Db_Image,
+    image: High_Csharp_Image,
     index: 27,
-    name: "High Db",
+    name: "High C sharp",
     audio_file: new Audio(High_Db),
   },
   {
@@ -262,9 +262,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(High_F),
   },
   {
-    image: High_Gb_Image,
+    image: High_Fsharp_Image,
     index: 32,
-    name: "High Gb",
+    name: "High F sharp",
     audio_file: new Audio(High_Gb),
   },
 ];
