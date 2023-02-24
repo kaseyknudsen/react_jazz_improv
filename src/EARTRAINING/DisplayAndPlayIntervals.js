@@ -11,8 +11,20 @@ import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "../features/RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
 import RandomChromaticIntervals from "./RandomChromaticIntervals";
-import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
 
+//function that generates random numbers that will correspond to the indices of the instrument array
+//it will return somewhere between 1 & 5 random numbers, depending on the chosen note sequence
+const randomSequence = (noteCount, noteArray) => {
+  const sequence = [];
+  for (let i = 0; i < noteCount; i++) {
+    const note = Math.floor(Math.random() * noteArray.length);
+    sequence.push(note);
+  }
+  return sequence;
+};
+const slow = 1800;
+const medium = 1300;
+const fast = 1000;
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
@@ -20,22 +32,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
-  const [isAnswerShowing, setIsAnswerShowing] = useState(false);
-  const [showCard, setShowCard] = useState(null)
-
-  //function that generates random numbers that will correspond to the indices of the instrument array
-  //it will return somewhere between 1 & 5 random numbers, depending on the chosen note sequence
-  const randomSequence = (noteCount, noteArray) => {
-    const sequence = [];
-    for (let i = 0; i < noteCount; i++) {
-      const note = Math.floor(Math.random() * noteArray.length);
-      sequence.push(note);
-    }
-    return sequence;
-  };
-  const slow = 1800;
-  const medium = 1300;
-  const fast = 1000;
 
   //function that plays the set of random indices of the instrument array
   const playSequence = (notes, noteArray) => {
@@ -51,7 +47,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
     const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
-    setIsAnswerShowing(false); 
     return newSequence;
   };
 
@@ -141,20 +136,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
                 sm="6"
                 className="mb-3"
                 onClick={() => {
-                  onNewSequenceClick(noteCount, currentInstrumentArray)
-                  console.log(noteCount, currentSequence)
-                  setShowCard(() => {
-                    return (
-                      <Card className="card card-grow">
-                        {/* where do I access the right index? Do i need
-                        to loop through it since it might be more that 1 image? */}
-                        <CardImg src={currentInstrumentArray[currentSequence[0] ?? 0].image}/>
-                        <CardBody className="card-body text-center">
-                          <p className="card-text">note name and image should go here</p>
-                        </CardBody>
-                      </Card>
-                    )
-                  })
+                  onNewSequenceClick(noteCount, currentInstrumentArray);
+                  console.log(noteCount, currentSequence);
                 }}
               >
                 {noteCount === 1 ? (
@@ -166,7 +149,21 @@ const DisplayAndPlayIntervalsRefactor = () => {
             );
           })}
         </Row>
-        <Row>{showCard}</Row>
+        {/* <Row>{showCard}</Row> */}
+        <Row>
+          {currentSequence.map((note) => {
+            return (
+              <Card className="card card-grow">
+                <CardImg src={currentInstrumentArray[note].image} />
+                <CardBody className="card-body text-center">
+                  <p className="card-text">
+                    {currentInstrumentArray[note].name}
+                  </p>
+                </CardBody>
+              </Card>
+            );
+          })}
+        </Row>
       </Container>
       <Container>
         <Row>
