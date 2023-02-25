@@ -54,7 +54,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
   };
 
   const answerCard = () => {
-    
     return (
       <Col>
         <Card className="card card-grow w-50 mx-auto mt-5 text-center">
@@ -72,11 +71,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
         {currentSequence.map((note) => {
           return (
             <Col className="mt-5">
-              <Card className="card card-grow" style={{maxWidth: 200}}>
-                <CardImg
-                  src={currentInstrumentArray[note].image}
-                  width="100%"
-                />
+              <Card className="card card-grow" style={{ maxWidth: 200 }}>
+                <CardImg src={currentInstrumentArray[note].image} />
                 <CardBody className="card-body text-center">
                   <p className="card-text">
                     {currentInstrumentArray[note].name}
@@ -95,7 +91,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
     setShowAnswer(true);
-    setShowIntervalCards(null)
+    setShowIntervalCards(null);
+    console.log(currentSequence);
     return newSequence;
   };
 
@@ -139,9 +136,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
             xs="6"
             md="3"
             className="mb-3"
-            onClick={() =>
-              setCurrentInstrumentArray(AltoSaxChromaticScaleArray)
-            }
+            onClick={() => {
+              setCurrentInstrumentArray(AltoSaxChromaticScaleArray);
+              setShowIntervalCards(false);
+              setShowAnswer(false);
+            }}
           >
             <InstrumentCard instrument={"Alto Saxophone"} />
           </Col>
@@ -149,9 +148,11 @@ const DisplayAndPlayIntervalsRefactor = () => {
             xs="6"
             md="3"
             className="mb-3"
-            onClick={() =>
-              setCurrentInstrumentArray(TenorSaxChromaticScaleArray)
-            }
+            onClick={() => {
+              setCurrentInstrumentArray(TenorSaxChromaticScaleArray);
+              setShowIntervalCards(false);
+              setShowAnswer(false);
+            }}
           >
             <InstrumentCard instrument={"Tenor Saxophone"} />
           </Col>
@@ -159,13 +160,21 @@ const DisplayAndPlayIntervalsRefactor = () => {
             xs="6"
             md="3"
             className="mb-3"
-            onClick={() => setCurrentInstrumentArray(trumpetChrScale)}
+            onClick={() => {
+              setCurrentInstrumentArray(trumpetChrScale);
+              setShowIntervalCards(false);
+              setShowAnswer(false);
+            }}
           >
             <InstrumentCard instrument={"Trumpet"} />
           </Col>
 
           <Col
-            onClick={() => setCurrentInstrumentArray(tromboneChrScale)}
+            onClick={() => {
+              setCurrentInstrumentArray(tromboneChrScale);
+              setShowIntervalCards(false);
+              setShowAnswer(false);
+            }}
             xs="6"
             md="3"
             className="mb-3"
