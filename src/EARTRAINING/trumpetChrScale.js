@@ -30,163 +30,223 @@ import concert_High_A from "./all_chromatic_scales/trumpet_chr_scale/concert_Hig
 import concert_High_Bb from "./all_chromatic_scales/trumpet_chr_scale/concert_High_Bb.mp3";
 import concert_High_B from "./all_chromatic_scales/trumpet_chr_scale/concert_High_B.mp3";
 
+//images
+import Low_Ab from "../app/images/treble-clef-notes/Low-Ab.png";
+import Low_A from "../app/images/treble-clef-notes/Low-A.png";
+import Low_Bb from "../app/images/treble-clef-notes/Low-Bb.png";
+import Low_B from "../app/images/treble-clef-notes/Low-B.png";
+import Low_C from "../app/images/treble-clef-notes/Low-C.png";
+import Low_Csharp from "../app/images/treble-clef-notes/Low-Csharp.png";
+import Low_D from "../app/images/treble-clef-notes/Low-D.png";
+import Low_Eb from "../app/images/treble-clef-notes/Low-Eb.png";
+import Low_E from "../app/images/treble-clef-notes/Low-E.png";
+import Low_F from "../app/images/treble-clef-notes/Low-F.png";
+import Low_Fsharp from "../app/images/treble-clef-notes/Low-Fsharp.png";
+import Middle_G from "../app/images/treble-clef-notes/Middle-G.png";
+import Middle_Gsharp from "../app/images/treble-clef-notes/Middle-Gsharp.png";
+import Middle_A from "../app/images/treble-clef-notes/Middle-A.png";
+import Middle_Bb from "../app/images/treble-clef-notes/Middle-Bb.png";
+import Middle_B from "../app/images/treble-clef-notes/Middle-B.png";
+import Middle_C from "../app/images/treble-clef-notes/Middle-C.png";
+import Middle_Csharp from "../app/images/treble-clef-notes/Middle-Csharp.png";
+import Middle_D from "../app/images/treble-clef-notes/Middle-D.png";
+import Middle_Eb from "../app/images/treble-clef-notes/Middle-Eb.png";
+import Middle_E from "../app/images/treble-clef-notes/Middle-E.png";
+import Middle_F from "../app/images/treble-clef-notes/Middle-F.png";
+import Middle_Fsharp from "../app/images/treble-clef-notes/Middle-Fsharp.png";
+import High_G from "../app/images/treble-clef-notes/High-G.png";
+import High_Ab from "../app/images/treble-clef-notes/High-Ab.png";
+import High_A from "../app/images/treble-clef-notes/High-A.png";
+import High_Bb from "../app/images/treble-clef-notes/High-Bb.png";
+import High_B from "../app/images/treble-clef-notes/High-B.png";
+import High_C from "../app/images/treble-clef-notes/High-C.png";
+import High_Csharp from "../app/images/treble-clef-notes/High-Csharp.png";
+
 export const trumpetChrScale = [
-    {
-        index: 0,
-        name: "Low G",
-        audio_file: new Audio(concert_Low_F),
-      },
-      {
-        index: 1,
-        name: "Low Ab",
-        audio_file: new Audio(concert_Low_Gb),
-      },
-      {
-        index: 2,
-        name: "Low A",
-        audio_file: new Audio(concert_Low_G),
-      },
-      {
-        index: 3,
-        name: "Low Bb",
-        audio_file: new Audio(concert_Low_Ab),
-      },
-      {
-        index: 4,
-        name: "Low B",
-        audio_file: new Audio(concert_Low_A),
-      },
-      {
-        index: 5,
-        name: "Low C",
-        audio_file: new Audio(concert_Low_Bb),
-      },
-      {
-        index: 6,
-        name: "Low C#",
-        audio_file: new Audio(concert_Low_B),
-      },
-      {
-        index: 7,
-        name: "Low D",
-        audio_file: new Audio(concert_Low_C),
-      },
-      {
-        index: 8,
-        name: "Low Eb",
-        audio_file: new Audio(concert_Low_Db),
-      },
-      {
-        index: 9,
-        name: "Low E",
-        audio_file: new Audio(concert_Low_D),
-      },
-      {
-        index: 10,
-        name: "Low F",
-        audio_file: new Audio(concert_Low_Eb),
-      },
-      {
-        index: 11,
-        name: "Low F#",
-        audio_file: new Audio(concert_Low_E),
-      },
-      {
-        index: 12,
-        name: "Middle G",
-        audio_file: new Audio(concert_F),
-      },
-      {
-        index: 13,
-        name: "Middle Ab",
-        audio_file: new Audio(concert_Gb),
-      },
-      {
-        index: 14,
-        name: "Middle A",
-        audio_file: new Audio(concert_G),
-      },
-      {
-        index: 15,
-        name: "Middle Bb",
-        audio_file: new Audio(concert_Ab),
-      },
-      {
-        index: 16,
-        name: "Middle B",
-        audio_file: new Audio(concert_A),
-      },
-      {
-        index: 17,
-        name: "Middle C",
-        audio_file: new Audio(concert_Bb),
-      },
-      {
-        index: 18,
-        name: "Middle C#",
-        audio_file: new Audio(concert_B),
-      },
-      {
-        index: 19,
-        name: "Middle D",
-        audio_file: new Audio(concert_C),
-      },
-      {
-        index: 20,
-        name: "Middle Eb",
-        audio_file: new Audio(concert_Db),
-      },
-      {
-        index: 21,
-        name: "Middle E",
-        audio_file: new Audio(concert_D),
-      },
-      {
-        index: 22,
-        name: "Middle F",
-        audio_file: new Audio(concert_Eb),
-      },
-      {
-        index: 23,
-        name: "Middle F#",
-        audio_file: new Audio(concert_E),
-      },
-      {
-        index: 24,
-        name: "High G",
-        audio_file: new Audio(concert_High_F),
-      },
-      {
-        index: 25,
-        name: "High Ab",
-        audio_file: new Audio(concert_High_Gb),
-      },
-      {
-        index: 26,
-        name: "High A",
-        audio_file: new Audio(concert_High_G),
-      },
-      {
-        index: 27,
-        name: "High Bb",
-        audio_file: new Audio(concert_High_Ab),
-      },
-      {
-        index: 28,
-        name: "High B",
-        audio_file: new Audio(concert_High_A),
-      },
-      {
-        index: 29,
-        name: "High C",
-        audio_file: new Audio(concert_High_Bb),
-      },
-      {
-        index: 30,
-        name: "High C#",
-        audio_file: new Audio(concert_High_B),
-      },
-
-]
-
-
+  {
+    //need an image for this
+    index: 0,
+    name: "Low G",
+    audio_file: new Audio(concert_Low_F),
+  },
+  {
+    index: 1,
+    name: "Low Ab",
+    image: Low_Ab,
+    audio_file: new Audio(concert_Low_Gb),
+  },
+  {
+    index: 2,
+    name: "Low A",
+    image: Low_A,
+    audio_file: new Audio(concert_Low_G),
+  },
+  {
+    index: 3,
+    name: "Low Bb",
+    image: Low_Bb,
+    audio_file: new Audio(concert_Low_Ab),
+  },
+  {
+    index: 4,
+    name: "Low B",
+    image: Low_B,
+    audio_file: new Audio(concert_Low_A),
+  },
+  {
+    index: 5,
+    image: Low_C,
+    name: "Low C",
+    audio_file: new Audio(concert_Low_Bb),
+  },
+  {
+    index: 6,
+    name: "Low C#",
+    image: Low_Csharp,
+    audio_file: new Audio(concert_Low_B),
+  },
+  {
+    index: 7,
+    name: "Low D",
+    image: Low_D,
+    audio_file: new Audio(concert_Low_C),
+  },
+  {
+    index: 8,
+    name: "Low Eb",
+    image: Low_Eb,
+    audio_file: new Audio(concert_Low_Db),
+  },
+  {
+    index: 9,
+    name: "Low E",
+    image: Low_E,
+    audio_file: new Audio(concert_Low_D),
+  },
+  {
+    index: 10,
+    name: "Low F",
+    image: Low_F,
+    audio_file: new Audio(concert_Low_Eb),
+  },
+  {
+    index: 11,
+    name: "Low F#",
+    image: Low_Fsharp,
+    audio_file: new Audio(concert_Low_E),
+  },
+  {
+    index: 12,
+    name: "Middle G",
+    image: Middle_G,
+    audio_file: new Audio(concert_F),
+  },
+  {
+    index: 13,
+    name: "Middle G#",
+    image: Middle_Gsharp,
+    audio_file: new Audio(concert_Gb),
+  },
+  {
+    index: 14,
+    name: "Middle A",
+    image: Middle_A,
+    audio_file: new Audio(concert_G),
+  },
+  {
+    index: 15,
+    name: "Middle Bb",
+    image: Middle_Bb,
+    audio_file: new Audio(concert_Ab),
+  },
+  {
+    index: 16,
+    name: "Middle B",
+    image: Middle_B,
+    audio_file: new Audio(concert_A),
+  },
+  {
+    index: 17,
+    name: "Middle C",
+    image: Middle_C,
+    audio_file: new Audio(concert_Bb),
+  },
+  {
+    index: 18,
+    name: "Middle C#",
+    image: Middle_Csharp,
+    audio_file: new Audio(concert_B),
+  },
+  {
+    index: 19,
+    name: "Middle D",
+    image: Middle_D,
+    audio_file: new Audio(concert_C),
+  },
+  {
+    index: 20,
+    name: "Middle Eb",
+    image: Middle_Eb,
+    audio_file: new Audio(concert_Db),
+  },
+  {
+    index: 21,
+    name: "Middle E",
+    image: Middle_E,
+    audio_file: new Audio(concert_D),
+  },
+  {
+    index: 22,
+    name: "Middle F",
+    image: Middle_F,
+    audio_file: new Audio(concert_Eb),
+  },
+  {
+    index: 23,
+    name: "Middle F#",
+    image: Middle_Fsharp,
+    audio_file: new Audio(concert_E),
+  },
+  {
+    index: 24,
+    name: "High G",
+    image: High_G,
+    audio_file: new Audio(concert_High_F),
+  },
+  {
+    index: 25,
+    name: "High Ab",
+    image: High_Ab,
+    audio_file: new Audio(concert_High_Gb),
+  },
+  {
+    index: 26,
+    name: "High A",
+    image: High_A,
+    audio_file: new Audio(concert_High_G),
+  },
+  {
+    index: 27,
+    name: "High Bb",
+    image: High_Bb,
+    audio_file: new Audio(concert_High_Ab),
+  },
+  {
+    index: 28,
+    name: "High B",
+    image: High_B,
+    audio_file: new Audio(concert_High_A),
+  },
+  {
+    index: 29,
+    name: "High C",
+    image: High_C,
+    audio_file: new Audio(concert_High_Bb),
+  },
+  {
+    index: 30,
+    name: "High C#",
+    image: High_Csharp,
+    audio_file: new Audio(concert_High_B),
+  },
+];
