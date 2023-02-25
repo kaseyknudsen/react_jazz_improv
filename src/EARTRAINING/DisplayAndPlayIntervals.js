@@ -68,7 +68,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
         {currentSequence.map((note, key) => {
           return (
               <Card className="card card-grow mb-2">
-                <CardImg src={currentInstrumentArray[note].image} />
+                <CardImg src={currentInstrumentArray[note].image} key={currentInstrumentArray[note].id} />
               </Card>
           );
         })}
@@ -180,7 +180,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
       </div>
       <container className="intervalSequenceGrid container-fixed mx-auto">
         <div>
-          {noteCounts.map((noteCount) => {
+          {noteCounts.map((noteCount, key) => {
             return (
               <div
                 sm="6"
