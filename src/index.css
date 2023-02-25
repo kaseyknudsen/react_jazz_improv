@@ -169,12 +169,18 @@ i {
 .intervalSequenceGrid {
   max-width: 1200px;
   padding: 20px;
-  margin: 15px auto;
   display: grid;
   column-gap: 50px;
-  grid-template-columns: 2fr 2fr 3fr 4fr;
-  align-items: start;
-  /* justify-content: center; */
+  grid-template-columns: 3fr 3fr 3fr 4fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.intervalSequenceItem {
+  justify-self: center;
+  max-width: 10em;
+  margin-bottom: 10px;
 }
 
 

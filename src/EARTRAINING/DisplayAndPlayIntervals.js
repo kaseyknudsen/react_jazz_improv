@@ -13,7 +13,6 @@ import {
   Card,
   CardBody,
   CardImg,
-  CardText,
 } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "../features/RandomMajorIntervals";
@@ -55,8 +54,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
   const answerCard = () => {
     return (
-      <Card className="card card-grow w-50 text-center">
-        <CardBody className="card-body text-center">
+      <Card className="card card-grow text-center">
+        <CardBody>
           <h4 className="card-text">Ready to see the answer?</h4>
         </CardBody>
       </Card>
@@ -66,15 +65,10 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const displayIntervalCards = () => {
     return (
       <>
-        {currentSequence.map((note) => {
+        {currentSequence.map((note, key) => {
           return (
-              <Card className="card card-grow mb-2 w-50">
+              <Card className="card card-grow mb-2">
                 <CardImg src={currentInstrumentArray[note].image} />
-                <CardBody className="card-body text-center">
-                  <p className="card-text">
-                    {currentInstrumentArray[note].name}
-                  </p>
-                </CardBody>
               </Card>
           );
         })}
@@ -184,7 +178,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <div style={{ textAlign: "center" }}>
         <h2>Choose Your Note Sequence Length</h2>
       </div>
-      <container className="intervalSequenceGrid">
+      <container className="intervalSequenceGrid container-fixed mx-auto">
         <div>
           {noteCounts.map((noteCount) => {
             return (
@@ -209,16 +203,16 @@ const DisplayAndPlayIntervalsRefactor = () => {
             playSequence(currentSequence, currentInstrumentArray);
           }}
         >
-          <Card className="card card-grow w-100 mx-auto">
+          <Card className="card card-grow w-100 mx-auto mb-3">
             <CardBody className="text-center">
               <h4>Replay Sequence</h4>
             </CardBody>
           </Card>
         </div>
-        <div onClick={() => setShowIntervalCards(true)}>
+        <div onClick={() => setShowIntervalCards(true)} style={{marginBottom: '1em'}}>
           {showAnswer ? answerCard() : null}
         </div>
-        <div>{showIntervalCards ? displayIntervalCards() : null}</div>
+        <div className="intervalSequenceItem">{showIntervalCards ? displayIntervalCards() : null}</div>
       </container>
     </>
   );
