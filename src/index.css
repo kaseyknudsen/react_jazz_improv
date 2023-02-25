@@ -165,3 +165,21 @@ i {
   margin-right: 2em;
   margin-left: 2em;
 }
+
+.intervalSequenceGrid {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 15px auto;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 2fr 2fr 3fr 4fr;
+  align-items: start;
+  /* justify-content: center; */
+}
+
+
+@media (max-width: 500px) {
+  .intervalSequenceGrid {
+    grid-template-columns: 1fr;
+  }
+}

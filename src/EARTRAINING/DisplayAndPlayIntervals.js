@@ -55,23 +55,20 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
   const answerCard = () => {
     return (
-      <Col>
-        <Card className="card card-grow w-50 mx-auto mt-5 text-center">
-          <CardBody>
-            <CardText>Ready to see the answer?</CardText>
-          </CardBody>
-        </Card>
-      </Col>
+      <Card className="card card-grow w-50 text-center">
+        <CardBody className="card-body text-center">
+          <h4 className="card-text">Ready to see the answer?</h4>
+        </CardBody>
+      </Card>
     );
   };
 
   const displayIntervalCards = () => {
     return (
-      <Row>
+      <>
         {currentSequence.map((note) => {
           return (
-            <Col className="mt-5">
-              <Card className="card card-grow" style={{ maxWidth: 200 }}>
+              <Card className="card card-grow mb-2 w-50">
                 <CardImg src={currentInstrumentArray[note].image} />
                 <CardBody className="card-body text-center">
                   <p className="card-text">
@@ -79,10 +76,9 @@ const DisplayAndPlayIntervalsRefactor = () => {
                   </p>
                 </CardBody>
               </Card>
-            </Col>
           );
         })}
-      </Row>
+      </>
     );
   };
 
@@ -183,14 +179,16 @@ const DisplayAndPlayIntervalsRefactor = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={{ maxWidth: 400 }}>
-        <h2 style={{ textAlign: "center" }}>
-          Choose Your Note Sequence Length
-        </h2>
-        <Row className="justify-content-center">
+
+      {/* GRID */}
+      <div style={{ textAlign: "center" }}>
+        <h2>Choose Your Note Sequence Length</h2>
+      </div>
+      <container className="intervalSequenceGrid">
+        <div>
           {noteCounts.map((noteCount) => {
             return (
-              <Col
+              <div
                 sm="6"
                 className="mb-3"
                 onClick={() => {
@@ -202,35 +200,26 @@ const DisplayAndPlayIntervalsRefactor = () => {
                 ) : (
                   <IntervalCard name={`Play ${noteCount} Notes`} />
                 )}
-              </Col>
+              </div>
             );
           })}
-        </Row>
-      </Container>
-
-      <Container style={{ maxWidth: 650 }}>
-        <Row>
-          <Col
-            onClick={() => {
-              playSequence(currentSequence, currentInstrumentArray);
-            }}
-          >
-            <Card className="card card-grow w-25 mx-auto mt-4">
-              <CardBody className="text-center">
-                <h4>Replay Sequence</h4>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col onClick={() => setShowIntervalCards(true)}>
-            {showAnswer ? answerCard() : null}
-          </Col>
-        </Row>
-        <Row>
-          <Col>{showIntervalCards ? displayIntervalCards() : null}</Col>
-        </Row>
-      </Container>
+        </div>
+        <div
+          onClick={() => {
+            playSequence(currentSequence, currentInstrumentArray);
+          }}
+        >
+          <Card className="card card-grow w-100 mx-auto">
+            <CardBody className="text-center">
+              <h4>Replay Sequence</h4>
+            </CardBody>
+          </Card>
+        </div>
+        <div onClick={() => setShowIntervalCards(true)}>
+          {showAnswer ? answerCard() : null}
+        </div>
+        <div>{showIntervalCards ? displayIntervalCards() : null}</div>
+      </container>
     </>
   );
 };
