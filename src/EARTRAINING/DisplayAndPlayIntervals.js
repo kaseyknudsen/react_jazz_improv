@@ -6,16 +6,9 @@ import { trumpetChrScale } from "./trumpetChrScale";
 import { tromboneChrScale } from "./tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../features/cards/SpeedCard";
-import {
-  Row,
-  Col,
-  Container,
-  Card,
-  CardBody,
-  CardImg,
-} from "reactstrap";
+import { Row, Col, Container, Card, CardBody, CardImg } from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
-import RandomMajorIntervals from "../features/RandomMajorIntervals";
+import RandomMajorIntervals from "./RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
 import RandomChromaticIntervals from "./RandomChromaticIntervals";
 
@@ -67,9 +60,12 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <>
         {currentSequence.map((note, key) => {
           return (
-              <Card className="card card-grow mb-2">
-                <CardImg src={currentInstrumentArray[note].image} key={currentInstrumentArray[note].id} />
-              </Card>
+            <Card className="card card-grow mb-2">
+              <CardImg
+                src={currentInstrumentArray[note].image}
+                key={currentInstrumentArray[note].id}
+              />
+            </Card>
           );
         })}
       </>
@@ -209,10 +205,15 @@ const DisplayAndPlayIntervalsRefactor = () => {
             </CardBody>
           </Card>
         </div>
-        <div onClick={() => setShowIntervalCards(true)} style={{marginBottom: '1em'}}>
+        <div
+          onClick={() => setShowIntervalCards(true)}
+          style={{ marginBottom: "1em" }}
+        >
           {showAnswer ? answerCard() : null}
         </div>
-        <div className="intervalSequenceItem">{showIntervalCards ? displayIntervalCards() : null}</div>
+        <div className="intervalSequenceItem">
+          {showIntervalCards ? displayIntervalCards() : null}
+        </div>
       </container>
     </>
   );

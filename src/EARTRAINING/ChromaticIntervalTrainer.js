@@ -1,11 +1,8 @@
 import { chromaticIntervals } from "./ChromaticIntervals";
 import ChromaticIntervalCard from "../features/cards/ChromaticIntervalCard";
-import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 
 const ChromaticIntervalTrainer = () => {
-  const [currentInterval, setCurrentInterval] = useState(chromaticIntervals[0]);
-
   //function that plays chromatic intervals
   const playChromaticInterval = (interval) => {
     const note1 = interval.audioFile1;
@@ -32,9 +29,7 @@ const ChromaticIntervalTrainer = () => {
               }}
               md="3"
               className="mb-4"
-              onClick={() =>
-                setCurrentInterval(playChromaticInterval(interval))
-              }
+              onClick={() => playChromaticInterval(interval)}
             >
               <ChromaticIntervalCard
                 interval={interval.title}

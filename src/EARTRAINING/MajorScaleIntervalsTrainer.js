@@ -1,12 +1,8 @@
-import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import BbMajorIntervalCard from "../features/cards/BbMajorIntervalCard";
 import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
 
 const MajorScaleIntervalTrainer = () => {
-  const [currentInterval, setCurrentInterval] = useState(
-    altoSaxBbMajorScale[0]
-  );
 
   //function that plays an interval of the Bb major scale
   const playMajorInterval = (interval) => {
@@ -41,7 +37,7 @@ const MajorScaleIntervalTrainer = () => {
               }}
               md="3"
               className="mb-4"
-              onClick={() => setCurrentInterval(playMajorInterval(interval))}
+              onClick={() => playMajorInterval(interval)}
             >
               <BbMajorIntervalCard
                 majorInterval={interval.title}

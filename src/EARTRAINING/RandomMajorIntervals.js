@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
-import GuessIntervalCard from "./cards/GuessIntervalCard";
-import GuessIntervalAnswerCard from "./cards/GuessIntervalAnswerCard";
-import { altoSaxBbMajorScale } from "../EARTRAINING/MajorScaleIntervals";
+import GuessIntervalCard from "../features/cards/GuessIntervalCard";
+import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
+import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
 
 const RandomMajorIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(
@@ -39,7 +39,9 @@ const RandomMajorIntervals = () => {
   return (
     <Container style={{ maxWidth: 600 }}>
       <Row className="mt-4">
-        <h2 style={{ textAlign: "center" }} className="mt-5">Test your ear!</h2>
+        <h2 style={{ textAlign: "center" }} className="mt-5">
+          Test your ear!
+        </h2>
       </Row>
       <Row className="mt-3 mx-auto">
         <Col
