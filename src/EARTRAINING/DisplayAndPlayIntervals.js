@@ -41,6 +41,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
     AltoSaxChromaticScaleArray
   );
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showIntervalCards, setShowIntervalCards] = useState(false);
 
   //function that plays the set of random indices of the instrument array
   const playSequence = (notes, noteArray) => {
@@ -52,12 +53,40 @@ const DisplayAndPlayIntervalsRefactor = () => {
     }
   };
 
-  const showRandomIntervalSequenceAnswer = () => {
-    setShowAnswer(true);
+  const answerCard = () => {
+    
     return (
-      <Card className="card card-grow w-25 mx-auto mt-4">
-        <CardText>Want to See the Answer?</CardText>
-      </Card>
+      <Col>
+        <Card className="card card-grow w-50 mx-auto mt-5 text-center">
+          <CardBody>
+            <CardText>Ready to see the answer?</CardText>
+          </CardBody>
+        </Card>
+      </Col>
+    );
+  };
+
+  const displayIntervalCards = () => {
+    return (
+      <Row>
+        {currentSequence.map((note) => {
+          return (
+            <Col className="mt-5">
+              <Card className="card card-grow" style={{maxWidth: 200}}>
+                <CardImg
+                  src={currentInstrumentArray[note].image}
+                  width="100%"
+                />
+                <CardBody className="card-body text-center">
+                  <p className="card-text">
+                    {currentInstrumentArray[note].name}
+                  </p>
+                </CardBody>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
     );
   };
 
@@ -65,7 +94,8 @@ const DisplayAndPlayIntervalsRefactor = () => {
     const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
-
+    setShowAnswer(true);
+    setShowIntervalCards(null)
     return newSequence;
   };
 
@@ -156,8 +186,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
                 className="mb-3"
                 onClick={() => {
                   onNewSequenceClick(noteCount, currentInstrumentArray);
-                  console.log(noteCount, currentSequence);
-                  showRandomIntervalSequenceAnswer();
                 }}
               >
                 {noteCount === 1 ? (
@@ -170,6 +198,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
           })}
         </Row>
       </Container>
+
       <Container style={{ maxWidth: 650 }}>
         <Row>
           <Col
@@ -184,34 +213,13 @@ const DisplayAndPlayIntervalsRefactor = () => {
             </Card>
           </Col>
         </Row>
-
         <Row>
-          <Col>
-            <Card className="card card-grow w-50 mx-auto mt-5 text-center">
-              <CardBody>
-                <CardText>Ready to see the answer?</CardText>
-              </CardBody>
-            </Card>
+          <Col onClick={() => setShowIntervalCards(true)}>
+            {showAnswer ? answerCard() : null}
           </Col>
         </Row>
         <Row>
-          {currentSequence.map((note) => {
-            return (
-              <Col className="mt-5">
-                <Card className="card card-grow">
-                  <CardImg
-                    src={currentInstrumentArray[note].image}
-                    width="100%"
-                  />
-                  <CardBody className="card-body text-center">
-                    <p className="card-text">
-                      {currentInstrumentArray[note].name}
-                    </p>
-                  </CardBody>
-                </Card>
-              </Col>
-            );
-          })}
+          <Col>{showIntervalCards ? displayIntervalCards() : null}</Col>
         </Row>
       </Container>
     </>
