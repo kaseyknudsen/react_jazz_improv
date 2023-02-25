@@ -44,7 +44,7 @@ import Low_E_Image from "../app/images/treble-clef-notes/Low-E.png";
 import Low_F_Image from "../app/images/treble-clef-notes/Low-F.png";
 import Low_Fsharp_Image from "../app/images/treble-clef-notes/Low-Fsharp.png";
 import Middle_G_Image from "../app/images/treble-clef-notes/Middle-G.png";
-import Middle_Ab_Image from "../app/images/treble-clef-notes/Middle-Ab.png";
+import Middle_Gsharp_Image from "../app/images/treble-clef-notes/Middle-Gsharp.png";
 import Middle_A_Image from "../app/images/treble-clef-notes/Middle-A.png";
 import Middle_Bb_Image from "../app/images/treble-clef-notes/Middle-Bb.png";
 import Middle_B_Image from "../app/images/treble-clef-notes/Middle-B.png";
@@ -130,9 +130,9 @@ export const AltoSaxChromaticScaleArray = [
     audio_file: new Audio(Middle_G),
   },
   {
-    image: Middle_Ab_Image,
+    image: Middle_Gsharp_Image,
     index: 10,
-    name: "Middle Ab",
+    name: "Middle G#",
     audio_file: new Audio(Middle_Ab),
   },
   {

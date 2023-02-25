@@ -6,7 +6,15 @@ import { trumpetChrScale } from "./trumpetChrScale";
 import { tromboneChrScale } from "./tromboneChrScale";
 import { useState } from "react";
 import SpeedCard from "../features/cards/SpeedCard";
-import { Row, Col, Container, Card, CardBody, CardImg } from "reactstrap";
+import {
+  Row,
+  Col,
+  Container,
+  Card,
+  CardBody,
+  CardImg,
+  CardText,
+} from "reactstrap";
 import MajorScaleIntervalTrainer from "./MajorScaleIntervalsTrainer";
 import RandomMajorIntervals from "../features/RandomMajorIntervals";
 import ChromaticIntervalTrainer from "./ChromaticIntervalTrainer";
@@ -32,6 +40,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );
+  const [showAnswer, setShowAnswer] = useState(false);
 
   //function that plays the set of random indices of the instrument array
   const playSequence = (notes, noteArray) => {
@@ -43,10 +52,20 @@ const DisplayAndPlayIntervalsRefactor = () => {
     }
   };
 
+  const showRandomIntervalSequenceAnswer = () => {
+    setShowAnswer(true);
+    return (
+      <Card className="card card-grow w-25 mx-auto mt-4">
+        <CardText>Want to See the Answer?</CardText>
+      </Card>
+    );
+  };
+
   const onNewSequenceClick = (notes, instrumentArray) => {
     const newSequence = randomSequence(notes, currentInstrumentArray);
     setCurrentSequence(newSequence);
     playSequence(newSequence, instrumentArray);
+
     return newSequence;
   };
 
@@ -138,6 +157,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
                 onClick={() => {
                   onNewSequenceClick(noteCount, currentInstrumentArray);
                   console.log(noteCount, currentSequence);
+                  showRandomIntervalSequenceAnswer();
                 }}
               >
                 {noteCount === 1 ? (
@@ -149,35 +169,49 @@ const DisplayAndPlayIntervalsRefactor = () => {
             );
           })}
         </Row>
-        {/* <Row>{showCard}</Row> */}
-        <Row>
-          {currentSequence.map((note) => {
-            return (
-              <Card className="card card-grow">
-                <CardImg src={currentInstrumentArray[note].image} />
-                <CardBody className="card-body text-center">
-                  <p className="card-text">
-                    {currentInstrumentArray[note].name}
-                  </p>
-                </CardBody>
-              </Card>
-            );
-          })}
-        </Row>
       </Container>
-      <Container>
+      <Container style={{ maxWidth: 650 }}>
         <Row>
           <Col
             onClick={() => {
               playSequence(currentSequence, currentInstrumentArray);
             }}
           >
-            <Card className="card card-grow w-25 mx-auto mt-3">
+            <Card className="card card-grow w-25 mx-auto mt-4">
               <CardBody className="text-center">
                 <h4>Replay Sequence</h4>
               </CardBody>
             </Card>
           </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <Card className="card card-grow w-50 mx-auto mt-5 text-center">
+              <CardBody>
+                <CardText>Ready to see the answer?</CardText>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          {currentSequence.map((note) => {
+            return (
+              <Col className="mt-5">
+                <Card className="card card-grow">
+                  <CardImg
+                    src={currentInstrumentArray[note].image}
+                    width="100%"
+                  />
+                  <CardBody className="card-body text-center">
+                    <p className="card-text">
+                      {currentInstrumentArray[note].name}
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </>
