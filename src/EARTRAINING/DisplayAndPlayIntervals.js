@@ -28,7 +28,7 @@ const fast = 1000;
 
 const DisplayAndPlayIntervalsRefactor = () => {
   const [currentSequence, setCurrentSequence] = useState([]);
-  const [currentDelay, setDelay] = useState(1300);
+  const [currentDelay, setDelay] = useState(medium);
   const [currentInstrumentArray, setCurrentInstrumentArray] = useState(
     AltoSaxChromaticScaleArray
   );

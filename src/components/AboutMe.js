@@ -5,7 +5,7 @@ import pic from '../app/images/Kasey-image1.jpg'
 const AboutMe = () => {
     return (
         <Container >
-            <Row className="mt-5 ms-auto row-style">    
+            <Row className="mt-5  mx-auto row-style">    
                 <Col md='6'>
                     <h1>About Me</h1>
                     <p>
