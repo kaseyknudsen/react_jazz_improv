@@ -5,14 +5,7 @@ const AboutMe = () => {
   return (
     <Container>
       <Row className="row-style">
-        <Col sm="6">
-          <img
-            className="img-fluid kaseyImage1"
-            src={pic}
-            alt="Kasey Knudsen"
-          />
-        </Col>
-        <Col sm="6">
+      <Col sm="6">
           <h1 className="mt-3">About Me</h1>
           <p>
             Hello, and thanks for visiting the Jazz Theory Website. My name is
@@ -25,6 +18,14 @@ const AboutMe = () => {
             the right place!
           </p>
         </Col>
+        <Col sm="6">
+          <img
+            className="img-fluid kaseyImage1"
+            src={pic}
+            alt="Kasey Knudsen"
+          />
+        </Col>
+       
       </Row>
     </Container>
   );
