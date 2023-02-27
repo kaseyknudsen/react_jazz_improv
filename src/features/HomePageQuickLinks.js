@@ -1,10 +1,10 @@
 import { quickLinks } from "./quickLinks"
 import QuickLinkCard from "./cards/QuickLinkCard";
-import { Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 const HomePageQuickLinks = () => {
   return (
-    <>
+    <Container>
       <Row className="text-center mt-5">
         <Col xs="12">
           <h1>Quick Links</h1>
@@ -23,7 +23,7 @@ const HomePageQuickLinks = () => {
           );
         })}
       </Row>
-    </>
+    </Container>
   );
 };
 

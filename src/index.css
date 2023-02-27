@@ -3,6 +3,7 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Quattrocento', serif; */
 
+
 .custom-nav-bar {
   background-color: rgb(191, 175, 160);
   min-height: 10rem;
@@ -34,6 +35,7 @@ p,
 
 .kaseyImage1 {
   filter: drop-shadow(10px 15px 4px #8e8c8c);
+  
 }
 
 h4 {
