@@ -132,7 +132,7 @@ export const altoSaxBbMajorScale = [
   },
 ];
 
-altoSaxBbMajorScale.forEach((interval) => {
-  interval.audioFile1.preload = true
-  interval.audioFile2.preload = true
-})
+// altoSaxBbMajorScale.forEach((interval) => {
+//   interval.audioFile1.preload = true
+//   interval.audioFile2.preload = true
+// })
