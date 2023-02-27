@@ -1,9 +1,24 @@
 import { Row, Col, Container } from "reactstrap";
 import BbMajorIntervalCard from "../features/cards/BbMajorIntervalCard";
 import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
+import { useState, useRef, useEffect } from "react";
 
 const MajorScaleIntervalTrainer = () => {
-
+  const effectRan = useRef(false);
+  const [log, setLog] = useState(["murphy", "the dog"]);
+  useEffect(() => {
+    if (effectRan.current) return;
+    const addLog = (text) => setLog((log) => [...log, text]);
+    altoSaxBbMajorScale.forEach((interval) => {
+      interval.audioFile1.addEventListener("canplaythrough", () =>
+        addLog(`audio file 1: ${interval.title}`)
+      );
+      interval.audioFile2.addEventListener("canplaythrough", () =>
+        addLog(`audio file 2: ${interval.title}`)
+      );
+    });
+    effectRan.current = true;
+  }, [setLog]);
   //function that plays an interval of the Bb major scale
   const playMajorInterval = (interval) => {
     const note1 = interval.audioFile1;
@@ -14,6 +29,13 @@ const MajorScaleIntervalTrainer = () => {
 
   return (
     <Container fixed>
+      <Row>
+        <Col>
+          {log.map((text) => (
+            <p>{text}</p>
+          ))}
+        </Col>
+      </Row>
       <Row>
         <h2 style={{ textAlign: "center" }}>Major Scale Interval Trainer</h2>
       </Row>

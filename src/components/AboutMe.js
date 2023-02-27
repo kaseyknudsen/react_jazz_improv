@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <Container>
       <Row className="row-style">
-      <Col sm="6">
-          <h1 className="mt-3">About Me</h1>
+        <Col sm="6">
+          <h1>About Me</h1>
           <p>
             Hello, and thanks for visiting the Jazz Theory Website. My name is
             Kasey, and I've been studying jazz for most of my adult life. I
@@ -25,7 +25,6 @@ const AboutMe = () => {
             alt="Kasey Knudsen"
           />
         </Col>
-       
       </Row>
     </Container>
   );

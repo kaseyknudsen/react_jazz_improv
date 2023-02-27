@@ -51,7 +51,6 @@ export const altoSaxBbMajorScale = [
     title: "Ascending Perfect 4th",
     audioFile1: new Audio(Middle_Bb),
     audioFile2: new Audio(Middle_Eb),
-    
     image: Bb_to_Eb,
   },
   {
@@ -132,3 +131,5 @@ export const altoSaxBbMajorScale = [
     image: descending_Bb_to_Bb,
   },
 ];
+
+
