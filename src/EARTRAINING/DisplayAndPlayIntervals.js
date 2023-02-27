@@ -50,6 +50,7 @@ const DisplayAndPlayIntervalsRefactor = () => {
       <Card className="card card-grow text-center">
         <CardBody>
           <h4 className="card-text">Ready to see the answer?</h4>
+          <h5>(all instruments are transposed)</h5>
         </CardBody>
       </Card>
     );
@@ -116,7 +117,6 @@ const DisplayAndPlayIntervalsRefactor = () => {
 
       <Container style={{ maxWidth: 700 }}>
         <h2 style={{ textAlign: "center" }}>Choose Your Instrument</h2>
-
         <Row className="mb-5">
           <Col
             xs="6"
