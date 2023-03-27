@@ -14,4 +14,4 @@ Practice Routines
 
 ## Tech
 
-This project was designed using React, Bootstrap, CSS and Logic Pro.
+This project was designed using React, Reactstrap, CSS and Logic Pro. It was deployed using Vercel.
