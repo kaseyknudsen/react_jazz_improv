@@ -7,10 +7,10 @@ My goal for this project was to create a fun, interactive, easy to use tool prac
 ## Project Features
 
 This project contains the following sections:
-# An instrument-specific Ear Training page that includes a random note sequencer
-# A theory page that includes "flash-card-like" questions and answers
-# A repertoire page where the student can choose a song list to work from
-# A Practice Routine page to help students organize their practice time
+### An instrument-specific Ear Training page that includes a random note sequencer
+### A theory page that includes "flash-card-like" questions and answers
+### A repertoire page where the student can choose a song list to work from
+### A Practice Routine page to help students organize their practice time
 
 ## Tech
 
