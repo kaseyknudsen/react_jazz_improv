@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-My goal for this project was to create a fun, interactive, easy to use tool practice tool for my saxophone and improvisation students. I included live trumpet and trombone in the ear training section.  
+My goal for this project was to create a fun, interactive, easy to use tool practice tool for my saxophone and improvisation students. I included live saxophone, trumpet and trombone in the ear training section. Most ear-training apps use midi piano sounds, and I wanted to offer something different.  
 
 ## Project Features
 
