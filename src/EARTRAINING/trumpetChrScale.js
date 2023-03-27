@@ -31,6 +31,7 @@ import concert_High_Bb from "./all_chromatic_scales/trumpet_chr_scale/concert_Hi
 import concert_High_B from "./all_chromatic_scales/trumpet_chr_scale/concert_High_B.mp3";
 
 //images
+import Low_G from "../app/images/treble-clef-notes/Low-G.png";
 import Low_Ab from "../app/images/treble-clef-notes/Low-Ab.png";
 import Low_A from "../app/images/treble-clef-notes/Low-A.png";
 import Low_Bb from "../app/images/treble-clef-notes/Low-Bb.png";
@@ -64,7 +65,7 @@ import High_Csharp from "../app/images/treble-clef-notes/High-Csharp.png";
 
 export const trumpetChrScale = [
   {
-    //need an image for this
+    image: Low_G,
     index: 0,
     name: "Low G",
     audio_file: new Audio(concert_Low_F),
