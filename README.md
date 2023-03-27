@@ -2,16 +2,16 @@
 
 ## Project Goal
 
-My goal for this project was to create a fun, interactive, easy to use tool for my saxophone and improvisation students to practice ear training and theory.
+My goal for this project was to create a fun, interactive, easy to use tool practice tool for my saxophone and improvisation students. I included live trumpet and trombone in the ear training section.  
 
 ## Project Features
 
 This project contains the following sections:
-Ear Training,
-Theory,
-Repertoire,
-Practice Routines
+An instrument-specific Ear Training page that includes a random note sequencer,
+A theory page that includes "flash-card-like" questions and answers,
+A repertoire page where the student can choose a song list to work from,
+A Practice Routine page to help students organize their practice time
 
 ## Tech
 
-This project was designed using React, Reactstrap, CSS and Logic Pro. It was deployed using Vercel.
+This project was designed using Javascript, React, Reactstrap, CSS, Formik, and Logic Pro. It was deployed using Vercel.
