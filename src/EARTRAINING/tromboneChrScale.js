@@ -23,125 +23,175 @@ import C from "./all_chromatic_scales/trombone_chr_scale/bone_C.mp3";
 import Db from "./all_chromatic_scales/trombone_chr_scale/bone_Db.mp3";
 import D from "./all_chromatic_scales/trombone_chr_scale/bone_high_D.mp3";
 
+//images
+import low_Eb_image from "../app/images/bass-clef-notes/Low-Eb.png"
+import low_E_image from "../app/images/bass-clef-notes/Low-E.png";
+import low_F_image from "../app/images/bass-clef-notes/Low-F.png";
+import low_Gb_image from "../app/images/bass-clef-notes/Low-Gb.png";
+import low_G_image from "../app/images/bass-clef-notes/Low-G.png";
+import low_Ab_image from "../app/images/bass-clef-notes/Low-Ab.png";
+import low_A_image from "../app/images/bass-clef-notes/Low-A.png";
+import low_Bb_image from "../app/images/bass-clef-notes/Low-Bb.png";
+import low_B_image from "../app/images/bass-clef-notes/Low-B.png";
+import low_C_image from "../app/images/bass-clef-notes/Low-C.png";
+import low_Db_image from "../app/images/bass-clef-notes/Low-Db.png";
+import low_D_image from "../app/images/bass-clef-notes/Low-D.png";
+import Eb_image from "../app/images/bass-clef-notes/Eb.png";
+import E_image from "../app/images/bass-clef-notes/E.png";
+import F_image from "../app/images/bass-clef-notes/F.png";
+import Gb_image from "../app/images/bass-clef-notes/Gb.png";
+import G_image from "../app/images/bass-clef-notes/G.png";
+import Ab_image from "../app/images/bass-clef-notes/Ab.png";
+import A_image from "../app/images/bass-clef-notes/A.png";
+import Bb_image from "../app/images/bass-clef-notes/Bb.png";
+import B_image from "../app/images/bass-clef-notes/B.png";
+import C_image from "../app/images/bass-clef-notes/C.png";
+import Db_image from "../app/images/bass-clef-notes/Db.png";
+import D_image from "../app/images/bass-clef-notes/D.png";
+
 export const tromboneChrScale = [
   {
     index: 0,
-    name: 'Low Eb',
+    name: "Low Eb",
+    image: low_Eb_image,
     audio_file: new Audio(low_Eb),
   },
   {
     index: 1,
-    name: 'Low E',
+    name: "Low E",
+    image: low_E_image,
     audio_file: new Audio(low_E),
   },
   {
     index: 2,
-    name: 'Low F',
+    name: "Low F",
+    image: low_F_image,
     audio_file: new Audio(low_F),
   },
   {
     index: 3,
-    name: 'Low Gb',
+    name: "Low Gb",
+    image: low_Gb_image,
     audio_file: new Audio(low_Gb),
   },
   {
     index: 4,
-    name: 'Low G',
+    name: "Low G",
+    image: low_G_image,
     audio_file: new Audio(low_G),
   },
   {
     index: 5,
-    name: 'Low Ab',
+    name: "Low Ab",
+    image: low_Ab_image,
     audio_file: new Audio(low_Ab),
   },
   {
     index: 6,
-    name: 'Low A',
+    name: "Low A",
+    image: low_A_image,
     audio_file: new Audio(low_A),
   },
   {
     index: 7,
-    name: 'Low Bb',
+    name: "Low Bb",
+    image: low_Bb_image,
     audio_file: new Audio(low_Bb),
   },
   {
     index: 8,
-    name: 'Low B',
+    name: "Low B",
+    image: low_B_image,
     audio_file: new Audio(low_B),
   },
   {
     index: 9,
-    name: 'Low C',
+    name: "Low C",
+    image: low_C_image,
     audio_file: new Audio(low_C),
   },
   {
     index: 10,
-    name: 'Low Db',
+    name: "Low Db",
+    image: low_Db_image,
     audio_file: new Audio(low_Db),
   },
   {
     index: 11,
-    name: 'Low D',
+    name: "Low D",
+    image: low_D_image,
     audio_file: new Audio(low_D),
   },
   {
     index: 12,
-    name: 'Eb',
+    name: "Eb",
+    image: Eb_image,
     audio_file: new Audio(Eb),
   },
   {
     index: 13,
-    name: 'E',
+    name: "E",
+    image: E_image,
     audio_file: new Audio(E),
   },
   {
     index: 14,
-    name: 'F',
+    name: "F",
+    image: F_image,
     audio_file: new Audio(F),
   },
   {
     index: 15,
-    name: 'Gb',
+    name: "Gb",
+    image: Gb_image,
     audio_file: new Audio(Gb),
   },
   {
     index: 16,
-    name: 'G',
+    name: "G",
+    image: G_image,
     audio_file: new Audio(G),
   },
   {
     index: 17,
-    name: 'Ab',
+    name: "Ab",
+    image: Ab_image,
     audio_file: new Audio(Ab),
   },
   {
     index: 18,
-    name: 'A',
+    name: "A",
+    image: A_image,
     audio_file: new Audio(A),
   },
   {
     index: 19,
-    name: 'Bb',
+    name: "Bb",
+    image: Bb_image,
     audio_file: new Audio(Bb),
   },
   {
     index: 20,
-    name: 'B',
+    name: "B",
+    image: B_image,
     audio_file: new Audio(B),
   },
   {
     index: 21,
-    name: 'C',
+    name: "C",
+    image: C_image,
     audio_file: new Audio(C),
   },
   {
     index: 22,
-    name: 'Db',
+    name: "Db",
+    image: Db_image,
     audio_file: new Audio(Db),
   },
   {
     index: 23,
-    name: 'D',
+    name: "D",
+    image: D_image,
     audio_file: new Audio(D),
   },
 ];
