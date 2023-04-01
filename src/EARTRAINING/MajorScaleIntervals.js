@@ -1,11 +1,5 @@
-import Middle_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Bb.mp3";
-import Middle_C from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-C.mp3";
-import Middle_D from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-D.mp3";
-import Middle_Eb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Eb.mp3";
-import Middle_F from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-F.mp3";
-import High_G from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-G.mp3";
-import High_A from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-A.mp3";
-import High_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/High-Bb.mp3";
+import { altoSaxSounds } from "./AltoSaxSounds";
+import { trumpetSounds } from "./TrumpetSounds";
 
 import Bb_to_C from "../EARTRAINING/Bb_MajorScale/Bb_C.png";
 import Bb_to_D from "../EARTRAINING/Bb_MajorScale/Bb_D.png";
@@ -15,14 +9,6 @@ import Bb_to_G from "../EARTRAINING/Bb_MajorScale/Bb_G.png";
 import Bb_to_A from "../EARTRAINING/Bb_MajorScale/Bb_A.png";
 import Bb_to_Bb from "../EARTRAINING/Bb_MajorScale/Bb_Bb.png";
 
-import Low_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Bb.mp3";
-import Low_C from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-C.mp3";
-import Low_D from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-D.mp3";
-import Low_Eb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Eb.mp3";
-import Low_F from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-F.mp3";
-import Middle_G from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-G.mp3";
-import Middle_A from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-A.mp3";
-
 import descending_Bb_to_A from "../EARTRAINING/descending_major_intervals/descending_min_2nd.png";
 import descending_Bb_to_G from "../EARTRAINING/descending_major_intervals/descending_min_3rd.png";
 import descending_Bb_to_F from "../EARTRAINING/descending_major_intervals/descending_perf_4th.png";
@@ -31,108 +17,125 @@ import descending_Bb_to_D from "../EARTRAINING/descending_major_intervals/descen
 import descending_Bb_to_C from "../EARTRAINING/descending_major_intervals/descending_min_7th.png";
 import descending_Bb_to_Bb from "../EARTRAINING/descending_major_intervals/descending_perf_8ve.png";
 
-export const altoSaxBbMajorScale = [
-  {
-    id: 1,
-    title: "Ascending Major 2nd",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_C),
-    image: Bb_to_C,
-  },
-  {
-    id: 2,
-    title: "Ascending Major 3rd",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_D),
-    image: Bb_to_D,
-  },
-  {
-    id: 3,
-    title: "Ascending Perfect 4th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_Eb),
-    image: Bb_to_Eb,
-  },
-  {
-    id: 4,
-    title: "Ascending Perfect 5th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_F),
-    image: Bb_to_F,
-  },
-  {
-    id: 5,
-    title: "Ascending Major 6th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(High_G),
-    image: Bb_to_G,
-  },
-  {
-    id: 6,
-    title: "Ascending Major 7th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(High_A),
-    image: Bb_to_A,
-  },
-  {
-    id: 7,
-    title: "Ascending Perfect Octave",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(High_Bb),
-    image: Bb_to_Bb,
-  },
-  {
-    id: 8,
-    title: "Descending Minor 2nd",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_A),
-    image: descending_Bb_to_A,
-  },
-  {
-    id: 9,
-    title: "Descending Minor 3rd",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Middle_G),
-    image: descending_Bb_to_G,
-  },
-  {
-    id: 10,
-    title: "Descending Perfect 4th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Low_F),
-    image: descending_Bb_to_F,
-  },
-  {
-    id: 11,
-    title: "Descending Perfect 5th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Low_Eb),
-    image: descending_Bb_to_Eb,
-  },
-  {
-    id: 12,
-    title: "Descending Minor 6th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Low_D),
-    image: descending_Bb_to_D,
-  },
-  {
-    id: 13,
-    title: "Descending Minor 7th",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Low_C),
-    image: descending_Bb_to_C,
-  },
-  {
-    id: 14,
-    title: "Descending Perfect Octave",
-    audioFile1: new Audio(Middle_Bb),
-    audioFile2: new Audio(Low_Bb),
-    image: descending_Bb_to_Bb,
-  },
-];
 
-// altoSaxBbMajorScale.forEach((interval) => {
-//   interval.audioFile1.preload = true
-//   interval.audioFile2.preload = true
-// })
+
+export const getMajorScaleIntervalPairs = (instrument) => {
+  let instrumentSounds;
+  if (instrument === 'alto sax') {
+    instrumentSounds = altoSaxSounds
+  } else if (instrument === 'trumpet') {
+    instrumentSounds = trumpetSounds
+  }
+
+  const scaleDegree = {
+    1: instrumentSounds.middle_Bb,
+    2: instrumentSounds.middle_C,
+    3: instrumentSounds.middle_D,
+    4: instrumentSounds.middle_Eb,
+    5: instrumentSounds.middle_F,
+    6: instrumentSounds.high_G,
+    7: instrumentSounds.high_A,
+    8: instrumentSounds.high_Bb,
+  };
+
+  return [
+    {
+      id: 1,
+      title: "Ascending Major 2nd",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[2],
+      image: Bb_to_C,
+    },
+    {
+      id: 2,
+      title: "Ascending Major 3rd",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[3],
+      image: Bb_to_D,
+    },
+    {
+      id: 3,
+      title: "Ascending Perfect 4th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[4],
+      image: Bb_to_Eb,
+    },
+    {
+      id: 4,
+      title: "Ascending Perfect 5th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[5],
+      image: Bb_to_F,
+    },
+    {
+      id: 5,
+      title: "Ascending Major 6th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[6],
+      image: Bb_to_G,
+    },
+    {
+      id: 6,
+      title: "Ascending Major 7th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[7],
+      image: Bb_to_A,
+    },
+    {
+      id: 7,
+      title: "Ascending Perfect Octave",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[8],
+      image: Bb_to_Bb,
+    },
+    {
+      id: 8,
+      title: "Descending Minor 2nd",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[7],
+      image: descending_Bb_to_A,
+    },
+    {
+      id: 9,
+      title: "Descending Minor 3rd",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[6],
+      image: descending_Bb_to_G,
+    },
+    {
+      id: 10,
+      title: "Descending Perfect 4th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[5],
+      image: descending_Bb_to_F,
+    },
+    {
+      id: 11,
+      title: "Descending Perfect 5th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[4],
+      image: descending_Bb_to_Eb,
+    },
+    {
+      id: 12,
+      title: "Descending Minor 6th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[3],
+      image: descending_Bb_to_D,
+    },
+    {
+      id: 13,
+      title: "Descending Minor 7th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[2],
+      image: descending_Bb_to_C,
+    },
+    {
+      id: 14,
+      title: "Descending Perfect Octave",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[1],
+      image: descending_Bb_to_Bb,
+    },
+  ]
+};
