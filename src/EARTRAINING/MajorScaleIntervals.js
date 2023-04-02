@@ -1,5 +1,7 @@
 import { altoSaxSounds } from "./AltoSaxSounds";
 import { trumpetSounds } from "./TrumpetSounds";
+import { tenorSaxSounds } from "./TenorSaxSounds";
+import { tromboneSounds } from "./TromboneSounds";
 
 import Bb_to_C from "../EARTRAINING/Bb_MajorScale/Bb_C.png";
 import Bb_to_D from "../EARTRAINING/Bb_MajorScale/Bb_D.png";
@@ -25,6 +27,10 @@ export const getMajorScaleIntervalPairs = (instrument) => {
     instrumentSounds = altoSaxSounds
   } else if (instrument === 'trumpet') {
     instrumentSounds = trumpetSounds
+  } else if (instrument === 'tenor sax') {
+    instrumentSounds = tenorSaxSounds
+  } else if (instrument === 'trombone') {
+    instrument = tromboneSounds
   }
 
   const scaleDegree = {
