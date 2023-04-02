@@ -56,7 +56,6 @@ const MajorScaleIntervalTrainer = () => {
             sm="3"
             onClick={() => {
               setInstrument("trombone");
-              console.log("trombone clicked");
             }}
           >
             <Card className="card card-grow">
