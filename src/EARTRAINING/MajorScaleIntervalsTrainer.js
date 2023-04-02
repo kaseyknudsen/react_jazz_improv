@@ -3,7 +3,6 @@ import { Row, Col, Container } from "reactstrap";
 import BbMajorIntervalCard from "../features/cards/BbMajorIntervalCard";
 import { getMajorScaleIntervalPairs } from "./MajorScaleIntervals";
 import { Card, CardBody } from "reactstrap";
-import { altoSaxSounds } from "./AltoSaxSounds";
 
 const MajorScaleIntervalTrainer = () => {
   const [intervalPairs, setIntervalPairs] = useState(
@@ -25,30 +24,51 @@ const MajorScaleIntervalTrainer = () => {
   return (
     <Container fixed>
       <Row>
-        <Col sm="3" onClick={() => setInstrument("alto sax")}>
-          <Card className="card card-grow">
-            <CardBody className="text-center">
-              <h5>Alto Sax</h5>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col sm="3" onClick={() => setInstrument("trumpet")}>
-          <Card className="card card-grow">
-            <CardBody className="text-center">
-              <h5>Trumpet</h5>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
         <h2 style={{ textAlign: "center" }}>Major Scale Interval Trainer</h2>
       </Row>
-      <Row className="mb-5">
-        <h5 style={{ textAlign: "center" }}>(Transposed for Alto Saxophone)</h5>
-      </Row>
-
+      <Container style={{ maxWidth: 650 }}>
+        <Row className="mt-4 mb-2">
+          <h4 style={{ textAlign: "center" }}>Choose Your Instrument</h4>
+        </Row>
+        <Row>
+          <Col sm="3" onClick={() => setInstrument("alto sax")}>
+            <Card className="card card-grow">
+              <CardBody className="text-center">
+                <h5>Alto Sax</h5>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="3" onClick={() => setInstrument("trumpet")}>
+            <Card className="card card-grow">
+              <CardBody className="text-center">
+                <h5>Trumpet</h5>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col sm="3" onClick={() => setInstrument("tenor sax")}>
+            <Card className="card card-grow">
+              <CardBody className="text-center">
+                <h5>Tenor Sax</h5>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col
+            sm="3"
+            onClick={() => {
+              setInstrument("trombone");
+              console.log("trombone clicked");
+            }}
+          >
+            <Card className="card card-grow">
+              <CardBody className="text-center">
+                <h5>Trombone</h5>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
       <Row>
-        <h4 style={{ textAlign: "center" }} className="mt-4 mb-3">
+        <h4 style={{ textAlign: "center" }} className="mt-5 mb-3">
           Intervals of the Bb Major Scale
         </h4>
       </Row>

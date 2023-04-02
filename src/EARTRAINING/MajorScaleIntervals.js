@@ -30,7 +30,7 @@ export const getMajorScaleIntervalPairs = (instrument) => {
   } else if (instrument === 'tenor sax') {
     instrumentSounds = tenorSaxSounds
   } else if (instrument === 'trombone') {
-    instrument = tromboneSounds
+    instrumentSounds = tromboneSounds
   }
 
   const scaleDegree = {
