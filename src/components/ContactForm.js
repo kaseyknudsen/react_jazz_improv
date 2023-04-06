@@ -47,7 +47,7 @@ const ContactForm = () => {
           contactType: "By Email",
           feedback: "",
         }}
-        validate={() => validateContactForm()}
+        validate={() => validateContactForm}
         onSubmit={(values, actions) => {
           sendEmail(values, actions);
         }}
