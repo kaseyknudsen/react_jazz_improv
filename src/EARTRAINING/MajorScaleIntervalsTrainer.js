@@ -31,21 +31,29 @@ const MajorScaleIntervalTrainer = () => {
           <h4 style={{ textAlign: "center" }}>Choose Your Instrument</h4>
         </Row>
         <Row>
-          <Col sm="3" onClick={() => setInstrument("alto sax")}>
+          <Col
+            sm="3"
+            className="mb-2"
+            onClick={() => setInstrument("alto sax")}
+          >
             <Card className="card card-grow">
               <CardBody className="text-center">
                 <h5>Alto Sax</h5>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3" onClick={() => setInstrument("trumpet")}>
+          <Col sm="3" className="mb-2" onClick={() => setInstrument("trumpet")}>
             <Card className="card card-grow">
               <CardBody className="text-center">
                 <h5>Trumpet</h5>
               </CardBody>
             </Card>
           </Col>
-          <Col sm="3" onClick={() => setInstrument("tenor sax")}>
+          <Col
+            sm="3"
+            className="mb-2"
+            onClick={() => setInstrument("tenor sax")}
+          >
             <Card className="card card-grow">
               <CardBody className="text-center">
                 <h5>Tenor Sax</h5>
