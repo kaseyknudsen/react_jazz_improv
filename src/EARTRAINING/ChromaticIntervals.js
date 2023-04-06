@@ -1,3 +1,8 @@
+import { altoSaxSounds } from "./AltoSaxSounds";
+import { trumpetSounds } from "./TrumpetSounds";
+import { tenorSaxSounds } from "./TenorSaxSounds";
+import { tromboneSounds } from "./TromboneSounds";
+
 //ascending images
 import asc_Bb_to_B from "../EARTRAINING/ascending_non_diatonic_intervals/ascending_min_2nd.png";
 import asc_Bb_to_Db from "../EARTRAINING/ascending_non_diatonic_intervals/ascending_min_3rd.png";
@@ -20,6 +25,102 @@ import Low_E from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/
 import Middle_Gb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Low-Gb.mp3";
 import Middle_Ab from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Ab.mp3";
 import Middle_Bb from "../EARTRAINING/all_chromatic_scales/alto_sax_chromatic_scale/Middle-Bb.mp3";
+
+export const getChromaticScaleIntervalPairs = (instrument) => {
+  let instrumentSounds;
+  if (instrument === "alto sax") {
+    instrumentSounds = altoSaxSounds;
+  } else if (instrument === "trumpet") {
+    instrumentSounds = trumpetSounds;
+  } else if (instrument === "tenor sax") {
+    instrumentSounds = tenorSaxSounds;
+  } else if (instrument === "trombone") {
+    instrumentSounds = tromboneSounds;
+  }
+
+  const scaleDegree = {
+    1: instrumentSounds.low_Bb,
+    2: instrumentSounds.low_B,
+    3: instrumentSounds.low_Db,
+    4: instrumentSounds.low_E,
+    6: instrumentSounds.middle_Gb,
+    7: instrumentSounds.middle_Ab,
+    8: instrumentSounds.high_Bb
+  }
+
+  return [
+    {
+      id: 1,
+      title: "Ascending Minor 2nd",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[2],
+      image: asc_Bb_to_B,
+    },
+    {
+      id: 2,
+      title: "Ascending Minor 3rd",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[3],
+      image: asc_Bb_to_Db,
+    },
+    {
+      id: 3,
+      title: "Ascending Tri-tone (augmented 4th)",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[4],
+      image: asc_Bb_to_E,
+    },
+    {
+      id: 4,
+      title: "Ascending Minor 6th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[6],
+      image: asc_Bb_to_Gb,
+    },
+    {
+      id: 5,
+      title: "Ascending Minor 7th",
+      audioFile1: scaleDegree[1],
+      audioFile2: scaleDegree[7],
+      image: asc_Bb_to_Ab,
+    },
+    {
+      id: 6,
+      title: "Descending Major 2nd",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[7],
+      image: desc_Bb_to_Ab,
+    },
+    {
+      id: 7,
+      title: "Descending Major 3rd",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[6],
+      image: desc_Bb_to_Gb,
+    },
+    {
+      id: 8,
+      title: "Descending Tri-tone (diminished 5th)",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[4],
+      image: desc_Bb_to_E,
+    },
+    {
+      id: 9,
+      title: "Descending Major 6th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[3],
+      image: desc_Bb_to_Db,
+    },
+    {
+      id: 10,
+      title: "Descending Major 7th",
+      audioFile1: scaleDegree[8],
+      audioFile2: scaleDegree[2],
+      image: desc_Bb_to_B,
+    },
+  ];
+};
 
 export const chromaticIntervals = [
   {

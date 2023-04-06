@@ -2,14 +2,17 @@ import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import GuessIntervalCard from "../features/cards/GuessIntervalCard";
 import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
-import { altoSaxBbMajorScale } from "./MajorScaleIntervals";
+import { getMajorScaleIntervalPairs } from "./MajorScaleIntervals";
+
+const majorScaleIntervalPairs = getMajorScaleIntervalPairs('alto sax')
 
 const RandomMajorIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(
-    altoSaxBbMajorScale[0]
+    majorScaleIntervalPairs[0]
   );
-  const [randomIntervalAnswer, setRandomIntervalAnswer] =
-    useState(altoSaxBbMajorScale);
+  const [randomIntervalAnswer, setRandomIntervalAnswer] = useState(
+    majorScaleIntervalPairs
+  );
 
   const [isAnswerShowing, setIsAnswerShowing] = useState(false);
 
@@ -24,9 +27,9 @@ const RandomMajorIntervals = () => {
   //function that plays a random sequence from the Bb major scale
   const randomMajorSequence = () => {
     const intervalIndex = Math.floor(
-      Math.random() * altoSaxBbMajorScale.length
+      Math.random() * majorScaleIntervalPairs.length
     );
-    const randomMajInterval = altoSaxBbMajorScale[intervalIndex];
+    const randomMajInterval = majorScaleIntervalPairs[intervalIndex];
     playMajorInterval(randomMajInterval);
     setRandomIntervalAnswer("");
     return randomMajInterval;
