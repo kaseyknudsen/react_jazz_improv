@@ -6,7 +6,7 @@ const ContactMePage = () => {
   return (
     <Container>
       <SubHeader current="Contact Me" />
-      <Row className="row-style">
+      <Row className="contact-page-links">
         <Col xs="12">
           <a
             role="button"
@@ -26,15 +26,18 @@ const ContactMePage = () => {
             <i className="fa fa-envelope" /> Email: kaseyknudsen@gmail.com
           </a>
         </Col>
+        
       </Row>
-      <Row className="row-style">
-        <Col xs="12">
-          <h2 className="text-center mb-5">Contact Me!</h2>
-        </Col>
-        <Col md="10">
-          <ContactForm />
-        </Col>
-      </Row>
+      <div className="contact-page">
+        <Row className="row-style">
+          <Col xs="12">
+            <h1 className="text-center mb-5">Contact Me!</h1>
+          </Col>
+          <Col md="10">
+            <ContactForm />
+          </Col>
+        </Row>
+      </div>
     </Container>
   );
 };

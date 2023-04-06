@@ -31,6 +31,7 @@ p,
 .label {
   font-family: "Oswald", sans-serif;
   color: rgb(69, 44, 29);
+  
 }
 
 .kaseyImage1 {
@@ -183,6 +184,14 @@ i {
   justify-self: center;
   max-width: 10em;
   margin-bottom: 10px;
+}
+
+
+.contact-page-links {
+  border-bottom: .5px solid rgb(102, 74, 50);
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  font-family: 'Quattrocento', serif;
 }
 
 
