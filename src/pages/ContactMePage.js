@@ -6,7 +6,7 @@ const ContactMePage = () => {
   return (
     <Container>
       <SubHeader current="Contact Me" />
-      <Row className="contact-page-links">
+      {/* <Row className="contact-page-links">
         <Col xs="12">
           <a
             role="button"
@@ -27,7 +27,7 @@ const ContactMePage = () => {
           </a>
         </Col>
         
-      </Row>
+      </Row> */}
       <div className="contact-page">
         <Row className="row-style">
           <Col xs="12">
