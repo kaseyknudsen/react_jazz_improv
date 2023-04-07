@@ -3,6 +3,7 @@ import { Row, Col, Container } from "reactstrap";
 import GuessIntervalCard from "../features/cards/GuessIntervalCard"
 import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
 import { chromaticIntervals } from "../EARTRAINING/ChromaticIntervals";
+import ReplaySequenceCard from "../features/cards/ReplaySequenceCard";
 
 const RandomChromaticIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(
@@ -44,7 +45,7 @@ const RandomChromaticIntervals = () => {
       </Row>
       <Row className="mt-3 mx-auto">
         <Col
-          sm="6"
+          sm="4"
           className="mb-3"
           onClick={() => {
             setIsAnswerShowing(false);
@@ -53,9 +54,11 @@ const RandomChromaticIntervals = () => {
         >
           <GuessIntervalCard />
         </Col>
-
+        <Col onClick={() => playChromaticInterval(currentRandomInterval)}>
+          <ReplaySequenceCard />
+        </Col>
         <Col
-          sm="6"
+          sm="4"
           onClick={() => {
             showAnswer();
             setIsAnswerShowing(true);
