@@ -3,8 +3,9 @@ import { Row, Col, Container } from "reactstrap";
 import GuessIntervalCard from "../features/cards/GuessIntervalCard";
 import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
 import { getMajorScaleIntervalPairs } from "./MajorScaleIntervals";
+import ReplaySequenceCard from "../features/cards/ReplaySequenceCard";
 
-const majorScaleIntervalPairs = getMajorScaleIntervalPairs('alto sax')
+const majorScaleIntervalPairs = getMajorScaleIntervalPairs("alto sax");
 
 const RandomMajorIntervals = () => {
   const [currentRandomInterval, setCurrentRandomInterval] = useState(
@@ -48,7 +49,7 @@ const RandomMajorIntervals = () => {
       </Row>
       <Row className="mt-3 mx-auto">
         <Col
-          sm="6"
+          sm="4"
           className="mb-3"
           onClick={() => {
             setIsAnswerShowing(false);
@@ -57,9 +58,12 @@ const RandomMajorIntervals = () => {
         >
           <GuessIntervalCard />
         </Col>
+        <Col onClick={() => playMajorInterval(currentRandomInterval)}>
+          <ReplaySequenceCard />
+        </Col>
 
         <Col
-          sm="6"
+          sm="4"
           onClick={() => {
             showAnswer();
             setIsAnswerShowing(true);
