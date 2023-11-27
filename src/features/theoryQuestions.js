@@ -141,10 +141,10 @@ import Descending_Chromatic_Min_3rd_Bb_to_G from "../app/images/High-Res-Interva
 import Descending_Chromatic_Min_3rd_High_Csharp_to_A_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-3rds/HighCsharpToAsharpDesc.png";
 
 //dim 4ths
-import Descending_Chromatic_Dim_4th_B_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/BtoFdesc.png";
-import Descending_Chromatic_Dim_4th_D_to_Ab from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/DtoAbDesc.png";
-import Descending_Chromatic_Dim_4th_Eb_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/EbToAdesc.png";
-import Descending_Chromatic_Dim_4th_G_to_C_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-4ths/GtoCsharpDesc.png";
+import Descending_Chromatic_Dim_5th_B_to_F from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-5ths/BtoFdesc.png";
+import Descending_Chromatic_Dim_5th_D_to_Ab from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-5ths/DtoAbDesc.png";
+import Descending_Chromatic_Dim_5th_Eb_to_A from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-5ths/EbToAdesc.png";
+import Descending_Chromatic_Dim_5th_G_to_C_sharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-dim-5ths/GtoCsharpDesc.png";
 
 //min 6ths
 import Descending_Chromatic_Min_6th_A_to_Csharp from "../app/images/High-Res-Interval-Pics/Descending-Chromatic-Intervals/Descending-min-6ths/AtoLowCsharpDesc.png";
@@ -1004,7 +1004,7 @@ const AscendingMinor7th = "Minor 7th";
 //chromatic descending titles
 const DescendingMinor2nd = "Minor 2nd";
 const DescendingMinor3rd = "Minor 3rd";
-const DescendingDiminished4th = "Diminished 4th (tri-tone)";
+const DescendingDiminished5th = "Diminished 5th (tri-tone)";
 const DescendingMinor6th = "Minor 6th";
 const DescendingMinor7th = "Minor 7th";
 
@@ -1617,34 +1617,34 @@ export const IntervalQuestions = [
     answer: DescendingMinor3rd,
   },
 
-  //dim 4th
+  //dim 5th
   {
     id: 80,
     title: intervalTopic,
-    image: Descending_Chromatic_Dim_4th_B_to_F,
+    image: Descending_Chromatic_Dim_5th_B_to_F,
     question: intervalQuestion,
-    answer: DescendingDiminished4th,
+    answer: DescendingDiminished5th,
   },
   {
     id: 81,
     title: intervalTopic,
-    image: Descending_Chromatic_Dim_4th_D_to_Ab,
+    image: Descending_Chromatic_Dim_5th_D_to_Ab,
     question: intervalQuestion,
-    answer: DescendingDiminished4th,
+    answer: DescendingDiminished5th,
   },
   {
     id: 82,
     title: intervalTopic,
-    image: Descending_Chromatic_Dim_4th_Eb_to_A,
+    image: Descending_Chromatic_Dim_5th_Eb_to_A,
     question: intervalQuestion,
-    answer: DescendingDiminished4th,
+    answer: DescendingDiminished5th,
   },
   {
     id: 83,
     title: intervalTopic,
-    image: Descending_Chromatic_Dim_4th_G_to_C_sharp,
+    image: Descending_Chromatic_Dim_5th_G_to_C_sharp,
     question: intervalQuestion,
-    answer: DescendingDiminished4th,
+    answer: DescendingDiminished5th,
   },
 
   //minor 6ths
