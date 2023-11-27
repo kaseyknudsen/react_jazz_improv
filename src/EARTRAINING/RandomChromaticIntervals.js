@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
-import GuessIntervalCard from "../features/cards/GuessIntervalCard"
+import GuessIntervalCard from "../features/cards/GuessIntervalCard";
 import GuessIntervalAnswerCard from "../features/cards/GuessIntervalAnswerCard";
 import { chromaticIntervals } from "../EARTRAINING/ChromaticIntervals";
 import ReplaySequenceCard from "../features/cards/ReplaySequenceCard";
