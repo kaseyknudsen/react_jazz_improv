@@ -1,7 +1,6 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from "../utilities/validateContactForm";
-import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
